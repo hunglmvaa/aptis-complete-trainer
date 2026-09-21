@@ -1,0 +1,35 @@
+{
+  "manifest_schema": "1.0",
+  "app_version": "3.3",
+  "manifest_version": "2026.09.21.1",
+  "updated_at": "2026-09-21",
+  "description": "Online pack manifest for APTIS Complete Trainer V3.3 GitHub Edition.",
+  "packs": [
+    {
+      "pack_id": "LISTENING_PACK_03_04_V3_2",
+      "title": "APTIS Listening Pack 03–04 · Canonical V1.2",
+      "file": "LISTENING_PACK_03_04_V3_2.json",
+      "version": "1.0.0",
+      "enabled": true,
+      "skill": "listening",
+      "set_ids": [
+        "SET_03",
+        "SET_04"
+      ],
+      "label": "Listening Set 03–04"
+    },
+    {
+      "pack_id": "LISTENING_PACK_05_06_V3_2",
+      "title": "APTIS Listening Pack 05–06 · Canonical V1.2",
+      "file": "LISTENING_PACK_05_06_V3_2.json",
+      "version": "1.0.0",
+      "enabled": true,
+      "skill": "listening",
+      "set_ids": [
+        "SET_05",
+        "SET_06"
+      ],
+      "label": "Listening Set 05–06"
+    }
+  ]
+}

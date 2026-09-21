@@ -1,0 +1,43 @@
+{
+  "schema_version": "3.2",
+  "pack_id": "MY_APTIS_PACK",
+  "title": "My APTIS Pack",
+  "voice_engine": "Web Speech API",
+  "sets": [
+    {
+      "set_id": "SET_01",
+      "title": "Set 01",
+      "parts": {
+        "L1": [],
+        "L2": {},
+        "L3": {},
+        "L4": {}
+      },
+      "reading_refs": {
+        "R1": "R1_S01",
+        "R23": "R23_T01",
+        "R4": "R4_T01",
+        "R5": "R5_T01"
+      }
+    }
+  ],
+  "reading_bank": {
+    "R1": {
+      "sets": [],
+      "items": []
+    },
+    "R23": {
+      "topics": [],
+      "sentences": [],
+      "links": []
+    },
+    "R4": {
+      "topics": [],
+      "items": []
+    },
+    "R5": {
+      "topics": [],
+      "items": []
+    }
+  }
+}

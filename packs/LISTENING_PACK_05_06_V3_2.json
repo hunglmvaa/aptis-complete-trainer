@@ -1,0 +1,2655 @@
+{
+  "schema_version": "3.2",
+  "pack_id": "LISTENING_PACK_05_06_V3_2",
+  "title": "APTIS Listening Pack 05–06 · Canonical V1.2",
+  "canonical_source": "APTIS_DATA_CANONICAL_V1_2",
+  "voice_engine": "Web Speech API",
+  "notes": {
+    "scope": "Two additional listening sets for APTIS Complete Trainer V3.2 and later compatible builds.",
+    "l1_policy": "24 valid MCQ items per set, continuing sequentially after Set 04. Q103/Q122/Q138 omitted for visibly broken/non-English OCR; Q135/Q151 omitted because no generated-practice audio item exists. Raw source is preserved for every included item.",
+    "display_cleaning": "Only obvious display/OCR grammar artifacts are repaired in question_en; source_question_raw remains unchanged. Answer indices and source concepts are unchanged.",
+    "l3_voice_compatibility": "L3 script segments use M/F speaker labels and are compatible with the app gender-lock rule (Man=male voice, Woman=female voice even when Random voice is enabled).",
+    "l4_shuffle_compatibility": "L4 source answer_index remains canonical. The latest app shuffles displayed A/B/C each time L4 is reopened and maps scoring/key back to the source answer.",
+    "provenance": "L1 scripts, L3 dialogues, L4 monologues and L2 extra distractors are GENERATED_PRACTICE; source questions/answers/transcripts remain marked SOURCE."
+  },
+  "sets": [
+    {
+      "set_id": "SET_05",
+      "title": "Listening Set 05 · Environment, Actors & Famous Writers",
+      "parts": {
+        "L1": [
+          {
+            "id": "L1_Q101",
+            "source_ref": "L1_Q101",
+            "source_question_raw": "Where do they go when they travel to India?",
+            "source_options_raw": [
+              "Go to the park",
+              "Go to famous places",
+              "Go out to eat"
+            ],
+            "question_en": "Where do they go when they travel to India?",
+            "options": [
+              "Go to the park",
+              "Go to famous places",
+              "Go out to eat"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose Go to famous places."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is Go to the park."
+              },
+              {
+                "speaker": "M",
+                "text": "So Go out to eat and Go to famous places are both distractors, and Go to the park is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỊA ĐIỂM / KHU VỰC / PHÒNG / TẦNG",
+              "answer": "Go to the park",
+              "hint": "Thường đi đâu khi đi du lịch An Độ?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PLACE / LOCATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Go to the park"
+            }
+          },
+          {
+            "id": "L1_Q102",
+            "source_ref": "L1_Q102",
+            "source_question_raw": "What is the weather like today?",
+            "source_options_raw": [
+              "Cold and not wet",
+              "Hot and wet",
+              "Cold and wet"
+            ],
+            "question_en": "What is the weather like today?",
+            "options": [
+              "Cold and not wet",
+              "Hot and wet",
+              "Cold and wet"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Let's check the detail once more. It isn't Hot and wet."
+              },
+              {
+                "speaker": "F",
+                "text": "And not Cold and not wet either. The speaker settles on Cold and wet."
+              },
+              {
+                "speaker": "M",
+                "text": "Okay, Cold and wet. I'll use that."
+              }
+            ],
+            "key_vi": {
+              "type": "SỞ THÍCH / CẢM XÚC / Ý KIẾN / THỜI TIẾT",
+              "answer": "Cold and wet",
+              "hint": "Thời tiết hôm nay như thé nào?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: OPINION / FEELING / WEATHER. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Cold and wet"
+            }
+          },
+          {
+            "id": "L1_Q104",
+            "source_ref": "L1_Q104",
+            "source_question_raw": "Which door do they need to take to get to Edinburgh?",
+            "source_options_raw": [
+              "Two",
+              "Three",
+              "Four"
+            ],
+            "question_en": "Which door do they need to take to get to Edinburgh?",
+            "options": [
+              "Two",
+              "Three",
+              "Four"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "There were a few possibilities: Four, Three, and Two."
+              },
+              {
+                "speaker": "F",
+                "text": "Only one was finally confirmed. We ruled out Four, and Three won't work, so it has to be Two."
+              },
+              {
+                "speaker": "M",
+                "text": "That makes sense."
+              }
+            ],
+            "key_vi": {
+              "type": "GIÁ / SỐ LƯỢNG / CON SỐ / TUỔI / SĐT",
+              "answer": "Two",
+              "hint": "đi cửa nào dé đi tau đến Edinburgh?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: NUMBER / PRICE / AGE / PHONE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Two"
+            }
+          },
+          {
+            "id": "L1_Q105",
+            "source_ref": "L1_Q105",
+            "source_question_raw": "How does he feel?",
+            "source_options_raw": [
+              "Sick",
+              "Sad",
+              "Well"
+            ],
+            "question_en": "How does he feel?",
+            "options": [
+              "Sick",
+              "Sad",
+              "Well"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer Sad, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. Sad was only an earlier possibility. It's actually Sick."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard Well, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "SỞ THÍCH / CẢM XÚC / Ý KIẾN / THỜI TIẾT",
+              "answer": "Sick",
+              "hint": "anh ấy cảm thấy thé nao?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: OPINION / FEELING / WEATHER. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Sick"
+            }
+          },
+          {
+            "id": "L1_Q106",
+            "source_ref": "L1_Q106",
+            "source_question_raw": "How long does it take to get to the station?",
+            "source_options_raw": [
+              "15 minutes",
+              "20 minutes",
+              "25 minutes"
+            ],
+            "question_en": "How long does it take to get to the station?",
+            "options": [
+              "15 minutes",
+              "20 minutes",
+              "25 minutes"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose 15 minutes."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is 20 minutes."
+              },
+              {
+                "speaker": "M",
+                "text": "So 25 minutes and 15 minutes are both distractors, and 20 minutes is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "THỜI GIAN / THỨ / NGÀY / THỜI LƯỢNG",
+              "answer": "20 minutes",
+              "hint": "Mat bao lâu dé đến ga?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TIME / DAY / DURATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "20 minutes"
+            }
+          },
+          {
+            "id": "L1_Q107",
+            "source_ref": "L1_Q107",
+            "source_question_raw": "What did he call to say?",
+            "source_options_raw": [
+              "to say hello",
+              "to meet Felix",
+              "to say thank you"
+            ],
+            "question_en": "What did he call to say?",
+            "options": [
+              "to say hello",
+              "to meet Felix",
+              "to say thank you"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose to meet Felix."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is to say thank you."
+              },
+              {
+                "speaker": "M",
+                "text": "So to say hello and to meet Felix are both distractors, and to say thank you is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "LÝ DO / MỤC ĐÍCH / NGUYÊN NHÂN / LỜI KHUYÊN",
+              "answer": "to say thank you",
+              "hint": "anh Ấy gọi điện để nói gì?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: REASON / PURPOSE / ADVICE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "to say thank you"
+            }
+          },
+          {
+            "id": "L1_Q108",
+            "source_ref": "L1_Q108",
+            "source_question_raw": "Who is coming to visit him this weekend?",
+            "source_options_raw": [
+              "His wife",
+              "His wife’s parents",
+              "His sister and her children"
+            ],
+            "question_en": "Who is coming to visit him this weekend?",
+            "options": [
+              "His wife",
+              "His wife’s parents",
+              "His sister and her children"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I've written down His sister and her children. Is that still correct?"
+              },
+              {
+                "speaker": "F",
+                "text": "Yes. We talked about His wife’s parents first, and someone suggested His wife, but neither became the final choice."
+              },
+              {
+                "speaker": "M",
+                "text": "Perfect, I'll keep His sister and her children then."
+              }
+            ],
+            "key_vi": {
+              "type": "AI / NGƯỜI NÀO / SỐNG VỚI AI / CHỤP AI",
+              "answer": "His sister and her children",
+              "hint": "ai sắp đến thăm anh ấy?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PERSON. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "His sister and her children"
+            }
+          },
+          {
+            "id": "L1_Q109",
+            "source_ref": "L1_Q109",
+            "source_question_raw": "What time is the meeting?",
+            "source_options_raw": [
+              "2pm",
+              "10am",
+              "11am"
+            ],
+            "question_en": "What time is the meeting?",
+            "options": [
+              "2pm",
+              "10am",
+              "11am"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose 11am."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is 2pm."
+              },
+              {
+                "speaker": "M",
+                "text": "So 10am and 11am are both distractors, and 2pm is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "THỜI GIAN / THỨ / NGÀY / THỜI LƯỢNG",
+              "answer": "2pm",
+              "hint": "Budi họp lúc mấy giờ?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TIME / DAY / DURATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "2pm"
+            }
+          },
+          {
+            "id": "L1_Q110",
+            "source_ref": "L1_Q110",
+            "source_question_raw": "Why can't she pick up her child?",
+            "source_options_raw": [
+              "meet her client",
+              "have an urgent meeting",
+              "stay late at the office"
+            ],
+            "question_en": "Why can't she pick up her child?",
+            "options": [
+              "meet her client",
+              "have an urgent meeting",
+              "stay late at the office"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer meet her client, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. meet her client was only an earlier possibility. It's actually stay late at the office."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard have an urgent meeting, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "LÝ DO / MỤC ĐÍCH / NGUYÊN NHÂN / LỜI KHUYÊN",
+              "answer": "stay late at the office",
+              "hint": "Tại sao cô ta không thé đón con được?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: REASON / PURPOSE / ADVICE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "stay late at the office"
+            }
+          },
+          {
+            "id": "L1_Q111",
+            "source_ref": "L1_Q111",
+            "source_question_raw": "How much do the cleaning products cost?",
+            "source_options_raw": [
+              "one pound fifty",
+              "two pounds",
+              "one pence"
+            ],
+            "question_en": "How much do the cleaning products cost?",
+            "options": [
+              "one pound fifty",
+              "two pounds",
+              "one pence"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I've written down one pound fifty. Is that still correct?"
+              },
+              {
+                "speaker": "F",
+                "text": "Yes. We talked about two pounds first, and someone suggested one pence, but neither became the final choice."
+              },
+              {
+                "speaker": "M",
+                "text": "Perfect, I'll keep one pound fifty then."
+              }
+            ],
+            "key_vi": {
+              "type": "GIÁ / SỐ LƯỢNG / CON SỐ / TUỔI / SĐT",
+              "answer": "one pound fifty",
+              "hint": "Dung cụ vệ sinh giá bao nhiêu?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: NUMBER / PRICE / AGE / PHONE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "one pound fifty"
+            }
+          },
+          {
+            "id": "L1_Q112",
+            "source_ref": "L1_Q112",
+            "source_question_raw": "Where is she going with her family?",
+            "source_options_raw": [
+              "The mountains",
+              "The lake",
+              "The park"
+            ],
+            "question_en": "Where is she going with her family?",
+            "options": [
+              "The mountains",
+              "The lake",
+              "The park"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Let's check the detail once more. It isn't The park."
+              },
+              {
+                "speaker": "F",
+                "text": "And not The lake either. The speaker settles on The mountains."
+              },
+              {
+                "speaker": "M",
+                "text": "Okay, The mountains. I'll use that."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỊA ĐIỂM / KHU VỰC / PHÒNG / TẦNG",
+              "answer": "The mountains",
+              "hint": "cô ấy sẽ di đâu với gia đình cô ta?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PLACE / LOCATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "The mountains"
+            }
+          },
+          {
+            "id": "L1_Q113",
+            "source_ref": "L1_Q113",
+            "source_question_raw": "What did he usually do last year?",
+            "source_options_raw": [
+              "Running",
+              "Cycling",
+              "Walking"
+            ],
+            "question_en": "What did he usually do last year?",
+            "options": [
+              "Running",
+              "Cycling",
+              "Walking"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "About what did he usually do last year, I thought it might be Running."
+              },
+              {
+                "speaker": "F",
+                "text": "That was the first idea, but it changed. The confirmed detail is Cycling."
+              },
+              {
+                "speaker": "M",
+                "text": "Right. And Walking was mentioned too, but that option doesn't apply now."
+              }
+            ],
+            "key_vi": {
+              "type": "HOẠT ĐỘNG / THÓI QUEN / KẾ HOẠCH",
+              "answer": "Cycling",
+              "hint": "Anh ấy hay làm gì vào năm ngoái?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: ACTIVITY / PLAN. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Cycling"
+            }
+          },
+          {
+            "id": "L1_Q114",
+            "source_ref": "L1_Q114",
+            "source_question_raw": "How many minutes did he have to speak?",
+            "source_options_raw": [
+              "10",
+              "15",
+              "25"
+            ],
+            "question_en": "How many minutes did he have to speak?",
+            "options": [
+              "10",
+              "15",
+              "25"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer 25, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. 25 was only an earlier possibility. It's actually 15."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard 10, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "GIÁ / SỐ LƯỢNG / CON SỐ / TUỔI / SĐT",
+              "answer": "15",
+              "hint": "Anh ấy phải thuyết trình trong bao nhiêu phút?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: NUMBER / PRICE / AGE / PHONE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "15"
+            }
+          },
+          {
+            "id": "L1_Q115",
+            "source_ref": "L1_Q115",
+            "source_question_raw": "Who does she live with?",
+            "source_options_raw": [
+              "Her colleague",
+              "Her sister",
+              "Best friends"
+            ],
+            "question_en": "Who does she live with?",
+            "options": [
+              "Her colleague",
+              "Her sister",
+              "Best friends"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose Her sister."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is Best friends."
+              },
+              {
+                "speaker": "M",
+                "text": "So Her colleague and Her sister are both distractors, and Best friends is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "AI / NGƯỜI NÀO / SỐNG VỚI AI / CHỤP AI",
+              "answer": "Best friends",
+              "hint": "Cô ay ở chung với ai?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PERSON. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Best friends"
+            }
+          },
+          {
+            "id": "L1_Q116",
+            "source_ref": "L1_Q116",
+            "source_question_raw": "Why does she want to be a writer?",
+            "source_options_raw": [
+              "Help people",
+              "Make money",
+              "Her dream"
+            ],
+            "question_en": "Why does she want to be a writer?",
+            "options": [
+              "Help people",
+              "Make money",
+              "Her dream"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Let's check the detail once more. It isn't Make money."
+              },
+              {
+                "speaker": "F",
+                "text": "And not Her dream either. The speaker settles on Help people."
+              },
+              {
+                "speaker": "M",
+                "text": "Okay, Help people. I'll use that."
+              }
+            ],
+            "key_vi": {
+              "type": "LÝ DO / MỤC ĐÍCH / NGUYÊN NHÂN / LỜI KHUYÊN",
+              "answer": "Help people",
+              "hint": "Tai sao cô ay muốn lam nha văn?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: REASON / PURPOSE / ADVICE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Help people"
+            }
+          },
+          {
+            "id": "L1_Q117",
+            "source_ref": "L1_Q117",
+            "source_question_raw": "Why was the flight canceled?",
+            "source_options_raw": [
+              "There are no flight staff",
+              "Plane maintenance",
+              "Poor weather conditions"
+            ],
+            "question_en": "Why was the flight canceled?",
+            "options": [
+              "There are no flight staff",
+              "Plane maintenance",
+              "Poor weather conditions"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "About why was the flight canceled, I thought it might be There are no flight staff."
+              },
+              {
+                "speaker": "F",
+                "text": "That was the first idea, but it changed. The confirmed detail is Poor weather conditions."
+              },
+              {
+                "speaker": "M",
+                "text": "Right. And Plane maintenance was mentioned too, but that option doesn't apply now."
+              }
+            ],
+            "key_vi": {
+              "type": "LÝ DO / MỤC ĐÍCH / NGUYÊN NHÂN / LỜI KHUYÊN",
+              "answer": "Poor weather conditions",
+              "hint": "Tai sao chuyén bay bị hủy?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: REASON / PURPOSE / ADVICE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Poor weather conditions"
+            }
+          },
+          {
+            "id": "L1_Q118",
+            "source_ref": "L1_Q118",
+            "source_question_raw": "Why did he call his friend?",
+            "source_options_raw": [
+              "To make an appointment",
+              "To say hello",
+              "Suggest a drink"
+            ],
+            "question_en": "Why did he call his friend?",
+            "options": [
+              "To make an appointment",
+              "To say hello",
+              "Suggest a drink"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "There were a few possibilities: To make an appointment, To say hello, and Suggest a drink."
+              },
+              {
+                "speaker": "F",
+                "text": "Only one was finally confirmed. We ruled out To make an appointment, and To say hello won't work, so it has to be Suggest a drink."
+              },
+              {
+                "speaker": "M",
+                "text": "That makes sense."
+              }
+            ],
+            "key_vi": {
+              "type": "LÝ DO / MỤC ĐÍCH / NGUYÊN NHÂN / LỜI KHUYÊN",
+              "answer": "Suggest a drink",
+              "hint": "Tại sao anh ay goi dién cho ban anh ta?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: REASON / PURPOSE / ADVICE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Suggest a drink"
+            }
+          },
+          {
+            "id": "L1_Q119",
+            "source_ref": "L1_Q119",
+            "source_question_raw": "When did they decide to meet?",
+            "source_options_raw": [
+              "7am on Friday",
+              "9am on Sunday",
+              "9am on Saturday"
+            ],
+            "question_en": "When did they decide to meet?",
+            "options": [
+              "7am on Friday",
+              "9am on Sunday",
+              "9am on Saturday"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Let's check the detail once more. It isn't 7am on Friday."
+              },
+              {
+                "speaker": "F",
+                "text": "And not 9am on Saturday either. The speaker settles on 9am on Sunday."
+              },
+              {
+                "speaker": "M",
+                "text": "Okay, 9am on Sunday. I'll use that."
+              }
+            ],
+            "key_vi": {
+              "type": "THỜI GIAN / THỨ / NGÀY / THỜI LƯỢNG",
+              "answer": "9am on Sunday",
+              "hint": "2 người bạn gặp nhau lúc nào?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TIME / DAY / DURATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "9am on Sunday"
+            }
+          },
+          {
+            "id": "L1_Q120",
+            "source_ref": "L1_Q120",
+            "source_question_raw": "A girl is calling her mother. Which dress does she want?",
+            "source_options_raw": [
+              "long and green",
+              "long and red",
+              "short and red"
+            ],
+            "question_en": "A girl is calling her mother. Which dress does she want?",
+            "options": [
+              "long and green",
+              "long and red",
+              "short and red"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose short and red."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is long and red."
+              },
+              {
+                "speaker": "M",
+                "text": "So long and green and short and red are both distractors, and long and red is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "MÀU SẮC / NGOẠI HÌNH / ĐIỂM GIỐNG NHAU",
+              "answer": "long and red",
+              "hint": "Cô gái gọi cho mẹ cô ta. Cô ấy muốn cái váy nào?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: DESCRIPTION / APPEARANCE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "long and red"
+            }
+          },
+          {
+            "id": "L1_Q121",
+            "source_ref": "L1_Q121",
+            "source_question_raw": "What day is the new appointment?",
+            "source_options_raw": [
+              "Thursday 13th",
+              "Tuesday 13th",
+              "Wednesday 10th"
+            ],
+            "question_en": "What day is the new appointment?",
+            "options": [
+              "Thursday 13th",
+              "Tuesday 13th",
+              "Wednesday 10th"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer Wednesday 10th, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. Wednesday 10th was only an earlier possibility. It's actually Thursday 13th."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard Tuesday 13th, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "THỜI GIAN / THỨ / NGÀY / THỜI LƯỢNG",
+              "answer": "Thursday 13th",
+              "hint": "Budi hen mới vào ngày bao nhiêu?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TIME / DAY / DURATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Thursday 13th"
+            }
+          },
+          {
+            "id": "L1_Q123",
+            "source_ref": "L1_Q123",
+            "source_question_raw": "What did she do last weekend?",
+            "source_options_raw": [
+              "Stayed at home",
+              "Went shopping",
+              "Went to the cinema"
+            ],
+            "question_en": "What did she do last weekend?",
+            "options": [
+              "Stayed at home",
+              "Went shopping",
+              "Went to the cinema"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer Went shopping, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. Went shopping was only an earlier possibility. It's actually Stayed at home."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard Went to the cinema, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "HOẠT ĐỘNG / THÓI QUEN / KẾ HOẠCH",
+              "answer": "Stayed at home",
+              "hint": "Cô ấy làm gì cuối tuần trước?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: ACTIVITY / PLAN. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Stayed at home"
+            }
+          },
+          {
+            "id": "L1_Q124",
+            "source_ref": "L1_Q124",
+            "source_question_raw": "How many weeks have they been in India?",
+            "source_options_raw": [
+              "1 week",
+              "2 weeks",
+              "3 weeks"
+            ],
+            "question_en": "How many weeks have they been in India?",
+            "options": [
+              "1 week",
+              "2 weeks",
+              "3 weeks"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer 3 weeks, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. 3 weeks was only an earlier possibility. It's actually 2 weeks."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard 1 week, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "THỜI GIAN / THỨ / NGÀY / THỜI LƯỢNG",
+              "answer": "2 weeks",
+              "hint": "Đi du lịch An Độ mấy tuần?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TIME / DAY / DURATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "2 weeks"
+            }
+          },
+          {
+            "id": "L1_Q125",
+            "source_ref": "L1_Q125",
+            "source_question_raw": "Where is the office?",
+            "source_options_raw": [
+              "Opposite the hotel",
+              "Near the park",
+              "Opposite the station"
+            ],
+            "question_en": "Where is the office?",
+            "options": [
+              "Opposite the hotel",
+              "Near the park",
+              "Opposite the station"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose Opposite the station."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is Opposite the hotel."
+              },
+              {
+                "speaker": "M",
+                "text": "So Near the park and Opposite the station are both distractors, and Opposite the hotel is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỊA ĐIỂM / KHU VỰC / PHÒNG / TẦNG",
+              "answer": "Opposite the hotel",
+              "hint": "van phòng ở đâu?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PLACE / LOCATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Opposite the hotel"
+            }
+          },
+          {
+            "id": "L1_Q126",
+            "source_ref": "L1_Q126",
+            "source_question_raw": "Where do they wait for the bus?",
+            "source_options_raw": [
+              "Next to the hotel",
+              "Near the hotel's main entrance",
+              "By the hotel's main entrance"
+            ],
+            "question_en": "Where do they wait for the bus?",
+            "options": [
+              "Next to the hotel",
+              "Near the hotel's main entrance",
+              "By the hotel's main entrance"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose Next to the hotel."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is By the hotel's main entrance."
+              },
+              {
+                "speaker": "M",
+                "text": "So Near the hotel's main entrance and Next to the hotel are both distractors, and By the hotel's main entrance is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỊA ĐIỂM / KHU VỰC / PHÒNG / TẦNG",
+              "answer": "By the hotel's main entrance",
+              "hint": "liệi nhau ở đâu dé di xe bus?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PLACE / LOCATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "By the hotel's main entrance"
+            }
+          }
+        ],
+        "L2": {
+          "topic_id": "L2_T05",
+          "title": "ENVIRONMENT PROBLEM",
+          "title_vi": "VẤN ĐỀ MÔI TRƯỜNG",
+          "provenance": {
+            "transcripts": "SOURCE",
+            "answers": "SOURCE",
+            "extra_distractors": "GENERATED_PRACTICE"
+          },
+          "options": [
+            "Give away used items",
+            "Buy environmentally friendly products",
+            "Reuse containers for storing food",
+            "Does not use commercial cleaning products",
+            "Throw away used containers",
+            "Use stronger chemical cleaners"
+          ],
+          "speakers": [
+            {
+              "id": "L2_T05_SA",
+              "speaker": "A",
+              "script_text": "\"You know, it amazes me how much we throw away without thinking. I've started giving away my old clothes and furniture instead of dumping them. Think about it-someone else could really use what we consider junk. It's such a simple thing, but it keeps stuff out of landfills and helps people out. The more we share, the less we waste. Why let things rot in a corner when they could have a second life somewhere else? It makes me feel like I'm doing my part, even in small ways. Plus, it's a good reminder that what's old to me could be new to someone else.\"",
+              "answer": "Give away used items",
+              "key_vi": {
+                "answer": "Cho/tặng những đồ vật đã qua sử dụng",
+                "explanation": "Đáp án mục tiêu là “Give away used items”. Trong transcript, ý này được diễn đạt bằng các phrase throw away, giving away my, old, clothes. Khi nghe không chờ đúng nguyên văn đáp án; hãy nhận ra cụm đồng nghĩa/paraphrase.",
+                "evidence_en": "\"You know, it amazes me how much we throw away without thinking."
+              }
+            },
+            {
+              "id": "L2_T05_SB",
+              "speaker": "B",
+              "script_text": "\"I think one of the biggest ways we can protect the environment is by changing what we buy. I only purchase products that are sustainably sourced or made from recycled materials. Every dollar we spend is like casting a vote for the kind of world we want. It's crazy how much waste and pollution come from manufacturing—choosing eco-friendly products is a way to push back against that. Sure, it might cost a bit more sometimes, but isn't the planet worth it? I mean, we talk a lot about big changes, but if everyone just started small, like switching to biodegradable packaging, we'd see a massive impact.\"",
+              "answer": "Buy environmentally friendly products",
+              "key_vi": {
+                "answer": "Mua các sản phẩm thân thiện với môi trường",
+                "explanation": "Đáp án mục tiêu là “Buy environmentally friendly products”. Trong transcript, ý này được diễn đạt bằng các phrase we buy, only purchase, made from, recycled. Khi nghe không chờ đúng nguyên văn đáp án; hãy nhận ra cụm đồng nghĩa/paraphrase.",
+                "evidence_en": "\"I think one of the biggest ways we can protect the environment is by changing what we buy."
+              }
+            },
+            {
+              "id": "L2_T05_SC",
+              "speaker": "C",
+              "script_text": "\"I've started reusing containers for storing food. I was tired of buying plastic wrap and bags every month, just to toss them after one use. You don't realize how much waste you produce until you try cutting it down. Now, I use glass jars and old containers to store leftovers, and it works just as well. Honestly, it makes me feel a little less guilty about all the plastic in my life. I'm not saying I'm perfect, but even this small habit makes a difference. And let's be real-who needs more clutter in the kitchen, anyway?\"",
+              "answer": "Reuse containers for storing food",
+              "key_vi": {
+                "answer": "Tái sử dụng hộp đựng để bảo quản thực phẩm",
+                "explanation": "Đáp án mục tiêu là “Reuse containers for storing food”. Trong transcript, ý này được diễn đạt bằng các phrase reusing, containers, for storing food, Now, I use glass jars and old. Khi nghe không chờ đúng nguyên văn đáp án; hãy nhận ra cụm đồng nghĩa/paraphrase.",
+                "evidence_en": "\"I've started reusing containers for storing food."
+              }
+            },
+            {
+              "id": "L2_T05_SD",
+              "speaker": "D",
+              "script_text": "\"I stopped buying commercial cleaning products altogether. Most of them are filled with harsh chemicals that are terrible for the environment-and probably for us, too. Now, I make my own cleaning solutions. Vinegar, baking soda, and a little lemon juice can handle pretty much anything around the house. It's cheaper, safer, and I don't feel like I'm dumping toxins down the drain every time I clean. People think it's hard, but honestly, once you try it, it's not that bad. We don't need a cabinet full of chemicals to keep things tidy. Nature's got it covered.\"",
+              "answer": "Does not use commercial cleaning products",
+              "key_vi": {
+                "answer": "Không sử dụng các sản phẩm tẩy rửa thương mại",
+                "explanation": "Đáp án mục tiêu là “Does not use commercial cleaning products”. Trong transcript, ý này được diễn đạt bằng các phrase stopped, commercial cleaning products, baking soda, tidy. Khi nghe không chờ đúng nguyên văn đáp án; hãy nhận ra cụm đồng nghĩa/paraphrase.",
+                "evidence_en": "\"I stopped buying commercial cleaning products altogether."
+              }
+            }
+          ]
+        },
+        "L3": {
+          "topic_id": "L3_T05",
+          "title": "Two Actors",
+          "title_vi": "Hai diễn viên",
+          "provenance": {
+            "statements": "SOURCE",
+            "answers": "SOURCE",
+            "script": "GENERATED_PRACTICE"
+          },
+          "script_segments": [
+            {
+              "speaker": "M",
+              "text": "We've both been thinking about two actors, and I suspect we won't agree on every detail."
+            },
+            {
+              "speaker": "F",
+              "text": "Probably not. It helps to separate the individual claims, because our opinions can change from one point to the next."
+            },
+            {
+              "speaker": "M",
+              "text": "For me, auditions are the most important of casting. I've seen enough examples to feel quite strongly about that."
+            },
+            {
+              "speaker": "F",
+              "text": "I see the point, but I wouldn't go that far. I think there are too many exceptions for me to agree completely."
+            },
+            {
+              "speaker": "M",
+              "text": "I'm not fully convinced by that. In my experience the situation is more mixed, so I would be careful about making such a general claim."
+            },
+            {
+              "speaker": "F",
+              "text": "I take a clearer position: actors respond best to a strong script. That's the interpretation that makes most sense to me."
+            },
+            {
+              "speaker": "M",
+              "text": "I'd say theatre acting and movie acting require different skills. That seems a fair conclusion from what we've been discussing."
+            },
+            {
+              "speaker": "F",
+              "text": "I agree with that. My reasons are slightly different, but I reach the same conclusion."
+            },
+            {
+              "speaker": "M",
+              "text": "I'd say actors need to be praised. That seems a fair conclusion from what we've been discussing."
+            },
+            {
+              "speaker": "F",
+              "text": "I agree with that. My reasons are slightly different, but I reach the same conclusion."
+            },
+            {
+              "speaker": "M",
+              "text": "What makes this kind of discussion difficult is that sharing the same topic doesn't mean sharing the same judgement."
+            },
+            {
+              "speaker": "F",
+              "text": "Exactly. A listener has to track who actually supports each idea, and whether the other speaker agrees, qualifies it, or rejects it."
+            },
+            {
+              "speaker": "M",
+              "text": "Another thing I notice in discussions like this is that the same vocabulary can support different opinions. One person may mention the same problem as the other but use it to reach a different conclusion. That is why listening only for repeated nouns is risky; the important information is often in the verb, the evaluation, or the contrast that follows."
+            },
+            {
+              "speaker": "F",
+              "text": "Yes, and agreement is not always expressed with the word 'agree'. Sometimes a speaker restates the idea positively, gives a supporting example, or says that something matches their own experience. Disagreement can also be indirect: a speaker may say 'perhaps', 'not always', or 'it depends', which weakens the claim rather than rejecting every part of it."
+            },
+            {
+              "speaker": "M",
+              "text": "So during practice I would keep the four statements visible and make a quick mark only after each opinion becomes clear. If a speaker changes direction, the later qualified position should matter more than the first reaction."
+            },
+            {
+              "speaker": "F",
+              "text": "And after the audio ends, it is worth checking the pattern across all four statements. The aim is not to force a remembered code onto the conversation, but to use the code only as a memory check after the evidence has been heard."
+            }
+          ],
+          "statements": [
+            {
+              "id": "L3_T05_Q01",
+              "no": 1,
+              "text": "Auditions are the most important of casting",
+              "answer": "M",
+              "key_vi": {
+                "statement_vi": "Các buổi thử vai là phần quan trọng nhất trong quá trình tuyển chọn diễn viên",
+                "answer_text": "Man",
+                "code_digit": "1"
+              }
+            },
+            {
+              "id": "L3_T05_Q02",
+              "no": 2,
+              "text": "Actors respond best to a strong script",
+              "answer": "W",
+              "key_vi": {
+                "statement_vi": "Diễn viên phản ứng tốt nhất với một kịch bản mạnh",
+                "answer_text": "Woman",
+                "code_digit": "2"
+              }
+            },
+            {
+              "id": "L3_T05_Q03",
+              "no": 3,
+              "text": "Theatre acting and movie acting require different skills",
+              "answer": "B",
+              "key_vi": {
+                "statement_vi": "Diễn xuất sân khấu và diễn xuất điện ảnh đòi hỏi những kỹ năng khác nhau",
+                "answer_text": "Both",
+                "code_digit": "0"
+              }
+            },
+            {
+              "id": "L3_T05_Q04",
+              "no": 4,
+              "text": "Actors need to be praised",
+              "answer": "B",
+              "key_vi": {
+                "statement_vi": "Diễn viên cần được khen ngợi",
+                "answer_text": "Both",
+                "code_digit": "0"
+              }
+            }
+          ],
+          "canonical_code": "1200"
+        },
+        "L4": {
+          "topic_id": "L4_T05",
+          "title": "2 FAMOUS WRITERS",
+          "title_vi": "Hai nhà văn nổi tiếng",
+          "provenance": {
+            "questions": "SOURCE",
+            "answers": "SOURCE",
+            "script": "GENERATED_PRACTICE"
+          },
+          "script_text": "People often have quick opinions about 2 famous writers, but my experience has been more complicated. At first I expected the most obvious explanation to be right, and I even considered the idea that they have always received considerable academic attention. Another possibility people often mention is that their works are mainly studied in universities. After looking at the situation more carefully, neither description really matched what happened. The better summary is that things were ignored. That difference matters because the speaker's final judgement is more qualified than the tempting alternatives. There is another aspect that is easy to miss. Some people argue that their works are easy for everyone to interpret, while others go almost to the opposite extreme and say that the ideas in their books are explained very directly. My own view sits elsewhere. What matters is significance. In other words, the conclusion depends on the exact conditions being discussed, not on a broad slogan. During the discussion I might use several words related to the wrong choices, because they are realistic possibilities. That does not make them the answer. The key is to notice when an idea is introduced only to be limited, corrected, or rejected. Expressions such as “however”, “in practice”, “actually”, and “what matters more” often signal that the speaker is moving toward the real position. For a listening task, I would therefore avoid selecting an option as soon as I hear familiar vocabulary. I would wait until the evaluation becomes clear, then match that meaning to the option that paraphrases it most accurately. The two ideas to retain from this talk are the ones expressed through ignored, academics and significance, difficult to determine; they represent the settled view rather than the rejected alternatives. A longer talk also includes background that may not directly answer either question. For example, a speaker may describe how the issue developed, mention another person's view, or give a small personal example before returning to the main judgement. Those details are useful context, but they should not replace the two target conclusions. When I practise, I try to separate background information from evaluation language. Background tells me what happened; evaluation tells me what the speaker finally thinks about it. I also listen for changes in certainty. Words such as 'probably', 'only', 'not always', 'unlikely', and 'depends' can completely change which option is accurate. If two answers share similar vocabulary, the safer choice is the one that matches the strength and direction of the speaker's final judgement.",
+          "questions": [
+            {
+              "id": "L4_T05_Q01",
+              "no": 1,
+              "options": [
+                "They have both been overlooked by academics",
+                "They have always received considerable academic attention.",
+                "Their works are mainly studied in universities."
+              ],
+              "answer_index": 0,
+              "key_vi": {
+                "answer": "Cả hai người đều đã bị các học giả bỏ qua / không được giới học thuật chú ý đúng mức",
+                "explanation": "Nhận diện topic “2 FAMOUS WRITERS”, sau đó nhớ ý chính “They have both been overlooked by academics”. Các cụm paraphrase nguồn giúp nhận diện: overlooked → ignored | scholars → academics | not given attention → neglected.",
+                "evidence_en": "ignored"
+              }
+            },
+            {
+              "id": "L4_T05_Q02",
+              "no": 2,
+              "options": [
+                "The meanings of their works are not always easy to be identified",
+                "Their works are easy for everyone to interpret.",
+                "The ideas in their books are explained very directly."
+              ],
+              "answer_index": 0,
+              "key_vi": {
+                "answer": "Ý nghĩa trong các tác phẩm của họ không phải lúc nào cũng dễ xác định",
+                "explanation": "Nhận diện topic “2 FAMOUS WRITERS”, sau đó nhớ ý chính “The meanings of their works are not always easy to be identified”. Các cụm paraphrase nguồn giúp nhận diện: meaning → significance | not easy to identify → difficult to determine | unclear → hard to interpret.",
+                "evidence_en": "significance"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "set_id": "SET_06",
+      "title": "Listening Set 06 · Outdoor Activities, Technology & Regional Development",
+      "parts": {
+        "L1": [
+          {
+            "id": "L1_Q127",
+            "source_ref": "L1_Q127",
+            "source_question_raw": "What does his wife like to do?",
+            "source_options_raw": [
+              "sightseeing",
+              "going shopping",
+              "photography"
+            ],
+            "question_en": "What does his wife like to do?",
+            "options": [
+              "sightseeing",
+              "going shopping",
+              "photography"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose going shopping."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is photography."
+              },
+              {
+                "speaker": "M",
+                "text": "So sightseeing and going shopping are both distractors, and photography is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "HOẠT ĐỘNG / THÓI QUEN / KẾ HOẠCH",
+              "answer": "photography",
+              "hint": "Vo anh ay thích làm gi?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: ACTIVITY / PLAN. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "photography"
+            }
+          },
+          {
+            "id": "L1_Q128",
+            "source_ref": "L1_Q128",
+            "source_question_raw": "What outdoor activities do they do in the afternoon?",
+            "source_options_raw": [
+              "Play golf",
+              "Go to dance classes",
+              "Play bridge"
+            ],
+            "question_en": "What outdoor activities do they do in the afternoon?",
+            "options": [
+              "Play golf",
+              "Go to dance classes",
+              "Play bridge"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I've written down Play golf. Is that still correct?"
+              },
+              {
+                "speaker": "F",
+                "text": "Yes. We talked about Play bridge first, and someone suggested Go to dance classes, but neither became the final choice."
+              },
+              {
+                "speaker": "M",
+                "text": "Perfect, I'll keep Play golf then."
+              }
+            ],
+            "key_vi": {
+              "type": "HOẠT ĐỘNG / THÓI QUEN / KẾ HOẠCH",
+              "answer": "Play golf",
+              "hint": "Họ có hoạt động gì vào buổi chiều?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: ACTIVITY / PLAN. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Play golf"
+            }
+          },
+          {
+            "id": "L1_Q129",
+            "source_ref": "L1_Q129",
+            "source_question_raw": "The concert will end with?",
+            "source_options_raw": [
+              "A surprise performance",
+              "Some special offers",
+              "The city's favorite group"
+            ],
+            "question_en": "The concert will end with?",
+            "options": [
+              "A surprise performance",
+              "Some special offers",
+              "The city's favorite group"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose Some special offers."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is The city's favorite group."
+              },
+              {
+                "speaker": "M",
+                "text": "So A surprise performance and Some special offers are both distractors, and The city's favorite group is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỒ VẬT / MÓN ĂN / ĐỒ UỐNG / MUA-MẤT-QUÊN-SỬA",
+              "answer": "The city's favorite group",
+              "hint": "buổi hòa nhạc kết thúc với điều gì?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: OBJECT / FOOD / DRINK. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "The city's favorite group"
+            }
+          },
+          {
+            "id": "L1_Q130",
+            "source_ref": "L1_Q130",
+            "source_question_raw": "What was the writer's first job?",
+            "source_options_raw": [
+              "cook",
+              "reporter",
+              "teacher"
+            ],
+            "question_en": "What was the writer's first job?",
+            "options": [
+              "cook",
+              "reporter",
+              "teacher"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I've written down teacher. Is that still correct?"
+              },
+              {
+                "speaker": "F",
+                "text": "Yes. We talked about cook first, and someone suggested reporter, but neither became the final choice."
+              },
+              {
+                "speaker": "M",
+                "text": "Perfect, I'll keep teacher then."
+              }
+            ],
+            "key_vi": {
+              "type": "NGHỀ NGHIỆP / KHÓA HỌC / MÔN HỌC / CÔNG VIỆC",
+              "answer": "teacher",
+              "hint": "Công việc dau tiên của nhà văn là gì?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: WORK / COURSE / SUBJECT. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "teacher"
+            }
+          },
+          {
+            "id": "L1_Q131",
+            "source_ref": "L1_Q131",
+            "source_question_raw": "What does her sister drink?",
+            "source_options_raw": [
+              "Water",
+              "Tea",
+              "Coffee"
+            ],
+            "question_en": "What does her sister drink?",
+            "options": [
+              "Water",
+              "Tea",
+              "Coffee"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer Coffee, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. Coffee was only an earlier possibility. It's actually Tea."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard Water, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỒ VẬT / MÓN ĂN / ĐỒ UỐNG / MUA-MẤT-QUÊN-SỬA",
+              "answer": "Tea",
+              "hint": "chị gái cô ay uống gì?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: OBJECT / FOOD / DRINK. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Tea"
+            }
+          },
+          {
+            "id": "L1_Q132",
+            "source_ref": "L1_Q132",
+            "source_question_raw": "What is the population of this village?",
+            "source_options_raw": [
+              "10.000",
+              "2.000",
+              "5.000"
+            ],
+            "question_en": "What is the population of this village?",
+            "options": [
+              "10.000",
+              "2.000",
+              "5.000"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer 2.000, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. 2.000 was only an earlier possibility. It's actually 10.000."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard 5.000, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "GIÁ / SỐ LƯỢNG / CON SỐ / TUỔI / SĐT",
+              "answer": "10.000",
+              "hint": "Có bao nhiêu cư dân ở ngôi làng này?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: NUMBER / PRICE / AGE / PHONE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "10.000"
+            }
+          },
+          {
+            "id": "L1_Q133",
+            "source_ref": "L1_Q133",
+            "source_question_raw": "Where does he want to go tomorrow?",
+            "source_options_raw": [
+              "The town hall",
+              "The city center",
+              "The museum"
+            ],
+            "question_en": "Where does he want to go tomorrow?",
+            "options": [
+              "The town hall",
+              "The city center",
+              "The museum"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose The city center."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is The town hall."
+              },
+              {
+                "speaker": "M",
+                "text": "So The museum and The city center are both distractors, and The town hall is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỊA ĐIỂM / KHU VỰC / PHÒNG / TẦNG",
+              "answer": "The town hall",
+              "hint": "anh ấy muốn đi dau vào ngày mai?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PLACE / LOCATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "The town hall"
+            }
+          },
+          {
+            "id": "L1_Q134",
+            "source_ref": "L1_Q134",
+            "source_question_raw": "What floor is the office on?",
+            "source_options_raw": [
+              "on the first floor",
+              "on the second floor",
+              "on the third floor"
+            ],
+            "question_en": "What floor is the office on?",
+            "options": [
+              "on the first floor",
+              "on the second floor",
+              "on the third floor"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer on the third floor, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. on the third floor was only an earlier possibility. It's actually on the first floor."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard on the second floor, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỊA ĐIỂM / KHU VỰC / PHÒNG / TẦNG",
+              "answer": "on the first floor",
+              "hint": "Van phòng ở tang mấy?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PLACE / LOCATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "on the first floor"
+            }
+          },
+          {
+            "id": "L1_Q136",
+            "source_ref": "L1_Q136",
+            "source_question_raw": "When can they play football at school?",
+            "source_options_raw": [
+              "Friday afternoon",
+              "Wednesday afternoon",
+              "Thursday afternoon"
+            ],
+            "question_en": "When can they play football at school?",
+            "options": [
+              "Friday afternoon",
+              "Wednesday afternoon",
+              "Thursday afternoon"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Let's check the detail once more. It isn't Friday afternoon."
+              },
+              {
+                "speaker": "F",
+                "text": "And not Thursday afternoon either. The speaker settles on Wednesday afternoon."
+              },
+              {
+                "speaker": "M",
+                "text": "Okay, Wednesday afternoon. I'll use that."
+              }
+            ],
+            "key_vi": {
+              "type": "THỜI GIAN / THỨ / NGÀY / THỜI LƯỢNG",
+              "answer": "Wednesday afternoon",
+              "hint": "khi nào được chơi đá bóng ở trường học",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TIME / DAY / DURATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Wednesday afternoon"
+            }
+          },
+          {
+            "id": "L1_Q137",
+            "source_ref": "L1_Q137",
+            "source_question_raw": "Where is the office?",
+            "source_options_raw": [
+              "Opposite the hotel",
+              "Near the park",
+              "Opposite the station"
+            ],
+            "question_en": "Where is the office?",
+            "options": [
+              "Opposite the hotel",
+              "Near the park",
+              "Opposite the station"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "There were a few possibilities: Opposite the station, Near the park, and Opposite the hotel."
+              },
+              {
+                "speaker": "F",
+                "text": "Only one was finally confirmed. We ruled out Opposite the station, and Near the park won't work, so it has to be Opposite the hotel."
+              },
+              {
+                "speaker": "M",
+                "text": "That makes sense."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỊA ĐIỂM / KHU VỰC / PHÒNG / TẦNG",
+              "answer": "Opposite the hotel",
+              "hint": "Van phòng ở đâu",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PLACE / LOCATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Opposite the hotel"
+            }
+          },
+          {
+            "id": "L1_Q139",
+            "source_ref": "L1_Q139",
+            "source_question_raw": "What time do he have dinner these days?",
+            "source_options_raw": [
+              "6 o'clock",
+              "7 o'clock",
+              "8 o'clock"
+            ],
+            "question_en": "What time does he have dinner these days?",
+            "options": [
+              "6 o'clock",
+              "7 o'clock",
+              "8 o'clock"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE_CLEAN_DISPLAY",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer 6 o'clock, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. 6 o'clock was only an earlier possibility. It's actually 7 o'clock."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard 8 o'clock, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "THỜI GIAN / THỨ / NGÀY / THỜI LƯỢNG",
+              "answer": "7 o'clock",
+              "hint": "Anh ta ăn tôi lúc máy giờ?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TIME / DAY / DURATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "7 o'clock"
+            }
+          },
+          {
+            "id": "L1_Q140",
+            "source_ref": "L1_Q140",
+            "source_question_raw": "What does he do after work?",
+            "source_options_raw": [
+              "Go to the coffee shop",
+              "Play football",
+              "Go home"
+            ],
+            "question_en": "What does he do after work?",
+            "options": [
+              "Go to the coffee shop",
+              "Play football",
+              "Go home"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose Go home."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is Play football."
+              },
+              {
+                "speaker": "M",
+                "text": "So Go to the coffee shop and Go home are both distractors, and Play football is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "HOẠT ĐỘNG / THÓI QUEN / KẾ HOẠCH",
+              "answer": "Play football",
+              "hint": "Anh ấy làm gì sau giờ làm?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: ACTIVITY / PLAN. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Play football"
+            }
+          },
+          {
+            "id": "L1_Q141",
+            "source_ref": "L1_Q141",
+            "source_question_raw": "What did they both like about the movie?",
+            "source_options_raw": [
+              "the characters",
+              "the ending",
+              "the plot"
+            ],
+            "question_en": "What did they both like about the movie?",
+            "options": [
+              "the characters",
+              "the ending",
+              "the plot"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose the characters."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is the ending."
+              },
+              {
+                "speaker": "M",
+                "text": "So the plot and the characters are both distractors, and the ending is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "SỞ THÍCH / CẢM XÚC / Ý KIẾN / THỜI TIẾT",
+              "answer": "the ending",
+              "hint": "2 người cùng thích bộ phim ở điểm nao?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: OPINION / FEELING / WEATHER. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "the ending"
+            }
+          },
+          {
+            "id": "L1_Q142",
+            "source_ref": "L1_Q142",
+            "source_question_raw": "What area is he describing?",
+            "source_options_raw": [
+              "a university area",
+              "a park",
+              "a library"
+            ],
+            "question_en": "What area is he describing?",
+            "options": [
+              "a university area",
+              "a park",
+              "a library"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose a library."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is a university area."
+              },
+              {
+                "speaker": "M",
+                "text": "So a park and a library are both distractors, and a university area is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỊA ĐIỂM / KHU VỰC / PHÒNG / TẦNG",
+              "answer": "a university area",
+              "hint": "Aanh ay dang mô tả về khu vực nào?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PLACE / LOCATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "a university area"
+            }
+          },
+          {
+            "id": "L1_Q143",
+            "source_ref": "L1_Q143",
+            "source_question_raw": "What is his biggest problem?",
+            "source_options_raw": [
+              "choosing the proper area",
+              "financial problems",
+              "persuading his family"
+            ],
+            "question_en": "What is his biggest problem?",
+            "options": [
+              "choosing the proper area",
+              "financial problems",
+              "persuading his family"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "About what is his biggest problem, I thought it might be choosing the proper area."
+              },
+              {
+                "speaker": "F",
+                "text": "That was the first idea, but it changed. The confirmed detail is persuading his family."
+              },
+              {
+                "speaker": "M",
+                "text": "Right. And financial problems was mentioned too, but that option doesn't apply now."
+              }
+            ],
+            "key_vi": {
+              "type": "LÝ DO / MỤC ĐÍCH / NGUYÊN NHÂN / LỜI KHUYÊN",
+              "answer": "persuading his family",
+              "hint": "vấn đề lớn nhất khi người đàn ông muốn mua nhà là gì?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: REASON / PURPOSE / ADVICE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "persuading his family"
+            }
+          },
+          {
+            "id": "L1_Q144",
+            "source_ref": "L1_Q144",
+            "source_question_raw": "When do they meet each other?",
+            "source_options_raw": [
+              "On Thursday morning",
+              "On Wednesday morning",
+              "On Tuesday morning"
+            ],
+            "question_en": "When do they meet each other?",
+            "options": [
+              "On Thursday morning",
+              "On Wednesday morning",
+              "On Tuesday morning"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Was the answer On Tuesday morning, or am I remembering that wrongly?"
+              },
+              {
+                "speaker": "F",
+                "text": "Wrongly. On Tuesday morning was only an earlier possibility. It's actually On Thursday morning."
+              },
+              {
+                "speaker": "M",
+                "text": "Good. I also heard On Wednesday morning, but that was about something else."
+              }
+            ],
+            "key_vi": {
+              "type": "THỜI GIAN / THỨ / NGÀY / THỜI LƯỢNG",
+              "answer": "On Thursday morning",
+              "hint": "Họ gặp nhau vào lúc nao?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TIME / DAY / DURATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "On Thursday morning"
+            }
+          },
+          {
+            "id": "L1_Q145",
+            "source_ref": "L1_Q145",
+            "source_question_raw": "How old is this city?",
+            "source_options_raw": [
+              "150 years",
+              "1500 years",
+              "2000 years"
+            ],
+            "question_en": "How old is this city?",
+            "options": [
+              "150 years",
+              "1500 years",
+              "2000 years"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "About how old is this city, I thought it might be 150 years."
+              },
+              {
+                "speaker": "F",
+                "text": "That was the first idea, but it changed. The confirmed detail is 1500 years."
+              },
+              {
+                "speaker": "M",
+                "text": "Right. And 2000 years was mentioned too, but that option doesn't apply now."
+              }
+            ],
+            "key_vi": {
+              "type": "GIÁ / SỐ LƯỢNG / CON SỐ / TUỔI / SĐT",
+              "answer": "1500 years",
+              "hint": "Thành phô nay bao nhiêu năm tudi?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: NUMBER / PRICE / AGE / PHONE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "1500 years"
+            }
+          },
+          {
+            "id": "L1_Q146",
+            "source_ref": "L1_Q146",
+            "source_question_raw": "What colour is Jack's house?",
+            "source_options_raw": [
+              "Red",
+              "Black",
+              "Green"
+            ],
+            "question_en": "What colour is Jack's house?",
+            "options": [
+              "Red",
+              "Black",
+              "Green"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "There were a few possibilities: Green, Black, and Red."
+              },
+              {
+                "speaker": "F",
+                "text": "Only one was finally confirmed. We ruled out Green, and Black won't work, so it has to be Red."
+              },
+              {
+                "speaker": "M",
+                "text": "That makes sense."
+              }
+            ],
+            "key_vi": {
+              "type": "MÀU SẮC / NGOẠI HÌNH / ĐIỂM GIỐNG NHAU",
+              "answer": "Red",
+              "hint": "Nha của Jack mau gi?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: DESCRIPTION / APPEARANCE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Red"
+            }
+          },
+          {
+            "id": "L1_Q147",
+            "source_ref": "L1_Q147",
+            "source_question_raw": "How much does a bus card cost?*",
+            "source_options_raw": [
+              "$10",
+              "$20",
+              "c. $30"
+            ],
+            "question_en": "How much does a bus card cost?*",
+            "options": [
+              "$10",
+              "$20",
+              "c. $30"
+            ],
+            "answer_index": 1,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Let's check the detail once more. It isn't $10."
+              },
+              {
+                "speaker": "F",
+                "text": "And not c. $30 either. The speaker settles on $20."
+              },
+              {
+                "speaker": "M",
+                "text": "Okay, $20. I'll use that."
+              }
+            ],
+            "key_vi": {
+              "type": "GIÁ / SỐ LƯỢNG / CON SỐ / TUỔI / SĐT",
+              "answer": "$20",
+              "hint": "Thẻ xe buýt giá bao nhiêu tiền",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: NUMBER / PRICE / AGE / PHONE. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "$20"
+            }
+          },
+          {
+            "id": "L1_Q148",
+            "source_ref": "L1_Q148",
+            "source_question_raw": "Where is she taking the staff to?",
+            "source_options_raw": [
+              "To a different country",
+              "To a different city",
+              "To a village"
+            ],
+            "question_en": "Where is she taking the staff to?",
+            "options": [
+              "To a different country",
+              "To a different city",
+              "To a village"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "About where is she taking the staff to, I thought it might be To a different city."
+              },
+              {
+                "speaker": "F",
+                "text": "That was the first idea, but it changed. The confirmed detail is To a different country."
+              },
+              {
+                "speaker": "M",
+                "text": "Right. And To a village was mentioned too, but that option doesn't apply now."
+              }
+            ],
+            "key_vi": {
+              "type": "ĐỊA ĐIỂM / KHU VỰC / PHÒNG / TẦNG",
+              "answer": "To a different country",
+              "hint": "cô ấy đưa nhân viên đi đâu?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: PLACE / LOCATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "To a different country"
+            }
+          },
+          {
+            "id": "L1_Q149",
+            "source_ref": "L1_Q149",
+            "source_question_raw": "How does he travel?",
+            "source_options_raw": [
+              "by train",
+              "by car",
+              "by bus"
+            ],
+            "question_en": "How does he travel?",
+            "options": [
+              "by train",
+              "by car",
+              "by bus"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "There were a few possibilities: by car, by bus, and by train."
+              },
+              {
+                "speaker": "F",
+                "text": "Only one was finally confirmed. We ruled out by car, and by bus won't work, so it has to be by train."
+              },
+              {
+                "speaker": "M",
+                "text": "That makes sense."
+              }
+            ],
+            "key_vi": {
+              "type": "PHƯƠNG TIỆN / CÁCH DI CHUYỂN",
+              "answer": "by train",
+              "hint": "Anh ấy đi bằng phương tiện gì?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TRANSPORT. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "by train"
+            }
+          },
+          {
+            "id": "L1_Q150",
+            "source_ref": "L1_Q150",
+            "source_question_raw": "How long đoes it take her to ride her bike?",
+            "source_options_raw": [
+              "35 minutes",
+              "25 minutes",
+              "20 minutes"
+            ],
+            "question_en": "How long does it take her to ride her bike?",
+            "options": [
+              "35 minutes",
+              "25 minutes",
+              "20 minutes"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE_CLEAN_DISPLAY",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "I nearly chose 25 minutes."
+              },
+              {
+                "speaker": "F",
+                "text": "I can see why, because it came up in the conversation. But after the correction, the answer is 35 minutes."
+              },
+              {
+                "speaker": "M",
+                "text": "So 20 minutes and 25 minutes are both distractors, and 35 minutes is the detail I need."
+              }
+            ],
+            "key_vi": {
+              "type": "THỜI GIAN / THỨ / NGÀY / THỜI LƯỢNG",
+              "answer": "35 minutes",
+              "hint": "Cô ấy mat bao lâu đi xe đạp?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: TIME / DAY / DURATION. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "35 minutes"
+            }
+          },
+          {
+            "id": "L1_Q152",
+            "source_ref": "L1_Q152",
+            "source_question_raw": "What does she usually do in her free time?",
+            "source_options_raw": [
+              "Go to the theatre and play sports",
+              "Play sports and go shopping",
+              "Stay at home and shop online"
+            ],
+            "question_en": "What does she usually do in her free time?",
+            "options": [
+              "Go to the theatre and play sports",
+              "Play sports and go shopping",
+              "Stay at home and shop online"
+            ],
+            "answer_index": 0,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Let's check the detail once more. It isn't Play sports and go shopping."
+              },
+              {
+                "speaker": "F",
+                "text": "And not Stay at home and shop online either. The speaker settles on Go to the theatre and play sports."
+              },
+              {
+                "speaker": "M",
+                "text": "Okay, Go to the theatre and play sports. I'll use that."
+              }
+            ],
+            "key_vi": {
+              "type": "HOẠT ĐỘNG / THÓI QUEN / KẾ HOẠCH",
+              "answer": "Go to the theatre and play sports",
+              "hint": "Cô ấy thường làm gì vào thời gian rảnh?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: ACTIVITY / PLAN. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Go to the theatre and play sports"
+            }
+          },
+          {
+            "id": "L1_Q153",
+            "source_ref": "L1_Q153",
+            "source_question_raw": "Which sports is she good at?",
+            "source_options_raw": [
+              "Running",
+              "Swimming",
+              "Football"
+            ],
+            "question_en": "Which sports is she good at?",
+            "options": [
+              "Running",
+              "Swimming",
+              "Football"
+            ],
+            "answer_index": 2,
+            "provenance": {
+              "question": "SOURCE",
+              "options": "SOURCE_CLEAN_DISPLAY",
+              "answer": "SOURCE",
+              "script": "GENERATED_PRACTICE"
+            },
+            "script_type": "dialogue",
+            "script_segments": [
+              {
+                "speaker": "M",
+                "text": "Let's check the detail once more. It isn't Running."
+              },
+              {
+                "speaker": "F",
+                "text": "And not Swimming either. The speaker settles on Football."
+              },
+              {
+                "speaker": "M",
+                "text": "Okay, Football. I'll use that."
+              }
+            ],
+            "key_vi": {
+              "type": "HOẠT ĐỘNG / THÓI QUEN / KẾ HOẠCH",
+              "answer": "Football",
+              "hint": "môn thé thao mà cô ấy giỏi?",
+              "explanation": "Trước hết xác định loại thông tin cần nghe: ACTIVITY / PLAN. Sau đó loại các phương án không khớp ngữ cảnh và giữ chi tiết cuối cùng/được xác nhận.",
+              "evidence_en": "Football"
+            }
+          }
+        ],
+        "L2": {
+          "topic_id": "L2_T06",
+          "title": "OUTDOOR ACTIVITIES",
+          "title_vi": "CÁC HOẠT ĐỘNG NGOÀI TRỜI",
+          "provenance": {
+            "transcripts": "SOURCE",
+            "answers": "SOURCE",
+            "extra_distractors": "GENERATED_PRACTICE"
+          },
+          "options": [
+            "Horse riding",
+            "Climbing",
+            "Mountain biking",
+            "Going for a run",
+            "Watching television indoors",
+            "Playing computer games"
+          ],
+          "speakers": [
+            {
+              "id": "L2_T06_SA",
+              "speaker": "A",
+              "script_text": "\"I've been involved in different sports over the years, but one thing that stands out for me is horse riding. There's something about being with horses that feels both calming and exciting. Riding through open fields or along forest paths is an amazing way to stay active. It's not just a workout, but also a chance to connect with animals and nature. I try to go riding whenever I have a free weekend—it's definitely my favorite way to keep fit.\"",
+              "answer": "Horse riding",
+              "key_vi": {
+                "answer": "Cưỡi ngựa",
+                "explanation": "Đáp án mục tiêu là “Horse riding”. Trong transcript, ý này được diễn đạt bằng các phrase but, horse riding, horses, Riding. Khi nghe không chờ đúng nguyên văn đáp án; hãy nhận ra cụm đồng nghĩa/paraphrase.",
+                "evidence_en": "\"I've been involved in different sports over the years, but one thing that stands out for me is horse riding."
+              }
+            },
+            {
+              "id": "L2_T06_SB",
+              "speaker": "B",
+              "script_text": "\"I used to love mountain biking, enjoying the thrill of riding down steep slopes. It was really an amazing and adventurous feeling. However, after an injury from a fall, I became haunted by the fear of crashing and now I'm scared of this sport. But I still love the mountains, so I've decided to just go hiking every weekend instead.\"",
+              "answer": "Climbing",
+              "key_vi": {
+                "answer": "Leo núi / leo trèo",
+                "explanation": "Đáp án mục tiêu là “Climbing”. Trong transcript, ý này được diễn đạt bằng các phrase However, love the mountains, so I've decided to just go hiking every weekend instead. Khi nghe không chờ đúng nguyên văn đáp án; hãy nhận ra cụm đồng nghĩa/paraphrase.",
+                "evidence_en": "However, after an injury from a fall, I became haunted by the fear of crashing and now I'm scared of this sport."
+              }
+            },
+            {
+              "id": "L2_T06_SC",
+              "speaker": "C",
+              "script_text": "\"I've always been drawn to outdoor activities, especially those that get my heart racing. While some of my friends prefer running or hiking, I find nothing more exciting than mountain biking. I love the challenge of rough terrains and feeling the wind rush by as I go downhill. It's also a great way to explore nature and stay fit. I try to hit the trails at least a few times a month because it's such a thrilling experience for me. It's become my go-to form of exercise whenever I have the time.\"",
+              "answer": "Mountain biking",
+              "key_vi": {
+                "answer": "Đạp xe địa hình",
+                "explanation": "Đáp án mục tiêu là “Mountain biking”. Trong transcript, ý này được diễn đạt bằng các phrase I find nothing more, exciting than mountain biking, d, ownhill. Khi nghe không chờ đúng nguyên văn đáp án; hãy nhận ra cụm đồng nghĩa/paraphrase.",
+                "evidence_en": "While some of my friends prefer running or hiking, I find nothing more exciting than mountain biking."
+              }
+            },
+            {
+              "id": "L2_T06_SD",
+              "speaker": "D",
+              "script_text": "\"My husband and I often wake up early and go to a nearby forest for exercise. We usually go jogging in the early morning to stay healthy, and we really enjoy the fresh air and natural scenery in the forest. This peaceful routine helps us start our day with lots of positive energy. It is also a great way for both of us to bond and relax together after a busy week.\"",
+              "answer": "Going for a run",
+              "key_vi": {
+                "answer": "Đi chạy bộ",
+                "explanation": "Đáp án mục tiêu là “Going for a run”. Trong transcript, ý này được diễn đạt bằng các phrase wake up, exercise, usually go jogging, early morning. Khi nghe không chờ đúng nguyên văn đáp án; hãy nhận ra cụm đồng nghĩa/paraphrase.",
+                "evidence_en": "\"My husband and I often wake up early and go to a nearby forest for exercise."
+              }
+            }
+          ]
+        },
+        "L3": {
+          "topic_id": "L3_T06",
+          "title": "Information and Technology",
+          "title_vi": "Thông tin và công nghệ",
+          "provenance": {
+            "statements": "SOURCE",
+            "answers": "SOURCE",
+            "script": "GENERATED_PRACTICE"
+          },
+          "script_segments": [
+            {
+              "speaker": "M",
+              "text": "We've both been thinking about information and technology, and I suspect we won't agree on every detail."
+            },
+            {
+              "speaker": "F",
+              "text": "Probably not. It helps to separate the individual claims, because our opinions can change from one point to the next."
+            },
+            {
+              "speaker": "M",
+              "text": "For me, future generations fail to cope with technology information. I've seen enough examples to feel quite strongly about that."
+            },
+            {
+              "speaker": "F",
+              "text": "I see the point, but I wouldn't go that far. I think there are too many exceptions for me to agree completely."
+            },
+            {
+              "speaker": "M",
+              "text": "I'm not fully convinced by that. In my experience the situation is more mixed, so I would be careful about making such a general claim."
+            },
+            {
+              "speaker": "F",
+              "text": "I take a clearer position: technology revolution is good for the economy. That's the interpretation that makes most sense to me."
+            },
+            {
+              "speaker": "M",
+              "text": "I'm not fully convinced by that. In my experience the situation is more mixed, so I would be careful about making such a general claim."
+            },
+            {
+              "speaker": "F",
+              "text": "I take a clearer position: no computer is superior to the human brain. That's the interpretation that makes most sense to me."
+            },
+            {
+              "speaker": "M",
+              "text": "I'd say increasingly ought to be done to protect individual privacy. That seems a fair conclusion from what we've been discussing."
+            },
+            {
+              "speaker": "F",
+              "text": "I agree with that. My reasons are slightly different, but I reach the same conclusion."
+            },
+            {
+              "speaker": "M",
+              "text": "What makes this kind of discussion difficult is that sharing the same topic doesn't mean sharing the same judgement."
+            },
+            {
+              "speaker": "F",
+              "text": "Exactly. A listener has to track who actually supports each idea, and whether the other speaker agrees, qualifies it, or rejects it."
+            },
+            {
+              "speaker": "M",
+              "text": "Another thing I notice in discussions like this is that the same vocabulary can support different opinions. One person may mention the same problem as the other but use it to reach a different conclusion. That is why listening only for repeated nouns is risky; the important information is often in the verb, the evaluation, or the contrast that follows."
+            },
+            {
+              "speaker": "F",
+              "text": "Yes, and agreement is not always expressed with the word 'agree'. Sometimes a speaker restates the idea positively, gives a supporting example, or says that something matches their own experience. Disagreement can also be indirect: a speaker may say 'perhaps', 'not always', or 'it depends', which weakens the claim rather than rejecting every part of it."
+            },
+            {
+              "speaker": "M",
+              "text": "So during practice I would keep the four statements visible and make a quick mark only after each opinion becomes clear. If a speaker changes direction, the later qualified position should matter more than the first reaction."
+            },
+            {
+              "speaker": "F",
+              "text": "And after the audio ends, it is worth checking the pattern across all four statements. The aim is not to force a remembered code onto the conversation, but to use the code only as a memory check after the evidence has been heard."
+            }
+          ],
+          "statements": [
+            {
+              "id": "L3_T06_Q01",
+              "no": 1,
+              "text": "Future generations fail to cope with technology information",
+              "answer": "M",
+              "key_vi": {
+                "statement_vi": "Các thế hệ tương lai không thể thích ứng tốt với thông tin công nghệ",
+                "answer_text": "Man",
+                "code_digit": "1"
+              }
+            },
+            {
+              "id": "L3_T06_Q02",
+              "no": 2,
+              "text": "Technology revolution is good for the economy",
+              "answer": "W",
+              "key_vi": {
+                "statement_vi": "Cuộc cách mạng công nghệ tốt cho nền kinh tế",
+                "answer_text": "Woman",
+                "code_digit": "2"
+              }
+            },
+            {
+              "id": "L3_T06_Q03",
+              "no": 3,
+              "text": "No computer is superior to the human brain",
+              "answer": "W",
+              "key_vi": {
+                "statement_vi": "Không có máy tính nào vượt trội hơn bộ não con người",
+                "answer_text": "Woman",
+                "code_digit": "2"
+              }
+            },
+            {
+              "id": "L3_T06_Q04",
+              "no": 4,
+              "text": "More should be done to protect individual privacy",
+              "answer": "B",
+              "key_vi": {
+                "statement_vi": "Cần làm nhiều hơn để bảo vệ quyền riêng tư cá nhân",
+                "answer_text": "Both",
+                "code_digit": "0"
+              }
+            }
+          ],
+          "canonical_code": "1220"
+        },
+        "L4": {
+          "topic_id": "L4_T06",
+          "title": "REGIONAL DEVELOPMENT PLAN",
+          "title_vi": "Kế hoạch phát triển khu vực",
+          "provenance": {
+            "questions": "SOURCE",
+            "answers": "SOURCE",
+            "script": "GENERATED_PRACTICE"
+          },
+          "script_text": "People often have quick opinions about regional development plan, but my experience has been more complicated. At first I expected the most obvious explanation to be right, and I even considered the idea that it provides many more alternatives to driving. Another possibility people often mention is that it strongly encourages people to stop using private cars. After looking at the situation more carefully, neither description really matched what happened. The better summary is that things were insufficient effort. That difference matters because the speaker's final judgement is more qualified than the tempting alternatives. There is another aspect that is easy to miss. Some people argue that the plan makes excellent use of all available land, while others go almost to the opposite extreme and say that most existing land is being used in the most efficient way. My own view sits elsewhere. What matters is available land. In other words, the conclusion depends on the exact conditions being discussed, not on a broad slogan. During the discussion I might use several words related to the wrong choices, because they are realistic possibilities. That does not make them the answer. The key is to notice when an idea is introduced only to be limited, corrected, or rejected. Expressions such as “however”, “in practice”, “actually”, and “what matters more” often signal that the speaker is moving toward the real position. For a listening task, I would therefore avoid selecting an option as soon as I hear familiar vocabulary. I would wait until the evaluation becomes clear, then match that meaning to the option that paraphrases it most accurately. The two ideas to retain from this talk are the ones expressed through insufficient effort, promote and available land, made good use of; they represent the settled view rather than the rejected alternatives. A longer talk also includes background that may not directly answer either question. For example, a speaker may describe how the issue developed, mention another person's view, or give a small personal example before returning to the main judgement. Those details are useful context, but they should not replace the two target conclusions. When I practise, I try to separate background information from evaluation language. Background tells me what happened; evaluation tells me what the speaker finally thinks about it. I also listen for changes in certainty. Words such as 'probably', 'only', 'not always', 'unlikely', and 'depends' can completely change which option is accurate. If two answers share similar vocabulary, the safer choice is the one that matches the strength and direction of the speaker's final judgement.",
+          "questions": [
+            {
+              "id": "L4_T06_Q01",
+              "no": 1,
+              "options": [
+                "It doesn't do enough to promote alternatives to driving",
+                "It provides many more alternatives to driving.",
+                "It strongly encourages people to stop using private cars."
+              ],
+              "answer_index": 0,
+              "key_vi": {
+                "answer": "Nó chưa làm đủ để thúc đẩy các lựa chọn thay thế cho việc lái xe",
+                "explanation": "Nhận diện topic “REGIONAL DEVELOPMENT PLAN”, sau đó nhớ ý chính “It doesn't do enough to promote alternatives to driving”. Các cụm paraphrase nguồn giúp nhận diện: not done enough → insufficient effort | encourage → promote | alternatives to driving → other ways of travelling.",
+                "evidence_en": "insufficient effort"
+              }
+            },
+            {
+              "id": "L4_T06_Q02",
+              "no": 2,
+              "options": [
+                "The plan is not making efficient use of existing land",
+                "The plan makes excellent use of all available land.",
+                "Most existing land is being used in the most efficient way."
+              ],
+              "answer_index": 0,
+              "key_vi": {
+                "answer": "Kế hoạch này chưa sử dụng hiệu quả quỹ đất hiện có",
+                "explanation": "Nhận diện topic “REGIONAL DEVELOPMENT PLAN”, sau đó nhớ ý chính “The plan is not making efficient use of existing land”. Các cụm paraphrase nguồn giúp nhận diện: existing land → available land | used effectively → made good use of | not used well → inefficiently used.",
+                "evidence_en": "available land"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "pack_version": "1.0.0",
+  "min_app_version": "3.3"
+}

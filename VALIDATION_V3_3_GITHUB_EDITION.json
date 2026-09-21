@@ -1,0 +1,184 @@
+{
+  "app_version": "3.3",
+  "edition": "GitHub Edition",
+  "validated_at": "2026-09-21",
+  "javascript_syntax": {
+    "app.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "default_data.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "packs/bundled_online_packs.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "manifest": {
+    "schema": "1.0",
+    "version": "2026.09.21.1",
+    "entry_count": 2,
+    "entries": [
+      {
+        "pack_id": "LISTENING_PACK_03_04_V3_2",
+        "file": "LISTENING_PACK_03_04_V3_2.json",
+        "exists": true,
+        "id_matches": true,
+        "version": "1.0.0",
+        "sets": [
+          "SET_03",
+          "SET_04"
+        ]
+      },
+      {
+        "pack_id": "LISTENING_PACK_05_06_V3_2",
+        "file": "LISTENING_PACK_05_06_V3_2.json",
+        "exists": true,
+        "id_matches": true,
+        "version": "1.0.0",
+        "sets": [
+          "SET_05",
+          "SET_06"
+        ]
+      }
+    ]
+  },
+  "listening": {
+    "set_ids": [
+      "SET_01",
+      "SET_02",
+      "SET_03",
+      "SET_04",
+      "SET_05",
+      "SET_06"
+    ],
+    "set_count": 6,
+    "sets": [
+      {
+        "set_id": "SET_01",
+        "l1_count": 24,
+        "l1_is_24": true,
+        "l3_speakers": [
+          "F",
+          "M"
+        ],
+        "l3_has_M_and_F": true,
+        "l4_questions": 2,
+        "l4_all_have_vi_key": true,
+        "l4_source_answer_indices": [
+          0,
+          0
+        ]
+      },
+      {
+        "set_id": "SET_02",
+        "l1_count": 24,
+        "l1_is_24": true,
+        "l3_speakers": [
+          "F",
+          "M"
+        ],
+        "l3_has_M_and_F": true,
+        "l4_questions": 2,
+        "l4_all_have_vi_key": true,
+        "l4_source_answer_indices": [
+          0,
+          0
+        ]
+      },
+      {
+        "set_id": "SET_03",
+        "l1_count": 24,
+        "l1_is_24": true,
+        "l3_speakers": [
+          "F",
+          "M"
+        ],
+        "l3_has_M_and_F": true,
+        "l4_questions": 2,
+        "l4_all_have_vi_key": true,
+        "l4_source_answer_indices": [
+          0,
+          0
+        ]
+      },
+      {
+        "set_id": "SET_04",
+        "l1_count": 24,
+        "l1_is_24": true,
+        "l3_speakers": [
+          "F",
+          "M"
+        ],
+        "l3_has_M_and_F": true,
+        "l4_questions": 2,
+        "l4_all_have_vi_key": true,
+        "l4_source_answer_indices": [
+          0,
+          0
+        ]
+      },
+      {
+        "set_id": "SET_05",
+        "l1_count": 24,
+        "l1_is_24": true,
+        "l3_speakers": [
+          "F",
+          "M"
+        ],
+        "l3_has_M_and_F": true,
+        "l4_questions": 2,
+        "l4_all_have_vi_key": true,
+        "l4_source_answer_indices": [
+          0,
+          0
+        ]
+      },
+      {
+        "set_id": "SET_06",
+        "l1_count": 24,
+        "l1_is_24": true,
+        "l3_speakers": [
+          "F",
+          "M"
+        ],
+        "l3_has_M_and_F": true,
+        "l4_questions": 2,
+        "l4_all_have_vi_key": true,
+        "l4_source_answer_indices": [
+          0,
+          0
+        ]
+      }
+    ],
+    "all_l1_24": true,
+    "all_l3_have_M_F": true,
+    "all_l4_have_vi_key": true
+  },
+  "reading": {
+    "R1_sets": 17,
+    "R1_items": 85,
+    "R23_topics": 13,
+    "R23_sentences": 65,
+    "R4_topics": 6,
+    "R4_questions": 42,
+    "R5_topics": 3,
+    "R5_headings": 21
+  },
+  "feature_static_checks": {
+    "github_manifest_loader": true,
+    "offline_cache": true,
+    "local_import_store": true,
+    "duplicate_protection": true,
+    "l3_strict_gender_call": true,
+    "l4_shuffle": true,
+    "l4_vietnamese_key": true,
+    "standalone_file_guard": true
+  },
+  "notes": [
+    "L4 canonical answer_index values remain source-authentic; V3.3 shuffles display positions and grades against the source index.",
+    "GitHub Pages synchronizes official packs, not learning progress; progress remains per-browser localStorage."
+  ]
+}

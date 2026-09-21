@@ -1,0 +1,63 @@
+{
+  "app": "APTIS Complete Trainer V3.2",
+  "schema_version": "3.2",
+  "listening": {
+    "sets": 2,
+    "L1_counts": {
+      "SET_01": 24,
+      "SET_02": 24
+    },
+    "all_L1_exact_24": true
+  },
+  "reading": {
+    "R1": {
+      "sets": 17,
+      "items": 85,
+      "sets_all_5": true
+    },
+    "R23": {
+      "topics": 13,
+      "sentences": 65,
+      "links": 52,
+      "printed_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "13",
+        "13"
+      ]
+    },
+    "R4": {
+      "topics": 6,
+      "questions": 42,
+      "missing_evidence": 0
+    },
+    "R5": {
+      "topics": 3,
+      "source_headings": 21,
+      "source_paragraphs": 0,
+      "generated_practice_paragraphs": 21
+    }
+  },
+  "provenance_guard": {
+    "r5_generated_labeled": true
+  },
+  "files": [
+    "index.html",
+    "styles.css",
+    "app.js",
+    "default_data.js",
+    "APTIS_COMPLETE_DATA_V3_2.json",
+    "PACK_TEMPLATE_V3_2.json",
+    "START_LOCAL_SERVER.bat",
+    "README.txt"
+  ]
+}
