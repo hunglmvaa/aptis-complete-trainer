@@ -1,0 +1,61 @@
+{
+  "app_version": "3.8.0",
+  "scope": "Reading bilingual learning update",
+  "validation_date": "2026-09-23",
+  "source_english_data_unchanged": true,
+  "source_hashes": {
+    "default_data.js": "2927e2821520f5798dab29a43c5c5bcc4a9a8e223363daf6d9a1822966a31543",
+    "reading_practice_data.js": "62f4d968eac05bc8de4ec588e77d09eb1cac41d43b77e0e5d866fc93ae369494"
+  },
+  "translation_layer": {
+    "file": "reading_vi_data.js",
+    "provenance": "DERIVED_TRANSLATION_FOR_LEARNING"
+  },
+  "coverage": {
+    "source": {
+      "R1_items": 85,
+      "R23_sentences": 65,
+      "R4_questions": 42,
+      "R5_items": 21
+    },
+    "practice": {
+      "topics": 10,
+      "items": 90,
+      "part1_items": 50,
+      "part2_items": 20,
+      "part4_items": 10,
+      "part5_items": 10
+    },
+    "missing_displayed_vietnamese_fields": 0
+  },
+  "ui": {
+    "vietnamese_visible_by_default": true,
+    "correct_answer_bold_english": true,
+    "correct_answer_bold_vietnamese": true,
+    "source_parts": [
+      "R1",
+      "R2-3",
+      "R4",
+      "R5"
+    ],
+    "practice_parts": [
+      "R1",
+      "R2-3",
+      "R4",
+      "R5"
+    ]
+  },
+  "checks": {
+    "app_js_syntax": "PASS",
+    "default_data_js_syntax": "PASS",
+    "reading_practice_data_js_syntax": "PASS",
+    "reading_vi_data_js_syntax": "PASS",
+    "bundled_online_packs_js_syntax": "PASS",
+    "standalone_regenerated": "PASS"
+  },
+  "notes": [
+    "English SOURCE data is preserved; translations are separated into reading_vi_data.js.",
+    "Practice R5 Vietnamese text is a quick-meaning learning aid rather than an official SOURCE translation.",
+    "R4 evidence uses exact Vietnamese evidence translations where authored; otherwise the UI provides a Vietnamese meaning/hint so the key is never English-only."
+  ]
+}

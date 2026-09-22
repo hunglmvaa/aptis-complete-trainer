@@ -98,3 +98,21 @@ Nút **Import Pack JSON** vẫn hoạt động. Pack import thủ công được
 ## 7. Tiến độ học
 
 Điểm số, lựa chọn và cấu hình voice nằm trong localStorage. GitHub Pages không phải database, nên tiến độ trên laptop và điện thoại vẫn độc lập. Pack online thì đồng bộ vì được lấy từ repository.
+
+## 8. Reading V3.8.0 — cập nhật song ngữ
+
+Bản V3.8.0 bổ sung lớp dịch phục vụ học nhanh cho toàn bộ phần Reading đang hiển thị.
+
+Các file cần giữ cùng nhau trên GitHub Pages:
+
+- `index.html`
+- `app.js`
+- `styles.css`
+- `default_data.js`
+- `reading_practice_data.js`
+- `reading_vi_data.js`  ← mới ở V3.8.0
+- `packs/`
+
+`reading_vi_data.js` chỉ chứa lớp dịch/ghi nhớ hỗ trợ (`DERIVED_TRANSLATION_FOR_LEARNING`), không ghi đè dữ liệu SOURCE tiếng Anh trong `default_data.js`.
+
+Nếu GitHub Pages vẫn hiện giao diện cũ sau khi upload, thực hiện hard refresh hoặc xóa cache trang. Các URL asset trong `index.html` đã được đổi query version thành `v=3.8.0` để giảm nguy cơ giữ cache cũ.
