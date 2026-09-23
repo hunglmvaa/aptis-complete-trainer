@@ -19,3 +19,19 @@
 
 /* V3.8 Reading bilingual learning layer */
 .vi-title{margin-top:3px;font-weight:800;color:#315d87;font-size:.95rem}.bi-block{display:block;line-height:1.55}.bi-en{color:var(--text)}.bi-vi{margin-top:4px;color:#3f5f7d;font-size:.92rem;line-height:1.5}.vi-tag{display:inline-block;margin-right:6px;padding:1px 6px;border-radius:999px;background:#eaf2fb;color:#174f83;font-size:.66rem;font-weight:900;vertical-align:1px}.bi-context{display:grid;gap:8px}.bi-context>.bi-vi{padding-top:8px;border-top:1px dashed #c8d6e5;white-space:pre-wrap}.bilingual-option{align-items:flex-start}.bilingual-option>span{display:grid;gap:2px}.option-en{font-weight:800;color:var(--text)}.option-vi{font-size:.84rem;color:#4c6a85}.bi-answer{margin:3px 0 9px;padding:10px 12px;border:1px solid #8cc8a5;border-radius:10px;background:#f0faf4}.answer-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:#3e6b53;font-weight:900;margin-bottom:3px}.answer-en,.answer-vi{display:block;font-size:1.04rem;line-height:1.45;color:#126640}.answer-vi{color:#174f83;margin-top:3px}.answer-statement{margin-top:8px;padding-top:8px;border-top:1px dashed #d7e1ec}.ordered-answer{padding:8px 0;border-bottom:1px dashed #d7e1ec}.ordered-answer:last-child{border-bottom:0}.order-code{font-weight:950;color:var(--green);font-size:1.05rem;margin:4px 0 8px}.linking-row{padding:7px 0;border-bottom:1px dashed #e2e8f0}.linking-row:last-child{border-bottom:0}.vi-evidence{color:#315d87}.bilingual-heading{display:grid!important;gap:2px;white-space:normal!important;line-height:1.35}.bilingual-heading>span{font-size:.78rem;color:#4c6a85;font-weight:650}.heading-chip.bilingual-heading{border-radius:10px;padding:8px 10px}.reorder-text .bi-vi{font-size:.86rem}.person .inside .bi-vi{font-size:.88rem}.practice-context .bi-vi{font-size:.91rem}@media(max-width:620px){.bi-vi{font-size:.9rem}.answer-en,.answer-vi{font-size:1rem}.bilingual-heading>span{font-size:.76rem}.option-vi{font-size:.82rem}}
+
+/* V3.8.2 Reading R5: full translation + main idea + keyword-to-heading map */
+.r5-en-paragraph{white-space:pre-wrap;line-height:1.72;background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:12px;margin:9px 0;font-weight:600}
+.r5-study{display:grid;gap:8px;margin:9px 0 12px}
+.r5-full-vi{line-height:1.68;background:#f6fbff;border-left:4px solid #6a9ac7;border-radius:9px;padding:10px 12px}
+.r5-study-label{font-size:.78rem;font-weight:900;color:var(--navy);margin-bottom:4px;text-transform:uppercase;letter-spacing:.02em}
+.r5-main-idea{line-height:1.58;background:#fff8e8;border:1px solid #ecd79e;border-radius:9px;padding:9px 11px;color:#604500}
+.r5-keyword-map{margin-top:12px;padding-top:10px;border-top:1px dashed #d8bf78}
+.r5-keyword-title{font-weight:950;color:#704600;margin-bottom:7px}
+.r5-keyword-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding:8px 9px;margin:6px 0;background:#fffdf5;border:1px solid #ead9ab;border-radius:9px;line-height:1.45}
+.r5-keyword-en{color:#173d66;background:#eaf2fb;border-radius:6px;padding:2px 6px}
+.r5-keyword-vi{font-weight:800;color:#4f6071}
+.r5-concept{color:#18794e;background:#eaf8f0;border-radius:6px;padding:2px 6px}
+.r5-arrow{font-weight:950;color:#8a5a00}
+.r5-memory{margin-top:10px}
+@media(max-width:620px){.r5-en-paragraph,.r5-full-vi{padding:10px}.r5-keyword-row{display:grid;grid-template-columns:1fr}.r5-arrow{display:none}}
