@@ -35,3 +35,9 @@
 .r5-arrow{font-weight:950;color:#8a5a00}
 .r5-memory{margin-top:10px}
 @media(max-width:620px){.r5-en-paragraph,.r5-full-vi{padding:10px}.r5-keyword-row{display:grid;grid-template-columns:1fr}.r5-arrow{display:none}}
+
+
+/* V3.8.3 Global Vietnamese meaning toggle */
+.vi-toggle{white-space:nowrap}
+.hide-vi .vi-meaning,.hide-vi .vi-title,.hide-vi .bi-vi,.hide-vi .option-vi,.hide-vi .answer-vi,.hide-vi .vi-evidence,.hide-vi .r5-study,.hide-vi .r5-keyword-vi,.hide-vi .bilingual-heading>span{display:none!important}
+@media(max-width:620px){.vi-toggle{width:100%}}
