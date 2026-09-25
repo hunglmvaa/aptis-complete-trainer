@@ -41,3 +41,13 @@
 .vi-toggle{white-space:nowrap}
 .hide-vi .vi-meaning,.hide-vi .vi-title,.hide-vi .bi-vi,.hide-vi .option-vi,.hide-vi .answer-vi,.hide-vi .vi-evidence,.hide-vi .r5-study,.hide-vi .r5-keyword-vi,.hide-vi .bilingual-heading>span{display:none!important}
 @media(max-width:620px){.vi-toggle{width:100%}}
+
+/* V3.8.4 · L1 Show All */
+.l1-scopebar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.scope-label{font-size:.82rem;font-weight:900;color:var(--navy)}
+.r1-all-set{margin-top:18px;padding-top:14px;border-top:2px solid #dce7f1}
+.r1-all-set:first-of-type{margin-top:8px}
+.r1-all-set-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.r1-all-set-head h3{margin:0;color:var(--navy);font-size:1.05rem}
+.select:disabled{opacity:.65;cursor:not-allowed;background:#f3f5f7}
+@media(max-width:620px){.l1-scopebar .btn{flex:1 1 auto}.r1-all-set{margin-left:-2px;margin-right:-2px}.r1-all-set-head{align-items:flex-start}}
