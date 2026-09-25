@@ -51,3 +51,12 @@
 .r1-all-set-head h3{margin:0;color:var(--navy);font-size:1.05rem}
 .select:disabled{opacity:.65;cursor:not-allowed;background:#f3f5f7}
 @media(max-width:620px){.l1-scopebar .btn{flex:1 1 auto}.r1-all-set{margin-left:-2px;margin-right:-2px}.r1-all-set-head{align-items:flex-start}}
+
+/* V3.8.5 FULL L1/R1 visibility */
+.full-aware-select{font-weight:850}.full-aware-select option[value="__L1_FULL__"],.full-aware-select option[value="__R1_FULL__"]{font-weight:900}.full-btn{border:1px solid #d49a2a!important}.l1-scopebar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;padding:9px 10px;border:1px dashed #b8c9da;border-radius:11px;background:#f8fbff}.scope-label{font-weight:900;color:var(--navy)}
+
+/* V3.8.7 · L1 Learn + Contextual L1-CHECK */
+.l1-modebar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px;padding:10px;border:1px solid #d5dfeb;border-radius:11px;background:#fffaf0}
+.l1-modebar .full-btn{border-color:#c98b18!important}
+.full-aware-select option[value="__L1_CHECK__"]{font-weight:950}
+@media(max-width:620px){.l1-modebar .btn{flex:1 1 auto}.l1-modebar .help{flex-basis:100%}}

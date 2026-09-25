@@ -3,6 +3,7 @@
 const DEFAULT=window.DEFAULT_APTIS_DATA;
 const PRACTICE=window.READING_PRACTICE_BANK||{topics:[],items:[]};
 const READ_VI=window.READING_VI_BANK||{r1:{leads:{},sentences:{}},glosses:{},topic_vi:{},practice_part1_context:{},practice_items:{}};
+const L1_DIALOGUES=window.L1_DIALOGUE_BANK||{};
 // L3 KEY ↔ CODE memory bank supplied by the user. Keep the mapping itself exactly as provided.
 // vi/context/mnemonic fields below are DERIVED / GENERATED_PRACTICE aids for memorisation, not SOURCE exam data.
 const KEY_CODE_ITEMS=[
@@ -26,7 +27,7 @@ const fmtCode=c=>String(c||"").replace("-","–");
 const $=(q,r=document)=>r.querySelector(q), $$=(q,r=document)=>[...r.querySelectorAll(q)];
 const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 const STORE={get(k){try{return localStorage.getItem(k)}catch{return null}},set(k,v){try{localStorage.setItem(k,v)}catch{}},del(k){try{localStorage.removeItem(k)}catch{}}};
-const APP_VERSION="3.8.4", USER_PK="aptis_v33_user_packs", ONLINE_PK="aptis_v34_online_cache", LEGACY_PK="aptis_v32_packs", SK="aptis_v32_state", VK="aptis_v32_voice";
+const APP_VERSION="3.8.8", USER_PK="aptis_v33_user_packs", ONLINE_PK="aptis_v34_online_cache", LEGACY_PK="aptis_v32_packs", SK="aptis_v32_state", VK="aptis_v32_voice";
 const readStore=(k,fallback)=>{try{const v=JSON.parse(STORE.get(k)||"null");return v??fallback}catch{return fallback}};
 function validatePack(p){if(!p||!p.pack_id||!Array.isArray(p.sets))throw new Error("Pack không hợp lệ: cần pack_id và sets[].");for(const s of p.sets){if(s.parts?.L1&&s.parts.L1.length!==24)throw new Error(`${s.set_id}: nếu có L1 thì phải đúng 24 câu.`)}return p}
 function tagPack(p,source,version=""){const q=Object.assign({},p);q.__pack_source=source;q.__pack_version=version||p.pack_version||p.__pack_version||"";return q}
@@ -37,7 +38,7 @@ let onlinePacks=(Array.isArray(cache.packs)?cache.packs:[]).map(p=>tagPack(p,"on
 if(!onlinePacks.length&&Array.isArray(window.BUNDLED_ONLINE_PACKS))onlinePacks=window.BUNDLED_ONLINE_PACKS.map(p=>tagPack(p,"bundled",p.__pack_version||p.pack_version||""));
 let packs=[];let onlineStatus={state:"idle",message:"Đang dùng pack tích hợp sẵn.",manifest:cache.manifest_version||"",updated_at:cache.updated_at||""};
 function rebuildPacks(){const map=new Map();map.set(DEFAULT.pack_id,tagPack(DEFAULT,"builtin",DEFAULT.pack_version||"3.3"));for(const p of onlinePacks){try{validatePack(p);map.set(p.pack_id,p)}catch{}}for(const p of userPacks){try{validatePack(p);if(!map.has(p.pack_id))map.set(p.pack_id,tagPack(p,"local",p.pack_version||""))}catch{}}packs=[...map.values()];if(state&&!packs.some(p=>p.pack_id===state.packId)){state.packId=DEFAULT.pack_id;state.setId=DEFAULT.sets?.[0]?.set_id||"SET_01";save();}}
-let state=(()=>{try{return Object.assign({view:"practice",packId:DEFAULT.pack_id,skill:"listening",setId:"SET_01",lpart:"L1",rmode:"source",rpart:"R1",runit:{R1:"R1_S01",R23:"R23_T01",R4:"R4_T01",R5:"R5_T01"},ptopic:(PRACTICE.topics?.[0]||""),ppart:"part1",kcMode:"level1",kcFamily:"all",kcSmart:true,kcCurrent:null,kcLastId:"",kcStats:{correct:0,total:0,streak:0,best:0},kcItemStats:{},orders:{},attempts:{},showVi:true,l1Scope:"current",r1Scope:"current"},JSON.parse(STORE.get(SK)||"{}"))}catch{return{view:"practice",packId:DEFAULT.pack_id,skill:"listening",setId:"SET_01",lpart:"L1",rmode:"source",rpart:"R1",runit:{R1:"R1_S01",R23:"R23_T01",R4:"R4_T01",R5:"R5_T01"},ptopic:(PRACTICE.topics?.[0]||""),ppart:"part1",kcMode:"level1",kcFamily:"all",kcSmart:true,kcCurrent:null,kcLastId:"",kcStats:{correct:0,total:0,streak:0,best:0},kcItemStats:{},orders:{},attempts:{},showVi:true,l1Scope:"current",r1Scope:"current"}}})();
+let state=(()=>{try{return Object.assign({view:"practice",packId:DEFAULT.pack_id,skill:"listening",setId:"SET_01",lpart:"L1",rmode:"source",rpart:"R1",runit:{R1:"R1_S01",R23:"R23_T01",R4:"R4_T01",R5:"R5_T01"},ptopic:(PRACTICE.topics?.[0]||""),ppart:"part1",kcMode:"level1",kcFamily:"all",kcSmart:true,kcCurrent:null,kcLastId:"",kcStats:{correct:0,total:0,streak:0,best:0},kcItemStats:{},orders:{},attempts:{},showVi:true,l1Scope:"current",r1Scope:"current",l1StudyMode:"source",l1CheckIds:[],l1CheckRound:1,l1LearnRound:1},JSON.parse(STORE.get(SK)||"{}"))}catch{return{view:"practice",packId:DEFAULT.pack_id,skill:"listening",setId:"SET_01",lpart:"L1",rmode:"source",rpart:"R1",runit:{R1:"R1_S01",R23:"R23_T01",R4:"R4_T01",R5:"R5_T01"},ptopic:(PRACTICE.topics?.[0]||""),ppart:"part1",kcMode:"level1",kcFamily:"all",kcSmart:true,kcCurrent:null,kcLastId:"",kcStats:{correct:0,total:0,streak:0,best:0},kcItemStats:{},orders:{},attempts:{},showVi:true,l1Scope:"current",r1Scope:"current",l1StudyMode:"source",l1CheckIds:[],l1CheckRound:1,l1LearnRound:1}}})();
 // Migrate V3.6 Key-Code state without breaking existing browser progress.
 if(state.kcMode==="key-code")state.kcMode="level1";
 if(!["level1","level2","level3","code-key","table"].includes(state.kcMode))state.kcMode="level1";
@@ -47,6 +48,10 @@ state.kcItemStats=state.kcItemStats||{};
 state.kcCurrent=null;
 if(!["current","all"].includes(state.l1Scope))state.l1Scope="current";
 if(!["current","all"].includes(state.r1Scope))state.r1Scope="current";
+if(!["source","learn","check"].includes(state.l1StudyMode))state.l1StudyMode="source";
+if(!Array.isArray(state.l1CheckIds))state.l1CheckIds=[];
+state.l1CheckRound=Math.max(1,Number(state.l1CheckRound)||1);
+state.l1LearnRound=Math.max(1,Number(state.l1LearnRound)||1);
 let vs=(()=>{try{return Object.assign({male:"",female:"",extra1:"",extra2:"",rate:.95,random:false},JSON.parse(STORE.get(VK)||"{}"))}catch{return{male:"",female:"",extra1:"",extra2:"",rate:.95,random:false}}})();
 let voices=[], speechToken=0; const app=$("#app");
 function save(){STORE.set(SK,JSON.stringify(state))} function saveV(){STORE.set(VK,JSON.stringify(vs))} function saveUsers(){STORE.set(USER_PK,JSON.stringify(userPacks))}
@@ -64,8 +69,243 @@ function l1AllUniqueItems(){
   }
   return [...map.values()].map(z=>Object.assign({},z.item,{__sets:z.sets})).sort((a,b)=>String(a.id).localeCompare(String(b.id),undefined,{numeric:true}));
 }
-function listeningL1Items(){return state.l1Scope==="all"?l1AllUniqueItems():(cset()?.parts?.L1||[])}
-function findListeningL1Item(id){return listeningL1Items().find(x=>x.id===id)||null}
+function l1Category(x){
+  const t=String(x?.key_vi?.type||"").toUpperCase();
+  if(/GIÁ|SỐ LƯỢNG|CON SỐ|TUỔI|SĐT/.test(t))return "number";
+  if(/THỜI GIAN|THỨ|NGÀY|THỜI LƯỢNG/.test(t))return "time";
+  if(/ĐỊA ĐIỂM|KHU VỰC|PHÒNG|TẦNG/.test(t))return "place";
+  if(/PHƯƠNG TIỆN/.test(t))return "transport";
+  if(/LÝ DO|MỤC ĐÍCH|NGUYÊN NHÂN|LỜI KHUYÊN/.test(t))return "reason";
+  if(/HOẠT ĐỘNG|THÓI QUEN|KẾ HOẠCH/.test(t))return "activity";
+  if(/ĐỒ VẬT|MÓN ĂN|ĐỒ UỐNG|ĐỒ ĂN|MUA|MẤT|QUÊN|SỬA/.test(t))return "item";
+  if(/NGHỀ|CÔNG VIỆC|HỌC TẬP|KHÓA HỌC|MÔN HỌC/.test(t))return "study";
+  if(/SỞ THÍCH|CẢM XÚC|Ý KIẾN|THỜI TIẾT|ĐIỂM NỔI BẬT/.test(t))return "opinion";
+  if(/MÀU SẮC|NGOẠI HÌNH|MÔ TẢ/.test(t))return "description";
+  if(/AI \/|NGƯỜI NÀO|SỐNG VỚI AI|CHỤP AI/.test(t))return "person";
+  return "general";
+}
+function buildL1CheckIds(){
+  const all=l1AllUniqueItems(),prev=new Set(state.l1CheckIds||[]),fresh=all.filter(x=>!prev.has(x.id)),pool=fresh.length>=24?fresh:all;
+  const groups=new Map();for(const x of pool){const c=l1Category(x);if(!groups.has(c))groups.set(c,[]);groups.get(c).push(x)}
+  for(const [k,v] of groups)groups.set(k,shuffle(v));
+  const cats=shuffle([...groups.keys()]),out=[];let i=0,guard=0;
+  while(out.length<Math.min(24,pool.length)&&guard++<1000){const c=cats[i%cats.length],g=groups.get(c)||[];if(g.length)out.push(g.shift().id);i++}
+  if(out.length<Math.min(24,pool.length)){for(const x of shuffle(pool)){if(!out.includes(x.id))out.push(x.id);if(out.length>=Math.min(24,pool.length))break}}
+  return out;
+}
+function ensureL1CheckSet(force=false){
+  const validIds=new Set(l1AllUniqueItems().map(x=>x.id)),ok=Array.isArray(state.l1CheckIds)&&state.l1CheckIds.length===Math.min(24,validIds.size)&&state.l1CheckIds.every(id=>validIds.has(id));
+  if(force||!ok){state.l1CheckIds=buildL1CheckIds();if(force)state.l1CheckRound=(Number(state.l1CheckRound)||1)+1;save()}
+  return state.l1CheckIds;
+}
+function newL1CheckSet(){ensureL1CheckSet(true);Object.keys(state.orders).filter(k=>k.includes(":L1CHECK")).forEach(k=>delete state.orders[k]);save()}
+function l1CheckItems(){const ids=ensureL1CheckSet(false),m=new Map(l1AllUniqueItems().map(x=>[x.id,x]));return ids.map(id=>m.get(id)).filter(Boolean)}
+function listeningL1Items(){if(state.l1StudyMode==="check")return l1CheckItems();return state.l1Scope==="all"?l1AllUniqueItems():(cset()?.parts?.L1||[])}
+function findListeningL1Item(id){return listeningL1Items().find(x=>x.id===id)||l1AllUniqueItems().find(x=>x.id===id)||null}
+function l1OrderName(){return state.l1StudyMode==="check"?`L1CHECK:${state.l1CheckRound}`:(state.l1Scope==="all"?"L1ALL":"L1")}
+function l1Hash(s){let h=2166136261;for(const ch of String(s||"")){h^=ch.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}
+function l1Clean(s){return String(s??"").trim().replace(/[\s.?!]+$/g,"")}
+function l1FixedDialogueSegments(x){const d=L1_DIALOGUES?.[x?.id];return Array.isArray(d?.segments)&&d.segments.length?d.segments:(x?.script_segments||[])}
+function l1GeneratedSegments(x,mode=state.l1StudyMode){
+  if(mode==="source"||mode==="check")return l1FixedDialogueSegments(x);
+  const opts=x?.options||[],ai=Number(x?.answer_index)||0,ans=l1Clean(opts[ai]??x?.key_vi?.answer??""),ds=opts.map((v,i)=>({v:l1Clean(v),i})).filter(z=>z.i!==ai),round=state.l1LearnRound,h=l1Hash(`${x?.id}:${mode}:${round}`);
+  if(ds.length>1&&(h%2))ds.reverse();const d1=ds[0]?.v||"the first option",d2=ds[1]?.v||"the other option",evidence=l1Clean(x?.key_vi?.evidence_en||""),q=String(x?.question_en||"").trim(),cat=l1Category(x),cue=evidence&&evidence.toLowerCase()!==ans.toLowerCase()?evidence:ans;
+  if(mode==="learn"){
+    const second={
+      number:`I first noted ${d1}, but that figure belongs to a different detail. The number to remember here is ${ans}.`,
+      time:`I almost wrote down ${d1}, but that is not the relevant time or day. The detail to remember is ${ans}.`,
+      place:`${d1} is mentioned, so it is an easy trap. The place that matters here is ${ans}.`,
+      transport:`Do not stop at ${d1}; that is only a distractor. The way the person actually travels is ${ans}.`,
+      reason:`${d1} sounds possible, but it is not the real reason. The key idea is ${ans}.`,
+      activity:`${d1} is one possibility, but the actual activity is ${ans}.`,
+      item:`${d1} is mentioned, but the item we need to remember is ${ans}.`,
+      study:`${d1} is discussed, but the relevant study or work detail is ${ans}.`,
+      opinion:`${d1} is not the final view. The important opinion or preference is ${ans}.`,
+      description:`Do not choose ${d1}. The description that matches is ${ans}.`,
+      person:`${d1} is mentioned, but the person or group that matters is ${ans}.`,
+      general:`${d1} appears in the context, but the detail to remember is ${ans}.`
+    }[cat];
+    return [{speaker:"M",text:q||"Listen for the key detail."},{speaker:"F",text:`${second}${cue&&cue.toLowerCase()!==ans.toLowerCase()?` Another useful clue is: ${cue}.`:""}`}];
+  }
+  return l1ContextCheckSegments(x,{ans,d1,d2,h,cat,q,cue});
+}
+function l1ContextCheckSegments(x,{ans,d1,d2,h,cat,q,cue}){
+  const ql=String(q||"").toLowerCase();
+  const v=h%3;
+  const pair=(a,b)=>[{speaker:v===1?"F":"M",text:a},{speaker:v===1?"M":"F",text:b}];
+
+  // PRICE / NUMBER / AGE / COUNT
+  if(cat==="number"){
+    if(/how much|cost|pay/.test(ql)){
+      const A=[
+        [`I checked the price before coming here and thought it was ${d1}. Has it changed?`,`Yes. ${d1} was the old price. ${d2} is for a different option, but the one we're talking about now costs ${ans}.`],
+        [`I only brought enough money for ${d2}. Do I need more?`,`For this item, yes. The cheaper figure ${d1} was on last week's label. Today's price is ${ans}.`],
+        [`The shelf shows two prices, ${d1} and ${d2}, and I'm not sure which one applies.`,`Those labels are for other versions. The current price for this one is ${ans}.`]
+      ][v];return pair(A[0],A[1]);
+    }
+    if(/how old/.test(ql)){
+      const A=[
+        [`I thought she was ${d1}, because her brother is around that age.`,`Her brother is, but she had her birthday recently. She's ${ans} now; ${d2} is another age mentioned in the family.`],
+        [`Is she ${d2} already? I can never remember their ages.`,`Not yet. The person we're talking about is ${ans}. ${d1} is her friend's age.`],
+        [`There are three ages in my notes: ${d1}, ${ans}, and ${d2}.`,`For her, use ${ans}. The other two belong to people mentioned earlier.`]
+      ][v];return pair(A[0],A[1]);
+    }
+    if(/phone number/.test(ql)) return pair(`I wrote down ${d1}, but the last two groups sounded unclear on the phone.`,`Let me read it slowly: ${ans}. The number ${d2} belongs to another shop nearby.`);
+    if(/door|press/.test(ql)) return pair(`The announcement mentioned ${d1} and ${d2}, so I missed which one we actually need.`,`For this service, use ${ans}. The other numbers are for different routes or menu choices.`);
+    return pair(`The first figure I heard was ${d1}, and later someone mentioned ${d2}.`,`Those refer to other details. For the situation we're discussing, the figure we need is ${ans}.`);
+  }
+
+  // TIMES / DAYS / DURATIONS
+  if(cat==="time"){
+    if(/train/.test(ql)){
+      const A=[
+        [`I was going to catch the service at ${d1}. Is that still the plan?`,`No, the timetable changed. ${d2} doesn't fit our connection, so we're taking the one at ${ans}.`],
+        [`There are trains around ${d1}, ${d2}, and ${ans}. Which one gives us enough time?`,`The ${ans} service. The earlier one is unnecessary, and the other one gets us there too late.`],
+        [`I heard there was a delay. Should I still arrive for ${d2}?`,`Come for the ${ans} train. ${d1} was the original time before the change.`]
+      ][v];return pair(A[0],A[1]);
+    }
+    if(/meeting|meet|appointment/.test(ql)){
+      const A=[
+        [`Can we meet at ${d1}? I have another appointment later.`,`That clashes with my schedule. ${d2} was suggested too, but ${ans} works for both of us.`],
+        [`I put ${d2} in my calendar, but I'm not completely sure.`,`Change it to ${ans}. We discussed ${d1} first, then moved it because of another commitment.`],
+        [`I can manage ${d1} or ${ans}, but not ${d2}.`,`Let's settle on ${ans}. That gives us enough time without rushing.`]
+      ][v];return pair(A[0],A[1]);
+    }
+    if(/how long/.test(ql)) return pair(`I expected the journey to take ${d1}, but traffic looks heavier today.`,`It won't be as long as ${d2}. Allow about ${ans}, and we should arrive comfortably.`);
+    if(/due|day|when|weeks|usually/.test(ql)){
+      const A=[
+        [`I had ${d1} in mind, but I may have copied the old schedule.`,`The old plan did say ${d1}. The current arrangement is ${ans}; ${d2} belongs to a different activity.`],
+        [`Does it happen on ${d2}, or have I mixed up the dates?`,`You've mixed them up. The relevant day or time is ${ans}. ${d1} is mentioned for something else.`],
+        [`My calendar has three notes: ${d1}, ${d2}, and ${ans}.`,`Keep ${ans} for this one. The other two refer to separate events.`]
+      ][v];return pair(A[0],A[1]);
+    }
+  }
+
+  // TRANSPORT
+  if(cat==="transport"){
+    const A=[
+      [`I thought she went by ${d1}, especially when the weather is bad.`,`Only occasionally. Most days she uses ${ans}; ${d2} is another option she has tried before.`],
+      [`Does he normally use ${d2} for the journey?`,`Not now. He changed his routine and usually goes by ${ans}. ${d1} is what he used in the past.`],
+      [`There are several ways to get there. I would probably choose ${d1}.`,`He considered that, but his regular way of travelling is ${ans}. ${d2} isn't practical for him.`]
+    ][v];return pair(A[0],A[1]);
+  }
+
+  // PLACES / ROOMS / AREAS
+  if(cat==="place"){
+    if(/where is|where's|opposite|near/.test(ql)){
+      const A=[
+        [`I passed ${d1}, but I still couldn't find the place. Is it close to ${d2}?`,`You're nearly there. Look for ${ans}; that's the location described in the directions.`],
+        [`The map makes it look as if it's ${d2}.`,`That marker is for another building. The place you want is ${ans}; ${d1} is nearby but not the destination.`],
+        [`Should I turn toward ${d1} when I get there?`,`No. Follow the signs until you reach ${ans}. ${d2} is on the other side.`]
+      ][v];return pair(A[0],A[1]);
+    }
+    if(/room|floor/.test(ql)){
+      const A=[
+        [`I checked ${d1}, but nobody was there. Could it be ${d2}?`,`Neither. They've put us in ${ans}. The notice downstairs was updated this morning.`],
+        [`The building has several rooms, and I always confuse them.`,`For this one, go to ${ans}. ${d1} is used by another group, and ${d2} is unavailable today.`],
+        [`I was about to go to ${d2}.`,`Don't. We need ${ans}. ${d1} was listed on the old notice.`]
+      ][v];return pair(A[0],A[1]);
+    }
+    if(/meet|wait/.test(ql)){
+      const A=[
+        [`Shall we wait at ${d1}? It's easy to find.`,`It gets too crowded there. ${d2} was another idea, but let's use ${ans} instead.`],
+        [`I can meet you at ${d2} if that's convenient.`,`Let's make it ${ans}. We talked about ${d1} earlier, but it isn't suitable today.`],
+        [`Where exactly should I look for you? Near ${d1}?`,`No, I'll be at ${ans}. If you reach ${d2}, you've gone a little too far.`]
+      ][v];return pair(A[0],A[1]);
+    }
+    const A=[
+      [`I remember hearing about ${d1} and ${d2}, but which place did they finally choose?`,`They considered both, but the plan they kept was ${ans}.`],
+      [`Would you choose ${d2} for this trip?`,`They thought about it, but ${ans} suited the situation better. ${d1} was discussed earlier.`],
+      [`There were a few places in the conversation, so I lost track.`,`The important location is ${ans}. ${d1} and ${d2} are connected to other details.`]
+    ][v];return pair(A[0],A[1]);
+  }
+
+  // ACTIVITIES / HABITS
+  if(cat==="activity"){
+    const A=[
+      [`I know ${d1} is something she enjoys sometimes. Does she do that regularly?`,`Not usually. She may also do ${d2}, but her normal activity is ${ans}.`],
+      [`Last time we talked, he mentioned ${d2}. Is that still what he does?`,`Only now and then. These days, ${ans} is the activity he does most often; ${d1} is less regular.`],
+      [`There are so many things in her schedule: ${d1}, ${d2}, and ${ans}.`,`Yes, but ${ans} is the one that matches the time or situation we're talking about.`]
+    ][v];return pair(A[0],A[1]);
+  }
+
+  // REASONS / ADVICE / CAUSES
+  if(cat==="reason"){
+    const A=[
+      [`Was it because ${d1}? That would make sense.`,`That was mentioned, but it wasn't the main reason. ${d2} also played a part; the real reason was ${ans}.`],
+      [`I assumed ${d2} was the reason for the decision.`,`Not really. The key point was ${ans}. ${d1} came up in the discussion but didn't cause the final decision.`],
+      [`So the problem was ${d1}, right?`,`No. After they explained the situation, it became clear that ${ans} was the main reason. ${d2} was only background.`]
+    ][v];return pair(A[0],A[1]);
+  }
+
+  // ITEMS / FOOD / DRINK / PURCHASES / LOST THINGS
+  if(cat==="item"){
+    if(/lost|forget/.test(ql)){
+      const A=[
+        [`She checked for her ${d1} first and then looked for her ${d2}.`,`She still had both of those. The thing she couldn't find was ${ans}.`],
+        [`I thought he'd left his ${d2} at home.`,`He had that with him. What he actually forgot was ${ans}; ${d1} was in his bag.`],
+        [`They searched the car for ${d1}. Was that what was missing?`,`No. They found ${d1}. The missing item was ${ans}; ${d2} was never lost.`]
+      ][v];return pair(A[0],A[1]);
+    }
+    if(/drink|feed/.test(ql)){
+      const A=[
+        [`I offered ${d1}, but she didn't want it. Would ${d2} be better?`,`She sometimes has that, but today she chose ${ans}.`],
+        [`Should I get ${d2} for them?`,`No, they already have that. What they need is ${ans}; ${d1} isn't suitable this time.`],
+        [`I saw ${d1} and ${ans} on the table. Which one did he have?`,`He had ${ans}. ${d1} belonged to someone else, and ${d2} wasn't ordered.`]
+      ][v];return pair(A[0],A[1]);
+    }
+    const A=[
+      [`Do we still need ${d1}, or did someone buy it already?`,`That's already sorted, and so is ${d2}. The thing we still need is ${ans}.`],
+      [`I was going to choose ${d2}, but I'm not sure it's the right one.`,`For this situation, take ${ans}. ${d1} was considered earlier but doesn't fit what they need.`],
+      [`The list mentions ${d1}, ${d2}, and ${ans}.`,`Right, but ${ans} is the item connected with this part of the conversation.`]
+    ][v];return pair(A[0],A[1]);
+  }
+
+  // STUDY / JOB / CAREER
+  if(cat==="study"){
+    const A=[
+      [`He talked about ${d1} for a while. Did he finally choose that?`,`No. He also considered ${d2}, but in the end he chose ${ans} because it suited his plans better.`],
+      [`I expected her to go into ${d2}.`,`She thought about it, but ${ans} matched her interests more closely. ${d1} was another possibility.`],
+      [`There were a few study or career options: ${d1}, ${d2}, and ${ans}.`,`Yes, and after comparing them, ${ans} was the one they actually selected.`]
+    ][v];return pair(A[0],A[1]);
+  }
+
+  // OPINIONS / FEELINGS / WEATHER / PREFERENCES
+  if(cat==="opinion"){
+    const A=[
+      [`Some people focused on ${d1}, while others mentioned ${d2}. What stood out to him?`,`For him, the important thing was ${ans}. That's what he kept talking about afterwards.`],
+      [`I thought she felt ${d1}, but her voice didn't quite sound like that.`,`That's because she actually felt ${ans}. ${d2} describes someone else in the conversation.`],
+      [`Would you describe it as ${d2}?`,`Not in this case. The description or opinion that matches best is ${ans}; ${d1} doesn't fit what was said.`]
+    ][v];return pair(A[0],A[1]);
+  }
+
+  // COLOUR / APPEARANCE / DESCRIPTION
+  if(cat==="description"){
+    const A=[
+      [`I pictured it as ${d1}, but I may be remembering another one.`,`This one is ${ans}. ${d2} belongs to a different person or object they mentioned.`],
+      [`Was it ${d2}? That's the detail I wrote down.`,`Not quite. The description given was ${ans}. ${d1} came up earlier.`],
+      [`They compared several descriptions, including ${d1} and ${d2}.`,`The one that actually matches is ${ans}.`]
+    ][v];return pair(A[0],A[1]);
+  }
+
+  // PEOPLE / GROUPS
+  if(cat==="person"){
+    const A=[
+      [`I thought it involved ${d1}.`,`They were mentioned, but the person or group connected with this situation was ${ans}. ${d2} was part of another detail.`],
+      [`Was ${d2} the one they were talking about?`,`No. It was ${ans}. ${d1} came up earlier in the conversation.`],
+      [`There were several people mentioned, so I lost track.`,`The one you need here is ${ans}. The references to ${d1} and ${d2} belong elsewhere.`]
+    ][v];return pair(A[0],A[1]);
+  }
+
+  // Fallback: still contextual, never uses test/answer/distractor language.
+  const A=[
+    [`At first I thought the detail was ${d1}, because that came up early in the conversation.`,`Later the situation changed. ${d2} belongs to something else, and the detail that applies now is ${ans}.`],
+    [`I remember ${d2} being mentioned, but I may be mixing up two parts of the story.`,`That's what happened. For this part, the relevant detail is ${ans}; ${d1} was from an earlier point.`],
+    [`There are three details in my notes: ${d1}, ${d2}, and ${ans}.`,`The situation develops a little, and by the end the one that applies is ${ans}.`]
+  ][v];return pair(A[0],A[1]);
+}
+function l1OptionOrder(x){const ids=(x?.options||[]).map((_,i)=>i);if(state.l1StudyMode!=="check")return ids;return getShuffledOrder(orderKey(`L1CHECKOPT:${state.l1CheckRound}:${x.id}`),ids)}
+function l1ModeLabel(){return state.l1StudyMode==="learn"?"HỌC KEY":state.l1StudyMode==="check"?"L1-CHECK":"HỘI THOẠI ĐẦY ĐỦ"}
 function packSourceLabel(p){const s=p?.__pack_source||"local";if(s==="builtin")return "TÍCH HỢP";if(s==="online")return "ONLINE";if(s==="online-cache")return "CACHE ONLINE";if(s==="bundled")return "BUNDLED";return "IMPORT CÁ NHÂN"}
 async function refreshOnlinePacks(force=false,silent=false){
   if(location.protocol==="file:"){onlineStatus={state:"idle",message:"Chế độ file:// dùng pack bundled. Muốn đồng bộ manifest GitHub, hãy dùng START_LOCAL_SERVER.bat hoặc GitHub Pages.",manifest:onlineStatus.manifest||"",updated_at:onlineStatus.updated_at||""};rebuildPacks();if(state.view==="packs")renderPacks();return false;}
@@ -144,8 +384,8 @@ function voiceFor(role,i=0,strictGender=false){if(!voices.length)return null;if(
 function speakOne(text,voice,token){return new Promise(res=>{if(token!==speechToken){res();return}const u=new SpeechSynthesisUtterance(String(text||""));u.rate=Number(vs.rate)||.95;u.lang=voice?.lang||"en-GB";if(voice)u.voice=voice;let done=false;const keep=setInterval(()=>{if(token===speechToken&&speechSynthesis.speaking&&!speechSynthesis.paused){try{speechSynthesis.pause();setTimeout(()=>{try{speechSynthesis.resume()}catch{}},30)}catch{}}},14000);const fin=()=>{if(done)return;done=true;clearInterval(keep);res()};u.onend=fin;u.onerror=fin;speechSynthesis.speak(u)})}
 async function speakSegments(a,strictGender=false){stop();const t=speechToken;for(let i=0;i<a.length;i++){if(t!==speechToken)break;await speakOne(a[i].text,voiceFor(a[i].speaker,i,strictGender),t);if(t===speechToken)await new Promise(r=>setTimeout(r,120));}}
 async function speakText(s,i=0){stop();const t=speechToken;await speakOne(s,voiceFor("",i),t)}
-function topControls(){const p=cp(),s=cset();const sets=(p.sets||[]),viVisible=state.showVi!==false,setDisabled=state.skill==="listening"&&state.lpart==="L1"&&state.l1Scope==="all";return `<section class="card"><div class="toolbar space"><div class="toolbar"><select id="packSel" class="select" aria-label="Chọn pack">${packs.map(x=>`<option value="${esc(x.pack_id)}" ${x.pack_id===p.pack_id?"selected":""}>${esc(x.title)} · ${esc(packSourceLabel(x))}</option>`).join("")}</select>${sets.length?`<select id="setSel" class="select" aria-label="Chọn set" ${setDisabled?"disabled title=\"Đang ở chế độ Tất cả câu L1\"":""}>${sets.map(x=>`<option value="${esc(x.set_id)}" ${s&&x.set_id===s.set_id?"selected":""}>${esc(x.title)}</option>`).join("")}</select>`:""}</div><div class="toolbar"><button class="btn vi-toggle ${viVisible?"secondary":"ghost"}" data-action="toggle-vi">${viVisible?"🙈 Ẩn nghĩa Việt":"🇻🇳 Hiện nghĩa Việt"}</button><span class="pill">${esc(packSourceLabel(p))} · Schema ${esc(p.schema_version||"?")}</span></div></div><div class="skilltabs"><button class="skilltab ${state.skill==="listening"?"active":""}" data-skill="listening">🎧 Listening</button><button class="skilltab ${state.skill==="reading"?"active":""}" data-skill="reading">📖 Reading</button></div></section>`}
-function listeningControls(){const l1=state.lpart==="L1",currentCount=cset()?.parts?.L1?.length||0,allCount=l1?l1AllUniqueItems().length:0;return `<section class="card"><div class="toolbar space"><div class="tabs">${["L1","L2","L3","L4"].map(x=>`<button class="tab ${state.lpart===x?"active":""}" data-lpart="${x}">${x}</button>`).join("")}</div><div class="toolbar"><button class="btn secondary" data-action="shuffle">🔀 Xáo thứ tự</button><button class="btn ghost" data-action="original">↺ Thứ tự gốc</button><button class="btn danger" data-action="stop-audio">■ Stop</button></div></div>${l1?`<div class="l1-scopebar"><span class="scope-label">Hiển thị L1:</span><button class="btn small ${state.l1Scope!=="all"?"secondary":"ghost"}" data-l1scope="current">Bộ hiện tại · ${currentCount} câu</button><button class="btn small ${state.l1Scope==="all"?"secondary":"ghost"}" data-l1scope="all">📚 Tất cả · ${allCount} câu duy nhất</button>${state.l1Scope==="all"?`<span class="help">Đã loại câu lặp giữa các set.</span>`:""}</div>`:""}</section>`}
+function topControls(){const p=cp(),s=cset(),sets=(p.sets||[]),viVisible=state.showVi!==false,l1Check=state.skill==="listening"&&state.lpart==="L1"&&state.l1StudyMode==="check",l1Full=state.skill==="listening"&&state.lpart==="L1"&&!l1Check&&state.l1Scope==="all",l1FullCount=state.skill==="listening"&&state.lpart==="L1"?l1AllUniqueItems().length:0;return `<section class="card"><div class="toolbar space"><div class="toolbar"><select id="packSel" class="select" aria-label="Chọn pack">${packs.map(x=>`<option value="${esc(x.pack_id)}" ${x.pack_id===p.pack_id?"selected":""}>${esc(x.title)} · ${esc(packSourceLabel(x))}</option>`).join("")}</select>${sets.length?`<select id="setSel" class="select full-aware-select" aria-label="Chọn set">${state.skill==="listening"&&state.lpart==="L1"?`<option value="__L1_CHECK__" ${l1Check?"selected":""}>★ L1-CHECK · 24 câu trộn</option><option value="__L1_FULL__" ${l1Full?"selected":""}>★ FULL L1 · ${l1FullCount} câu duy nhất</option>`:""}${sets.map(x=>`<option value="${esc(x.set_id)}" ${!l1Full&&!l1Check&&s&&x.set_id===s.set_id?"selected":""}>${esc(x.title)}</option>`).join("")}</select>`:""}</div><div class="toolbar"><button class="btn vi-toggle ${viVisible?"secondary":"ghost"}" data-action="toggle-vi">${viVisible?"🙈 Ẩn nghĩa Việt":"🇻🇳 Hiện nghĩa Việt"}</button><span class="pill">${esc(packSourceLabel(p))} · Schema ${esc(p.schema_version||"?")}</span></div></div><div class="skilltabs"><button class="skilltab ${state.skill==="listening"?"active":""}" data-skill="listening">🎧 Listening</button><button class="skilltab ${state.skill==="reading"?"active":""}" data-skill="reading">📖 Reading</button></div></section>`}
+function listeningControls(){const l1=state.lpart==="L1",currentCount=cset()?.parts?.L1?.length||0,allCount=l1?l1AllUniqueItems().length:0,check=state.l1StudyMode==="check";return `<section class="card"><div class="toolbar space"><div class="tabs">${["L1","L2","L3","L4"].map(x=>`<button class="tab ${state.lpart===x?"active":""}" data-lpart="${x}">${x}</button>`).join("")}</div><div class="toolbar"><button class="btn secondary" data-action="shuffle">🔀 Xáo thứ tự</button><button class="btn ghost" data-action="original">↺ Thứ tự gốc</button><button class="btn danger" data-action="stop-audio">■ Stop</button></div></div>${l1?`<div class="l1-modebar"><span class="scope-label">Cách luyện:</span><button class="btn small ${state.l1StudyMode==="source"?"secondary":"ghost"}" data-l1mode="source">1 · Hội thoại đầy đủ</button><button class="btn small ${state.l1StudyMode==="learn"?"secondary":"ghost"}" data-l1mode="learn">2 · Học KEY</button><button class="btn full-btn small ${check?"secondary":"ghost"}" data-l1mode="check">3 · ★ L1-CHECK</button>${state.l1StudyMode==="learn"?`<button class="btn ghost small" data-action="new-l1-learn">🔄 Đổi cách nghe</button>`:""}${check?`<button class="btn key small" data-action="new-l1-check">🎲 Tạo CHECK mới</button><span class="help">Bộ #${state.l1CheckRound} · 24 câu cân bằng nhiều dạng · options cũng xáo.</span>`:""}</div>${!check?`<div class="l1-scopebar"><span class="scope-label">Phạm vi:</span><button class="btn small ${state.l1Scope!=="all"?"secondary":"ghost"}" data-l1scope="current">Bộ hiện tại · ${currentCount} câu</button><button class="btn full-btn small ${state.l1Scope==="all"?"secondary":"ghost"}" data-l1scope="all">★ FULL L1 · ${allCount} câu duy nhất</button>${state.l1Scope==="all"?`<span class="help">Đã loại câu lặp giữa các set.</span>`:""}</div>`:""}`:""}</section>`}
 function readingUnitOptions(part){const b=bank();if(part==="R1")return (b.R1?.sets||[]).map(x=>({id:x.set_id,label:`R1 · Bộ ${x.source_variant||x.source_printed_no||x.internal_set_no}`}));if(part==="R23")return (b.R23?.topics||[]).map(x=>({id:x.topic_id,label:`R2–3 · ${x.source_printed_no}. ${x.topic_en}`}));if(part==="R4")return (b.R4?.topics||[]).map(x=>({id:x.topic_id,label:`R4 · ${x.topic_en}`}));if(part==="R5")return (b.R5?.topics||[]).map(x=>({id:x.topic_id,label:`R5 · ${x.title_en_teacher}`}));return[]}
 function ensureReadingUnit(){const opts=readingUnitOptions(state.rpart);if(!opts.some(x=>x.id===state.runit?.[state.rpart])){state.runit=state.runit||{};state.runit[state.rpart]=opts[0]?.id||"";save()}}
 function practiceTopics(){return PRACTICE.topics||[]}
@@ -159,8 +399,8 @@ function readingControls(){
         <button class="tab ${state.rmode==="practice"?"active":""}" data-rmode="practice">PRACTICE · 10 chủ đề</button>
       </div><span class="pill">Đã đối chiếu lại 4 tài liệu Reading</span></div>
       <div class="toolbar space" style="margin-top:10px"><div class="tabs">${["R1","R23","R4","R5"].map(x=>`<button class="tab ${state.rpart===x?"active":""}" data-rpart="${x}">${x==="R23"?"R2–3":x}</button>`).join("")}</div>
-      <div class="toolbar"><select id="runitSel" class="select" ${state.rpart==="R1"&&state.r1Scope==="all"?"disabled title=\"Đang ở chế độ Tất cả câu R1\"":""}>${opts.map(x=>`<option value="${esc(x.id)}" ${x.id===state.runit[state.rpart]?"selected":""}>${esc(x.label)}</option>`).join("")}</select><button class="btn secondary" data-action="shuffle">🔀 Xáo</button>${state.rpart==="R5"?"":`<button class="btn ghost" data-action="original">↺ Gốc</button>`}</div></div>
-      ${state.rpart==="R1"?`<div class="l1-scopebar"><span class="scope-label">Hiển thị R1:</span><button class="btn small ${state.r1Scope!=="all"?"secondary":"ghost"}" data-r1scope="current">Bộ hiện tại · 5 câu</button><button class="btn small ${state.r1Scope==="all"?"secondary":"ghost"}" data-r1scope="all">📚 Tất cả · ${r1AllCount} câu</button>${state.r1Scope==="all"?`<span class="help">Hiển thị đủ 17 bài và giữ lead/context của từng bài.</span>`:""}</div>`:""}
+      <div class="toolbar"><select id="runitSel" class="select full-aware-select">${state.rpart==="R1"?`<option value="__R1_FULL__" ${state.r1Scope==="all"?"selected":""}>★ FULL R1 · ${r1AllCount} câu / ${(bank().R1?.sets||[]).length} bài</option>`:""}${opts.map(x=>`<option value="${esc(x.id)}" ${state.r1Scope!=="all"&&x.id===state.runit[state.rpart]?"selected":""}>${esc(x.label)}</option>`).join("")}</select><button class="btn secondary" data-action="shuffle">🔀 Xáo</button>${state.rpart==="R5"?"":`<button class="btn ghost" data-action="original">↺ Gốc</button>`}</div></div>
+      ${state.rpart==="R1"?`<div class="l1-scopebar"><span class="scope-label">R1:</span><button class="btn small ${state.r1Scope!=="all"?"secondary":"ghost"}" data-r1scope="current">Bộ hiện tại · 5 câu</button><button class="btn full-btn small ${state.r1Scope==="all"?"secondary":"ghost"}" data-r1scope="all">★ FULL R1 · ${r1AllCount} câu</button>${state.r1Scope==="all"?`<span class="help">Đủ ${(bank().R1?.sets||[]).length} bài; giữ lead/context của từng bài.</span>`:""}</div>`:""}
       <div class="note source" style="margin-top:10px"><b>SOURCE đã kiểm chứng:</b> R1 17 bài/85 blanks · R2–3 13 bài/65 câu · R4 6 bài/42 câu · R5 3 chủ đề/21 headings. Numbering lạ của tài liệu được giữ nguyên.</div>
     </section>`;
   }
@@ -188,8 +428,10 @@ function renderPractice(){
 }
 function renderListening(){const s=cset();if(!s?.parts)return `<section class="card"><div class="note info">Pack/set này không có Listening. Hãy chọn pack khác hoặc chuyển sang Reading.</div></section>`;const p=state.lpart,d=s.parts[p];if(!d)return `<section class="card">Không có ${esc(p)} trong set này.</section>`;if(p==="L1")return renderL1(s,d);if(p==="L2")return renderL2(d);if(p==="L3")return renderL3(d);return renderL4(d)}
 function renderL1(s,d){
-  const allMode=state.l1Scope==="all",items=allMode?l1AllUniqueItems():d,ids=items.map(x=>x.id),k=orderKey(allMode?"L1ALL":"L1"),ord=getOrder(k,ids),m=new Map(items.map(x=>[x.id,x]));
-  return `<section class="card"><div class="head"><h2>${allMode?`Listening Part 1 · Tất cả ${items.length} câu duy nhất`:`${esc(s.title)} · Listening Part 1`}</h2><div class="sub"><b>${items.length} câu</b> · Nghe → chọn → Chấm; Bài đọc và Key mở riêng.${allMode?" · Câu lặp giữa các set đã được loại bỏ.":""}</div></div><div class="note generated">Question/options/answer = SOURCE. Script nghe mô phỏng = GENERATED_PRACTICE.${allMode?` <b>Chế độ Tất cả:</b> lấy một bản đại diện cho mỗi ID câu; tổng ${items.length} câu duy nhất trong pack.`:""}</div>${ord.map((id,n)=>{const x=m.get(id),sets=x.__sets||[];return `<article class="question" data-q="${esc(id)}"><div class="qhead"><div><div class="number">Câu ${n+1}/${items.length} · ${esc(id)}${allMode&&sets.length?` · xuất hiện ${sets.length} set`:""}</div><div class="qtext">${esc(x.question_en)}</div></div><div>${provFromObject(x.provenance)}</div></div><div class="toolbar"><button class="btn secondary" data-action="play-l1" data-id="${esc(id)}">▶ Nghe</button><button class="btn danger" data-action="stop-audio">■ Stop</button><button class="btn ghost" data-action="toggle" data-target="scr-${esc(id)}">📄 Bài đọc</button></div><div id="scr-${esc(id)}" class="script hidden">${(x.script_segments||[]).map(z=>`<b>${z.speaker==="M"?"Man":"Woman"}:</b> ${esc(z.text)}`).join("<br>")}</div><div class="options">${x.options.map((v,i)=>`<label class="option"><input type="radio" name="${esc(id)}" value="${i}"> ${esc(v)}</label>`).join("")}</div><div class="toolbar"><button class="btn key" data-action="toggle" data-target="key-${esc(id)}">🔑 Hiện Key</button><button class="btn" data-action="check-l1-item" data-id="${esc(id)}">✓ Chấm câu</button></div><div id="key-${esc(id)}" class="keybox hidden"><h4>Key tiếng Việt</h4><div class="vi-meaning"><b>Dạng:</b> ${esc(x.key_vi?.type)}</div><div class="key-answer">Đáp án: ${esc(x.options?.[x.answer_index]??x.key_vi?.answer??"")}</div><div class="vi-meaning">${esc(x.key_vi?.explanation)}</div><div class="evidence"><b>Evidence:</b> ${esc(x.key_vi?.evidence_en)}</div></div><div id="fb-${esc(id)}"></div></article>`}).join("")}<div class="sticky-actions toolbar space"><div class="counter">L1: ${items.length} câu${allMode?" duy nhất":""}.</div><div class="toolbar"><button class="btn key" data-action="show-all-keys">🔑 Hiện tất cả Key</button><button class="btn secondary" data-action="play-wrong">▶ Nghe lại câu sai</button><button class="btn danger" data-action="stop-audio">■ Stop</button><button class="btn" data-action="check-l1-all">✓ Chấm toàn bộ</button></div></div></section>`;
+  const checkMode=state.l1StudyMode==="check",allMode=!checkMode&&state.l1Scope==="all",items=listeningL1Items(),ids=items.map(x=>x.id),k=orderKey(l1OrderName()),ord=getOrder(k,ids),m=new Map(items.map(x=>[x.id,x])),mode=l1ModeLabel();
+  const title=checkMode?`L1-CHECK · Bộ #${state.l1CheckRound} · ${items.length} câu trộn`:state.l1StudyMode==="learn"?`Listening Part 1 · Học KEY · ${allMode?"FULL":"bộ hiện tại"}`:allMode?`Listening Part 1 · Tất cả ${items.length} câu duy nhất`:`${esc(s.title)} · Listening Part 1`;
+  const provenance=state.l1StudyMode==="learn"?"GENERATED_LEARNING":"GENERATED_FIXED_DIALOGUE";
+  return `<section class="card"><div class="head"><h2>${title}</h2><div class="sub"><b>${items.length} câu</b> · ${mode} · Nghe → chọn → Chấm; Bài đọc và Key mở riêng.</div></div><div class="note generated"><b>Question/options/answer = SOURCE.</b> Audio ở chế độ này = <b>${provenance}</b>, không phải transcript/audio Aptis gốc.${state.l1StudyMode==="source"?` <b>L1 thường:</b> dùng ngân hàng 149 hội thoại cố định, mỗi ID L1 có một dialogue riêng.`:""}${state.l1StudyMode==="learn"?` <b>Học KEY:</b> nghe câu hỏi + một distractor + đáp án chốt để tạo liên kết nhớ.`:""}${checkMode?` <b>L1-CHECK:</b> chỉ random 24/${l1AllUniqueItems().length} câu và xáo options; transcript/audio lấy nguyên dialogue cố định của từng câu, không sinh lại nội dung khi chạy.`:""}</div>${ord.map((id,n)=>{const x=m.get(id),sets=x.__sets||[],segs=l1GeneratedSegments(x,state.l1StudyMode),optOrd=l1OptionOrder(x);return `<article class="question" data-q="${esc(id)}"><div class="qhead"><div><div class="number">Câu ${n+1}/${items.length} · ${esc(id)}${allMode&&sets.length?` · xuất hiện ${sets.length} set`:""}</div><div class="qtext">${esc(x.question_en)}</div></div><div>${provFromObject(x.provenance)}<span class="badge generated">${provenance}</span></div></div><div class="toolbar"><button class="btn secondary" data-action="play-l1" data-id="${esc(id)}">▶ Nghe</button><button class="btn danger" data-action="stop-audio">■ Stop</button><button class="btn ghost" data-action="toggle" data-target="scr-${esc(id)}">📄 Bài đọc</button></div><div id="scr-${esc(id)}" class="script hidden">${segs.map(z=>`<b>${z.speaker==="M"?"Man":"Woman"}:</b> ${esc(z.text)}`).join("<br>")}</div><div class="options">${optOrd.map(i=>`<label class="option"><input type="radio" name="${esc(id)}" value="${i}"> ${esc(x.options[i])}</label>`).join("")}</div><div class="toolbar"><button class="btn key" data-action="toggle" data-target="key-${esc(id)}">🔑 Hiện Key</button><button class="btn" data-action="check-l1-item" data-id="${esc(id)}">✓ Chấm câu</button></div><div id="key-${esc(id)}" class="keybox hidden"><h4>Key & móc nhớ</h4><div class="vi-meaning"><b>Dạng:</b> ${esc(x.key_vi?.type)}</div><div class="key-answer">Đáp án SOURCE: ${esc(x.options?.[x.answer_index]??x.key_vi?.answer??"")}</div><div class="vi-meaning">${esc(x.key_vi?.explanation)}</div><div class="evidence"><b>Evidence/KEY:</b> ${esc(x.key_vi?.evidence_en)}</div>${state.l1StudyMode!=="source"?`<div class="evidence"><b>Móc nghe:</b> ngữ cảnh → thông tin nhiễu/paraphrase → <span class="key-answer">${esc(x.options?.[x.answer_index]??"")}</span></div>`:""}</div><div id="fb-${esc(id)}"></div></article>`}).join("")}<div class="sticky-actions toolbar space"><div class="counter">L1: ${items.length} câu · ${mode}.</div><div class="toolbar"><button class="btn key" data-action="show-all-keys">🔑 Hiện tất cả Key</button><button class="btn secondary" data-action="play-wrong">▶ Nghe lại câu sai</button>${checkMode?`<button class="btn key" data-action="new-l1-check">🎲 CHECK mới</button>`:""}<button class="btn danger" data-action="stop-audio">■ Stop</button><button class="btn" data-action="check-l1-all">✓ Chấm toàn bộ</button></div></div></section>`;
 }
 function l2KeyData(x){
   const k=L2_CANONICAL_KEY_BANK[x?.id];
@@ -320,7 +562,7 @@ function renderR5(){
 }
 function answerL3(x){let a=x.answer||x.correct||x.answer_text||x.key_vi?.answer_text||"";a=String(a).toLowerCase();if(a.includes("man")||a==="m"||a==="1")return"M";if(a.includes("woman")||a==="w"||a==="2")return"W";if(a.includes("both")||a==="b"||a==="0")return"B";return String(x.code_digit??x.key_vi?.code_digit??"")==="1"?"M":String(x.code_digit??x.key_vi?.code_digit??"")==="2"?"W":"B"}
 function checkL1Item(id){const x=findListeningL1Item(id),sel=$(`input[name="${CSS.escape(id)}"]:checked`),ok=!!sel&&Number(sel.value)===Number(x.answer_index),q=$(`[data-q="${CSS.escape(id)}"]`);markEl(q,ok);$(`#fb-${CSS.escape(id)}`).innerHTML=sel?`<div class="feedback ${ok?"good":"bad"}">${ok?"Đúng":"Sai"}</div>`:`<div class="feedback bad">Chưa chọn đáp án.</div>`;return ok}
-function checkL1All(){const d=listeningL1Items();let c=0;d.forEach(x=>{if(checkL1Item(x.id))c++});rec(orderKey(state.l1Scope==="all"?"L1ALLscore":"score"),c,d.length);appendGlobalScore(c,d.length)}
+function checkL1All(){const d=listeningL1Items();let c=0;d.forEach(x=>{if(checkL1Item(x.id))c++});rec(orderKey(state.l1StudyMode==="check"?`L1CHECKscore:${state.l1CheckRound}`:(state.l1Scope==="all"?"L1ALLscore":"score")),c,d.length);appendGlobalScore(c,d.length)}
 function checkL2Item(id){const d=cset().parts.L2,x=d.speakers.find(z=>z.id===id),sel=$(`select.ans[data-id="${CSS.escape(id)}"]`)?.value||"",ans=x.answer||x.correct_answer||x.key_vi?.answer||"",ok=!!sel&&norm(sel)===norm(ans);markEl($(`[data-q="${CSS.escape(id)}"]`),ok);$(`#fb-${CSS.escape(id)}`).innerHTML=sel?`<div class="feedback ${ok?"good":"bad"}">${ok?"Đúng":"Sai"}</div>`:`<div class="feedback bad">Chưa chọn.</div>`;return ok}
 function checkL2All(){const d=cset().parts.L2;let c=0;d.speakers.forEach(x=>{if(checkL2Item(x.id))c++});rec(orderKey("score"),c,d.speakers.length);appendGlobalScore(c,d.speakers.length)}
 function checkL3All(){const d=cset().parts.L3;let c=0;d.statements.forEach(x=>{const sel=$(`select.ans[data-id="${CSS.escape(x.id)}"]`)?.value||"",ok=!!sel&&sel===answerL3(x);markEl($(`[data-q="${CSS.escape(x.id)}"]`),ok);$(`#fb-${CSS.escape(x.id)}`).innerHTML=sel?`<div class="feedback ${ok?"good":"bad"}">${ok?"Đúng":"Sai"}</div>`:`<div class="feedback bad">Chưa chọn.</div>`;if(ok)c++});rec(orderKey("score"),c,d.statements.length);appendGlobalScore(c,d.statements.length)}
@@ -346,10 +588,10 @@ function checkP5All(){const x=pCurrentItem(),qs=x?.matchPrompts||[];let c=0;qs.f
 function moveP23(taskId,sid,delta){const x=pItems("part2").find(z=>z.id===taskId);if(!x)return;const ids=(x.sentences||[]).map(s=>s.id),key=orderKey(`P23:${x.id}`),ord=getOrder(key,ids),i=ord.indexOf(sid),j=i+delta;if(i<0||j<0||j>=ord.length)return;[ord[i],ord[j]]=[ord[j],ord[i]];setOrder(key,ord);renderPractice()}
 function appendGlobalScore(c,t){let el=$("#globalScore");if(!el){el=document.createElement("div");el.id="globalScore";el.className="card";app.appendChild(el)}el.innerHTML=`<div class="head"><h3>Kết quả gần nhất</h3></div>${score(c,t)}`;el.scrollIntoView({behavior:"smooth",block:"nearest"})}
 function norm(s){return String(s??"").trim().toLowerCase().replace(/\s+/g," ")}
-function shuffleCurrent(){if(state.skill==="listening"){const s=cset(),p=state.lpart,d=s?.parts?.[p];if(!d)return;if(p==="L1"){const items=listeningL1Items();setOrder(orderKey(state.l1Scope==="all"?"L1ALL":"L1"),shuffle(items.map(x=>x.id)))}if(p==="L2")setOrder(orderKey("L2"),shuffle(d.speakers.map(x=>x.id)));if(p==="L3")setOrder(orderKey("L3"),shuffle(d.statements.map(x=>x.id)));if(p==="L4")setOrder(orderKey("L4"),shuffle(d.questions.map(x=>x.id)));renderPractice();return}
+function shuffleCurrent(){if(state.skill==="listening"){const s=cset(),p=state.lpart,d=s?.parts?.[p];if(!d)return;if(p==="L1"){const items=listeningL1Items();setOrder(orderKey(l1OrderName()),shuffle(items.map(x=>x.id)))}if(p==="L2")setOrder(orderKey("L2"),shuffle(d.speakers.map(x=>x.id)));if(p==="L3")setOrder(orderKey("L3"),shuffle(d.statements.map(x=>x.id)));if(p==="L4")setOrder(orderKey("L4"),shuffle(d.questions.map(x=>x.id)));renderPractice();return}
  if((state.rmode||"source")==="practice"){const items=pItems();if(state.ppart==="part1"){for(const x of items)setOrder(orderKey(`P1:${x.id}`),shuffle((x.choices||[]).map(c=>c.id)));}else if(state.ppart==="part2"){for(const x of items)setOrder(orderKey(`P23:${x.id}`),shuffle((x.sentences||[]).map(s=>s.id)));}else if(state.ppart==="part4"){const x=items[0];if(x)setOrder(orderKey(`P4OPTS:${x.id}`),shuffle((x.matchOptions||[]).map(o=>o.id)));}else if(state.ppart==="part5"){const x=items[0];if(x)setOrder(orderKey(`P5HEAD:${x.id}`),shuffleDifferent((x.matchOptions||[]).map(o=>o.id)));}renderPractice();return}
  const b=bank();if(state.rpart==="R1"){const items=state.r1Scope==="all"?b.R1.items:b.R1.items.filter(x=>x.set_id===state.runit.R1),base=orderKey(state.r1Scope==="all"?"R1ALLopts":"R1opts");for(const x of items)setOrder(`${base}:${x.id}`,shuffle([0,1,2]));}if(state.rpart==="R23"){const ids=b.R23.sentences.filter(x=>x.topic_id===state.runit.R23).map(x=>x.id);setOrder(orderKey("R23"),shuffle(ids));}if(state.rpart==="R4"){const ids=b.R4.items.filter(x=>x.topic_id===state.runit.R4).map(x=>x.id);setOrder(orderKey("R4questions"),shuffle(ids));}if(state.rpart==="R5"){const ids=b.R5.items.filter(x=>x.topic_id===state.runit.R5).map(x=>x.id);setOrder(orderKey("R5headings"),shuffleDifferent(ids));}renderPractice()}
-function originalCurrent(){if(state.skill==="listening"){if(state.lpart==="L1")resetOrder(orderKey(state.l1Scope==="all"?"L1ALL":"L1"));else resetOrder(orderKey(state.lpart));}else{const prefix=orderKey("");Object.keys(state.orders).filter(k=>k.startsWith(prefix)).forEach(k=>delete state.orders[k]);save();}renderPractice()}
+function originalCurrent(){if(state.skill==="listening"){if(state.lpart==="L1")resetOrder(orderKey(l1OrderName()));else resetOrder(orderKey(state.lpart));}else{const prefix=orderKey("");Object.keys(state.orders).filter(k=>k.startsWith(prefix)).forEach(k=>delete state.orders[k]);save();}renderPractice()}
 function moveR23(id,delta){const items=bank().R23.sentences.filter(x=>x.topic_id===state.runit.R23),ids=items.map(x=>x.id),key=orderKey("R23"),ord=getOrder(key,ids),i=ord.indexOf(id),j=i+delta;if(i<0||j<0||j>=ord.length)return;[ord[i],ord[j]]=[ord[j],ord[i]];setOrder(key,ord);renderPractice()}
 function showAllKeys(){$$('.keybox').forEach(x=>x.classList.remove('hidden'))}
 
@@ -446,8 +688,8 @@ function renderAbout(){const b=bank();const onlineCount=packs.filter(p=>["online
 
 function bindDynamic(){}
 function render(){stop();applyViVisibility();$$('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.view===state.view));if(state.view==='practice')renderPractice();else if(state.view==='keycode')renderKeyCodeTrainer();else if(state.view==='voices')renderVoices();else if(state.view==='packs')renderPacks();else if(state.view==='progress')renderProgress();else renderAbout()}
-document.addEventListener('click',async e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.view){state.view=b.dataset.view;save();render();return}if(b.dataset.kcmode){state.kcMode=b.dataset.kcmode;state.kcCurrent=null;save();renderKeyCodeTrainer();return}if(b.dataset.skill){state.skill=b.dataset.skill;save();renderPractice();return}if(b.dataset.lpart){state.lpart=b.dataset.lpart;save();renderPractice();return}if(b.dataset.l1scope){state.l1Scope=b.dataset.l1scope;save();renderPractice();return}if(b.dataset.r1scope){state.r1Scope=b.dataset.r1scope;save();renderPractice();return}if(b.dataset.rmode){state.rmode=b.dataset.rmode;save();renderPractice();return}if(b.dataset.rpart){state.rpart=b.dataset.rpart;ensureReadingUnit();if(state.rpart==="R5")delete state.orders[orderKey("R5headings")];save();renderPractice();return}if(b.dataset.ppart){state.ppart=b.dataset.ppart;if(state.ppart==="part5"){const x=pItems()[0];if(x)delete state.orders[orderKey(`P5HEAD:${x.id}`)]}save();renderPractice();return}const a=b.dataset.action;if(a==='toggle-vi'){state.showVi=state.showVi===false?true:false;save();render();return}else if(a==='toggle')$(`#${CSS.escape(b.dataset.target)}`)?.classList.toggle('hidden');else if(a==='kc-answer')kcAnswer(b.dataset.code);else if(a==='kc-next')kcNewQuestion();else if(a==='kc-play'){const q=kcEnsureQuestion();if(q&&q.mode!=='code-key'){const item=KEY_CODE_ITEMS.find(x=>x.id===q.promptId);if(item){const text=q.mode==='level3'?(item.contexts[q.contextIdx||0]||item.contexts[0]):item.audio;await speakText(text,0)}}}else if(a==='kc-reset-stats'){if(confirm('Xóa điểm luyện KEY ↔ CODE?'))kcResetStats()}else if(a==='shuffle')shuffleCurrent();else if(a==='original')originalCurrent();else if(a==='check-l1-item')checkL1Item(b.dataset.id);else if(a==='check-l1-all')checkL1All();else if(a==='check-l2-item')checkL2Item(b.dataset.id);else if(a==='check-l2-all')checkL2All();else if(a==='check-l3-all')checkL3All();else if(a==='check-l4-all')checkL4All();else if(a==='check-r1-item')checkR1Item(b.dataset.id);else if(a==='check-r1-all')checkR1All();else if(a==='check-r23')checkR23();else if(a==='check-r4-item')checkR4Item(b.dataset.id);else if(a==='check-r4-all')checkR4All();else if(a==='check-r5-item')checkR5Item(b.dataset.id);else if(a==='check-r5-all')checkR5All();else if(a==='check-p1-item')checkP1Item(b.dataset.id);else if(a==='check-p1-all')checkP1All();else if(a==='check-p23-task')checkP23Task(b.dataset.id);else if(a==='check-p23-all')checkP23All();else if(a==='check-p4-item')checkP4Item(b.dataset.id);else if(a==='check-p4-all')checkP4All();else if(a==='check-p5-item')checkP5Item(b.dataset.id);else if(a==='check-p5-all')checkP5All();else if(a==='show-all-keys')showAllKeys();else if(a==='r23-up')moveR23(b.dataset.id,-1);else if(a==='r23-down')moveR23(b.dataset.id,1);else if(a==='p23-up')moveP23(b.dataset.task,b.dataset.id,-1);else if(a==='p23-down')moveP23(b.dataset.task,b.dataset.id,1);else if(a==='play-l1'){const x=findListeningL1Item(b.dataset.id);if(x)await speakSegments(x.script_segments||[])}else if(a==='play-l2'){const d=cset().parts.L2,x=d.speakers.find(z=>z.id===b.dataset.id);await speakText(x.script_text,Number(b.dataset.slot||0))}else if(a==='play-l3')await speakSegments(cset().parts.L3.script_segments||[],true);else if(a==='play-l4')await speakText(cset().parts.L4.script_text,1);else if(a==='play-wrong'){const x=listeningL1Items().find(x=>$(`[data-q="${CSS.escape(x.id)}"]`)?.classList.contains('wrong'));if(x)await speakSegments(x.script_segments||[]);else alert('Chưa có câu sai đã chấm.')}else if(a==='speak-r1'){const x=bank().R1.items.find(z=>z.id===b.dataset.id);await speakText(x.sentence_template.replace('___',x.answer))}else if(a==='speak-r4-passages'){const t=bank().R4.topics.find(x=>x.topic_id===state.runit.R4);await speakSegments(['A','B','C','D'].map((k,i)=>({speaker:i%2?'F':'M',text:`Person ${k}. ${t.passages_en[k]}`})))}else if(a==='speak-r5'){const x=bank().R5.items.find(z=>z.id===b.dataset.id);await speakText(x.practice_paragraph_en)}else if(a==='save-v'){const male=$('#male').value,female=$('#female').value;if(male&&female&&male===female){alert('Giọng Nam và Nữ phải là hai voice khác nhau để L3 đọc đúng Man/Woman.');return}vs.male=male;vs.female=female;vs.extra1=$('#extra1').value;vs.extra2=$('#extra2').value;vs.rate=Number($('#rate').value);vs.random=$('#random').value==='1';saveV();alert('Đã lưu giọng đọc. L3 luôn khóa đúng Man/Woman kể cả khi bật Random voice.')}else if(a==='reload-v')loadVoices();else if(a==='test-m'){stop();const t=speechToken;await speakOne('This is the selected male English voice for Aptis practice.',vuri($('#male').value),t)}else if(a==='test-f'){stop();const t=speechToken;await speakOne('This is the selected female English voice for Aptis practice.',vuri($('#female').value),t)}else if(a==='stop-audio')stop();else if(a==='refresh-online'){await refreshOnlinePacks(true,false)}else if(a==='use-pack'){state.packId=b.dataset.id;const p=cp();state.setId=p.sets?.[0]?.set_id||'';state.view='practice';save();render()}else if(a==='delete-pack'){const target=packs.find(x=>x.pack_id===b.dataset.id);if(target?.__pack_source!=="local"){alert('Chỉ xóa được pack cá nhân đã Import. Pack tích hợp/online được quản lý bằng manifest GitHub.');return}userPacks=userPacks.filter(x=>x.pack_id!==b.dataset.id);saveUsers();if(state.packId===b.dataset.id){state.packId=DEFAULT.pack_id;state.setId=DEFAULT.sets[0].set_id;save()}rebuildPacks();renderPacks()}else if(a==='clear-progress'){if(confirm('Xóa toàn bộ lịch sử điểm?')){state.attempts={};save();renderProgress()}}});
-document.addEventListener('change',async e=>{if(e.target.id==='kcFamilySel'){state.kcFamily=e.target.value;state.kcCurrent=null;state.kcLastId='';save();renderKeyCodeTrainer()}else if(e.target.id==='kcSmart'){state.kcSmart=e.target.checked;state.kcCurrent=null;save();renderKeyCodeTrainer()}else if(e.target.id==='packSel'){state.packId=e.target.value;const p=cp();state.setId=p.sets?.[0]?.set_id||'';save();renderPractice()}else if(e.target.id==='setSel'){state.setId=e.target.value;const s=cset();if(s?.reading_refs){state.runit=Object.assign({},state.runit,s.reading_refs)}save();renderPractice()}else if(e.target.id==='runitSel'){state.runit=state.runit||{};state.runit[state.rpart]=e.target.value;if(state.rpart==="R5")delete state.orders[orderKey("R5headings")];save();renderPractice()}else if(e.target.id==='ptopicSel'){state.ptopic=e.target.value;if(state.ppart==="part5"){const x=pItems()[0];if(x)delete state.orders[orderKey(`P5HEAD:${x.id}`)]}save();renderPractice()}else if(e.target.id==='packFile'){const f=e.target.files?.[0];if(!f)return;try{const p=validatePack(JSON.parse(await f.text()));const protectedPack=packs.find(x=>x.pack_id===p.pack_id&&x.__pack_source!=="local");if(protectedPack)throw new Error(`pack_id ${p.pack_id} đã thuộc pack ${packSourceLabel(protectedPack)}. Hãy đổi pack_id nếu muốn giữ một bản cá nhân riêng.`);const i=userPacks.findIndex(x=>x.pack_id===p.pack_id);if(i>=0){if(!confirm(`Pack ${p.pack_id} đã được import trước đó. Ghi đè bản cá nhân?`)){e.target.value='';return}userPacks[i]=p}else userPacks.push(p);saveUsers();rebuildPacks();alert(`Đã import ${p.title||p.pack_id}. Pack cá nhân chỉ lưu trên trình duyệt này.`);renderPacks()}catch(err){alert(err.message)}finally{e.target.value=''}}});
+document.addEventListener('click',async e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.view){state.view=b.dataset.view;save();render();return}if(b.dataset.kcmode){state.kcMode=b.dataset.kcmode;state.kcCurrent=null;save();renderKeyCodeTrainer();return}if(b.dataset.skill){state.skill=b.dataset.skill;save();renderPractice();return}if(b.dataset.lpart){state.lpart=b.dataset.lpart;save();renderPractice();return}if(b.dataset.l1mode){state.l1StudyMode=b.dataset.l1mode;if(state.l1StudyMode==="check")ensureL1CheckSet(false);save();renderPractice();return}if(b.dataset.l1scope){state.l1Scope=b.dataset.l1scope;if(state.l1StudyMode==="check")state.l1StudyMode="source";save();renderPractice();return}if(b.dataset.r1scope){state.r1Scope=b.dataset.r1scope;save();renderPractice();return}if(b.dataset.rmode){state.rmode=b.dataset.rmode;save();renderPractice();return}if(b.dataset.rpart){state.rpart=b.dataset.rpart;ensureReadingUnit();if(state.rpart==="R5")delete state.orders[orderKey("R5headings")];save();renderPractice();return}if(b.dataset.ppart){state.ppart=b.dataset.ppart;if(state.ppart==="part5"){const x=pItems()[0];if(x)delete state.orders[orderKey(`P5HEAD:${x.id}`)]}save();renderPractice();return}const a=b.dataset.action;if(a==='toggle-vi'){state.showVi=state.showVi===false?true:false;save();render();return}else if(a==='new-l1-check'){newL1CheckSet();state.l1StudyMode='check';save();renderPractice();return}else if(a==='new-l1-learn'){state.l1LearnRound=(Number(state.l1LearnRound)||1)+1;save();renderPractice();return}else if(a==='toggle')$(`#${CSS.escape(b.dataset.target)}`)?.classList.toggle('hidden');else if(a==='kc-answer')kcAnswer(b.dataset.code);else if(a==='kc-next')kcNewQuestion();else if(a==='kc-play'){const q=kcEnsureQuestion();if(q&&q.mode!=='code-key'){const item=KEY_CODE_ITEMS.find(x=>x.id===q.promptId);if(item){const text=q.mode==='level3'?(item.contexts[q.contextIdx||0]||item.contexts[0]):item.audio;await speakText(text,0)}}}else if(a==='kc-reset-stats'){if(confirm('Xóa điểm luyện KEY ↔ CODE?'))kcResetStats()}else if(a==='shuffle')shuffleCurrent();else if(a==='original')originalCurrent();else if(a==='check-l1-item')checkL1Item(b.dataset.id);else if(a==='check-l1-all')checkL1All();else if(a==='check-l2-item')checkL2Item(b.dataset.id);else if(a==='check-l2-all')checkL2All();else if(a==='check-l3-all')checkL3All();else if(a==='check-l4-all')checkL4All();else if(a==='check-r1-item')checkR1Item(b.dataset.id);else if(a==='check-r1-all')checkR1All();else if(a==='check-r23')checkR23();else if(a==='check-r4-item')checkR4Item(b.dataset.id);else if(a==='check-r4-all')checkR4All();else if(a==='check-r5-item')checkR5Item(b.dataset.id);else if(a==='check-r5-all')checkR5All();else if(a==='check-p1-item')checkP1Item(b.dataset.id);else if(a==='check-p1-all')checkP1All();else if(a==='check-p23-task')checkP23Task(b.dataset.id);else if(a==='check-p23-all')checkP23All();else if(a==='check-p4-item')checkP4Item(b.dataset.id);else if(a==='check-p4-all')checkP4All();else if(a==='check-p5-item')checkP5Item(b.dataset.id);else if(a==='check-p5-all')checkP5All();else if(a==='show-all-keys')showAllKeys();else if(a==='r23-up')moveR23(b.dataset.id,-1);else if(a==='r23-down')moveR23(b.dataset.id,1);else if(a==='p23-up')moveP23(b.dataset.task,b.dataset.id,-1);else if(a==='p23-down')moveP23(b.dataset.task,b.dataset.id,1);else if(a==='play-l1'){const x=findListeningL1Item(b.dataset.id);if(x)await speakSegments(l1GeneratedSegments(x,state.l1StudyMode))}else if(a==='play-l2'){const d=cset().parts.L2,x=d.speakers.find(z=>z.id===b.dataset.id);await speakText(x.script_text,Number(b.dataset.slot||0))}else if(a==='play-l3')await speakSegments(cset().parts.L3.script_segments||[],true);else if(a==='play-l4')await speakText(cset().parts.L4.script_text,1);else if(a==='play-wrong'){const x=listeningL1Items().find(x=>$(`[data-q="${CSS.escape(x.id)}"]`)?.classList.contains('wrong'));if(x)await speakSegments(l1GeneratedSegments(x,state.l1StudyMode));else alert('Chưa có câu sai đã chấm.')}else if(a==='speak-r1'){const x=bank().R1.items.find(z=>z.id===b.dataset.id);await speakText(x.sentence_template.replace('___',x.answer))}else if(a==='speak-r4-passages'){const t=bank().R4.topics.find(x=>x.topic_id===state.runit.R4);await speakSegments(['A','B','C','D'].map((k,i)=>({speaker:i%2?'F':'M',text:`Person ${k}. ${t.passages_en[k]}`})))}else if(a==='speak-r5'){const x=bank().R5.items.find(z=>z.id===b.dataset.id);await speakText(x.practice_paragraph_en)}else if(a==='save-v'){const male=$('#male').value,female=$('#female').value;if(male&&female&&male===female){alert('Giọng Nam và Nữ phải là hai voice khác nhau để L3 đọc đúng Man/Woman.');return}vs.male=male;vs.female=female;vs.extra1=$('#extra1').value;vs.extra2=$('#extra2').value;vs.rate=Number($('#rate').value);vs.random=$('#random').value==='1';saveV();alert('Đã lưu giọng đọc. L3 luôn khóa đúng Man/Woman kể cả khi bật Random voice.')}else if(a==='reload-v')loadVoices();else if(a==='test-m'){stop();const t=speechToken;await speakOne('This is the selected male English voice for Aptis practice.',vuri($('#male').value),t)}else if(a==='test-f'){stop();const t=speechToken;await speakOne('This is the selected female English voice for Aptis practice.',vuri($('#female').value),t)}else if(a==='stop-audio')stop();else if(a==='refresh-online'){await refreshOnlinePacks(true,false)}else if(a==='use-pack'){state.packId=b.dataset.id;const p=cp();state.setId=p.sets?.[0]?.set_id||'';state.view='practice';save();render()}else if(a==='delete-pack'){const target=packs.find(x=>x.pack_id===b.dataset.id);if(target?.__pack_source!=="local"){alert('Chỉ xóa được pack cá nhân đã Import. Pack tích hợp/online được quản lý bằng manifest GitHub.');return}userPacks=userPacks.filter(x=>x.pack_id!==b.dataset.id);saveUsers();if(state.packId===b.dataset.id){state.packId=DEFAULT.pack_id;state.setId=DEFAULT.sets[0].set_id;save()}rebuildPacks();renderPacks()}else if(a==='clear-progress'){if(confirm('Xóa toàn bộ lịch sử điểm?')){state.attempts={};save();renderProgress()}}});
+document.addEventListener('change',async e=>{if(e.target.id==='kcFamilySel'){state.kcFamily=e.target.value;state.kcCurrent=null;state.kcLastId='';save();renderKeyCodeTrainer()}else if(e.target.id==='kcSmart'){state.kcSmart=e.target.checked;state.kcCurrent=null;save();renderKeyCodeTrainer()}else if(e.target.id==='packSel'){state.packId=e.target.value;const p=cp();state.setId=p.sets?.[0]?.set_id||'';save();renderPractice()}else if(e.target.id==='setSel'){if(e.target.value==='__L1_CHECK__'){state.l1StudyMode='check';ensureL1CheckSet(false)}else if(e.target.value==='__L1_FULL__'){state.l1StudyMode=state.l1StudyMode==='check'?'source':state.l1StudyMode;state.l1Scope='all'}else{if(state.l1StudyMode==='check')state.l1StudyMode='source';state.l1Scope='current';state.setId=e.target.value;const s=cset();if(s?.reading_refs){state.runit=Object.assign({},state.runit,s.reading_refs)}}save();renderPractice()}else if(e.target.id==='runitSel'){state.runit=state.runit||{};if(state.rpart==='R1'&&e.target.value==='__R1_FULL__'){state.r1Scope='all'}else{if(state.rpart==='R1')state.r1Scope='current';state.runit[state.rpart]=e.target.value;if(state.rpart==="R5")delete state.orders[orderKey("R5headings")]}save();renderPractice()}else if(e.target.id==='ptopicSel'){state.ptopic=e.target.value;if(state.ppart==="part5"){const x=pItems()[0];if(x)delete state.orders[orderKey(`P5HEAD:${x.id}`)]}save();renderPractice()}else if(e.target.id==='packFile'){const f=e.target.files?.[0];if(!f)return;try{const p=validatePack(JSON.parse(await f.text()));const protectedPack=packs.find(x=>x.pack_id===p.pack_id&&x.__pack_source!=="local");if(protectedPack)throw new Error(`pack_id ${p.pack_id} đã thuộc pack ${packSourceLabel(protectedPack)}. Hãy đổi pack_id nếu muốn giữ một bản cá nhân riêng.`);const i=userPacks.findIndex(x=>x.pack_id===p.pack_id);if(i>=0){if(!confirm(`Pack ${p.pack_id} đã được import trước đó. Ghi đè bản cá nhân?`)){e.target.value='';return}userPacks[i]=p}else userPacks.push(p);saveUsers();rebuildPacks();alert(`Đã import ${p.title||p.pack_id}. Pack cá nhân chỉ lưu trên trình duyệt này.`);renderPacks()}catch(err){alert(err.message)}finally{e.target.value=''}}});
 if('speechSynthesis'in window){speechSynthesis.onvoiceschanged=loadVoices;loadVoices()}
 render();
 setTimeout(()=>refreshOnlinePacks(false,true),0);
