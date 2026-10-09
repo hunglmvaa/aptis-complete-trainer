@@ -60,3 +60,17 @@
 .l1-modebar .full-btn{border-color:#c98b18!important}
 .full-aware-select option[value="__L1_CHECK__"]{font-weight:950}
 @media(max-width:620px){.l1-modebar .btn{flex:1 1 auto}.l1-modebar .help{flex-basis:100%}}
+
+/* V4.0 PATCH: previous/next lessons, previous/next question, Listening bilingual panels */
+.lesson-nav,.question-nav{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px 14px;border:1px solid #cddded;border-radius:12px;background:#f6faff;margin:12px 0}
+.lesson-nav-meta{min-width:0;display:flex;flex-direction:column;gap:3px;line-height:1.35}
+.lesson-nav-meta b{color:var(--navy);font-size:.87rem}.lesson-nav-meta span{color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}
+.lesson-nav-buttons{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.lesson-nav-buttons .btn{min-width:110px}.lesson-nav-buttons .btn:disabled{opacity:.4;cursor:not-allowed}
+.question-nav{background:#fff;box-shadow:0 2px 8px rgba(23,61,102,.05)}.question-nav-count{font-weight:900;color:var(--navy);font-size:.88rem}
+.question-nav-active{outline:2px solid #8fb5d6;outline-offset:3px;scroll-margin-top:12px}
+.listening-translation-actions{margin:8px 0}.listening-vi-output{margin:10px 0;padding:12px;background:#f3f8ff;border:1px solid #cadcec;border-radius:10px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.listening-vi-output[hidden]{display:none!important}.listening-vi-output .vi-head{display:flex;align-items:center;gap:8px;justify-content:space-between;flex-wrap:wrap;margin-bottom:8px;font-weight:900;color:var(--navy)}
+.listening-vi-output .vi-row{padding:8px 0;border-top:1px dashed #c7d9eb}.listening-vi-output .vi-row:first-of-type{border-top:0}.listening-vi-output .vi-en{font-size:.84rem;color:#5c6c7a}.listening-vi-output .vi-translated{margin-top:3px;color:#174f83;font-weight:650}
+.listening-translation-actions button:disabled{opacity:.55;cursor:progress}.hide-vi .listening-vi-output{display:none!important}
+@media(max-width:680px){.lesson-nav,.question-nav{align-items:stretch;padding:10px}.lesson-nav-meta{flex-basis:100%}.lesson-nav-buttons{display:grid;grid-template-columns:1fr 1fr;width:100%}.lesson-nav-buttons .btn{min-width:0;padding:9px 6px;white-space:normal}}

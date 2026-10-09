@@ -1,0 +1,20 @@
+APTIS COMPLETE TRAINER - V4.0 PATCH (10-10-2026)
+==================================================
+
+CHUC NANG MOI
+- Nut "Bai truoc / Bai tiep theo" o dau va cuoi bai cho tat ca Listening L1-L4, Reading SOURCE R1/R2-3/R4/R5, Reading PRACTICE R1/R2-3/R4/R5.
+- Listening L1: dieu huong qua 6 bo Canonical, L1-CHECK cho phep tao bo CHECK moi, FULL L1 giu 143 cau tren 1 trang.
+- Nut "Cau truoc / Cau tiep" cho bai nhieu cau (chi cuon toi cau, khong mat dap an dang chon).
+- L1/L2/L3/L4: nut "Dich day du bai nghe + cau hoi": dich hoi thoai, transcript, cau hoi va cac phuong an.
+- Doi voi Chrome desktop (du dieu kien), uu tien Built-in Translator API; khi khong ho tro, fallback MyMemory online.
+- Luu ban dich da xem trong localStorage; lan sau mo lai se hien ban dich da luu (neu bat nghia Viet).
+- Nut "Xuat ban dich VI" tai Listening: tai file listening_vi_data.js. Thay file tuong ung tren GitHub de dong bo cac ban dich da xuat len moi thiet bi.
+- Bang SOURCE, dap an, quy tac cham va du lieu Reading cu khong bi chinh sua.
+
+LUU Y
+- Ban dich moi la DERIVED_MACHINE_TRANSLATION, KHONG phai transcript dich chinh thuc cua de APTIS.
+- Patch khong kem ban dich tinh day du cua tat ca listening sets (do chua co ban dich da duoc xac minh).
+- Dich moi can Internet hoac Chrome Built-in Translator co ho tro; dich da luu co the xem offline.
+- MyMemory mien phi co gioi han; neu het han muc, thu Chrome desktop hoac thuc hien vao ngay khac.
+- Chrome Built-in Translator khong kha dung tren tat ca browser/thiet bi, va can HTTPS de su dung API.
+- File index_standalone.html da duoc cap nhat rieng (bao gom app.js + data + translator).
