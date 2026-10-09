@@ -74,3 +74,64 @@
 .listening-vi-output .vi-row{padding:8px 0;border-top:1px dashed #c7d9eb}.listening-vi-output .vi-row:first-of-type{border-top:0}.listening-vi-output .vi-en{font-size:.84rem;color:#5c6c7a}.listening-vi-output .vi-translated{margin-top:3px;color:#174f83;font-weight:650}
 .listening-translation-actions button:disabled{opacity:.55;cursor:progress}.hide-vi .listening-vi-output{display:none!important}
 @media(max-width:680px){.lesson-nav,.question-nav{align-items:stretch;padding:10px}.lesson-nav-meta{flex-basis:100%}.lesson-nav-buttons{display:grid;grid-template-columns:1fr 1fr;width:100%}.lesson-nav-buttons .btn{min-width:0;padding:9px 6px;white-space:normal}}
+
+
+/* V4.1: Responsive mobile, remove per-question navigation, bilingual choices. */
+.question-nav,.question-nav-active{display:none!important}
+html,body{max-width:100%;overflow-x:clip}
+#app, main,.topbar,.card,.head,.toolbar,.toolbar>*{min-width:0}
+#app,main,.card,.topbar,.lesson-nav,.note,.script,.passage,.lead{max-width:100%}
+.card,.head,.qtext,.option-en,.option-vi,.bi-en,.bi-vi,.lesson-nav-meta,.reorder-text,.note,.script,.passage,.lead{overflow-wrap:anywhere;word-break:normal}
+.select,select,.field,.field select{min-width:0;max-width:100%}
+.toolbar .select{flex:0 1 auto;min-width:0}
+.option.bilingual-option{align-items:flex-start}
+.option.bilingual-option input{flex:0 0 auto;margin-top:5px}
+.option-text-stack{min-width:0;display:flex;flex-direction:column;flex:1 1 auto;gap:3px}
+.option-en{line-height:1.45;overflow-wrap:anywhere}
+.option-vi{display:block;font-size:.88rem;line-height:1.46;color:#366181;overflow-wrap:anywhere}
+.option-vi[data-vi-state="pending"]{font-style:italic;color:#738597;font-size:.78rem}
+.option-vi[data-vi-state="error"]{color:#8c7460;font-size:.78rem}
+.l2-option-meanings{border:1px dashed var(--line);border-radius:10px;padding:9px 11px;margin-top:8px;background:#f8fbff}
+.l2-option-hint{font-weight:850;font-size:.81rem;margin-bottom:6px;color:var(--navy)}
+.l2-option-row{padding:7px 0;border-top:1px dashed #d8e4f0;display:flex;flex-direction:column;gap:2px}
+.l2-option-row .option-en{font-weight:700;font-size:.88rem}
+.l2-option-row .option-vi{font-size:.82rem}
+.hide-vi .l2-option-meanings{display:none!important}
+@media(max-width:680px){
+  body{font-size:15px}
+  .topbar{width:100%;max-width:100%;padding:8px 9px;gap:7px}
+  .brand{width:100%;min-width:0;white-space:normal}
+  .brand strong{line-height:1.25;font-size:1.07rem;white-space:normal;overflow-wrap:anywhere}
+  .brand span{font-size:.7rem;white-space:normal;line-height:1.35}
+  .navscroll{width:100%;max-width:calc(100vw - 18px);overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
+  .navbtn{flex:0 0 auto;font-size:.9rem;padding:8px 11px}
+  main{width:100%;min-width:0;padding:8px 7px 76px}
+  .card{width:100%;min-width:0;padding:11px 9px;margin-bottom:10px}
+  .card .toolbar.space{width:100%;min-width:0;display:flex;flex-direction:column;align-items:stretch;gap:8px}
+  .card .toolbar.space>.toolbar{width:100%;min-width:0;max-width:100%;display:flex;flex-wrap:wrap}
+  .card .toolbar.space>.toolbar>.select,.card .toolbar.space>.toolbar>select{width:100%;flex:1 1 100%;max-width:100%;min-width:0}
+  .card .toolbar.space>.toolbar>.btn{flex:1 1 auto}
+  .card .toolbar.space>.select{width:100%;min-width:0;max-width:100%}
+  .select,select{font-size:14px;min-width:0;max-width:100%}
+  .tabs,.skilltabs{max-width:100%;min-width:0;gap:5px}
+  .tab,.skilltab{font-size:.91rem;padding:8px 9px;white-space:normal}
+  .qhead,.question,.question>*{min-width:0;max-width:100%}
+  .qhead>div{min-width:0;max-width:100%}
+  .options,.option{max-width:100%;min-width:0}
+  .option{padding:8px;gap:7px}
+  .reorder-row{min-width:0;max-width:100%;grid-template-columns:32px minmax(0,1fr)}
+  .reorder-row .reorder-text{min-width:0}
+  .movegroup{min-width:0;max-width:100%;flex-wrap:wrap}
+  .lesson-nav{max-width:100%;margin:8px 0}
+  .lesson-nav-meta{width:100%}
+  .lesson-nav-buttons{width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lesson-nav-buttons .btn{min-width:0;font-size:.86rem;padding:8px 5px}
+  .sticky-actions{width:100%;max-width:100%;bottom:4px}
+  .sticky-actions .toolbar{width:100%;max-width:100%;min-width:0;flex-wrap:wrap}
+  .sticky-actions .btn{flex:1 1 auto}
+  .heading-pool{max-width:100%}
+}
+
+/* V4.1: keep A/B/C markers unbroken beside bilingual answers */
+label.option.bilingual-option > b{white-space:nowrap;flex:0 0 22px;min-width:22px;text-align:left;overflow-wrap:normal}
+label.option.bilingual-option > .option-text-stack{min-width:0;flex:1 1 0}

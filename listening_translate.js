@@ -145,5 +145,5 @@ async function translatePanel(button){
     button.textContent='↻ Thử dịch lại';
   }finally{button.disabled=false}
 }
-window.APTIS_LISTENING_TRANSLATE={enhance,translatePanel,exportStatic};
+window.APTIS_LISTENING_TRANSLATE={enhance,translatePanel,exportStatic,cached,saveTranslation,translateText};
 })();

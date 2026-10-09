@@ -1,0 +1,28 @@
+APTIS COMPLETE TRAINER V4.1 · MOBILE + ANSWER VI
+================================================
+
+CHINH SUA
+1) Loai bo toan bo nut "Cau truoc / Cau tiep" trong Listening va Reading.
+2) GIU nguyen nut "Bai truoc / Bai tiep theo" o dau va cuoi moi bai.
+3) Listening L1 va L4: hien nghia VI ngay duoi tung dap an A/B/C, bao gom dap an sai.
+4) Listening L2: hien danh sach 6 lua chon Anh/Viet ngay duoi o chon, va Viet trong dropdown sau khi co ban dich.
+5) Listening L3: hien nghia VI cho statement ngay trong cau hoi; Man/Woman/Both co nghia Nam/Nu/Ca hai.
+6) Reading R1/PRACTICE: bo sung nghia VI cho lua chon khi du lieu dich cu bi thieu; Reading R2-R5 giu ban dich hien co.
+7) Tu dong dung nghia VI co san (SOURCE/tu dien/tap du lieu); cho noi dung chua co, web se dich online va luu cache.
+8) Nut "Dich dap an con thieu" thu lai neu dich truc tuyen bi gioi han/loi.
+9) CSS responsive: khong tran trang tai 360/390/428 px, thu gon o chon de, tabs, toolbar, cac option; nav chinh cuon ngang rieng.
+10) Khong sua cau hoi goc, answer_index, chuc nang shuffle, cham diem va du lieu tien do.
+
+LUU Y VE BAN DICH
+- Khong phai tat ca phuong an deu co ban dich da duoc bien tap/tich hop san offline. App hien nghia co san ngay,
+  tu dong dich cac phuong an con thieu qua MyMemory khi co mang, luu cache, va cho phep xuat listening_vi_data.js.
+- Dich may co the sai, dich online co gioi han luot/Internet, va goi van ban toi dich vu ben thu ba.
+- Neu khong co mang, phuong an chua co trong du lieu se hien thong bao khong dich duoc (khong tu doan nghia).
+- Chi cap nhat cac file trong patch; KHONG ghi de listening_vi_data.js da duoc nguoi dung xuat.
+- Banner "V3.5" trong ten bo du lieu la version source pack cu va KHONG phai phien ban web.
+
+TEST
+- Chromium, kich thuoc viewport 360/390/428/768/1200: khong con tran ngang, cac man L1-L4, R1/R23/PRACTICE load on.
+- Kiem thu chon radio dap an va cham diem Listening L1/L4 van dung.
+- Kiem thu dich dung mo phong: nghia cua dap an L4 hien va Listening L2/L3 co dong nghia VI.
+- Chua xac minh API dich truc tuyen thuc te tren trinh duyet dien thoai cua nguoi dung.
