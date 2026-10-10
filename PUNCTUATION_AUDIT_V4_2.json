@@ -1,0 +1,4828 @@
+{
+  "version": "V4.2",
+  "date": "2026-10-10",
+  "changes_total_across_files": 639,
+  "changes_unique_id_field_text": 318,
+  "by_file": {
+    "default_data.js": 495,
+    "l1_canonical_data.js": 27,
+    "l2_key_data.js": 8,
+    "APTIS_COMPLETE_DATA_V3_2.json": 44,
+    "packs/LISTENING_PACK_05_06_V3_2.json": 26,
+    "packs/LISTENING_PACK_03_04_V3_2.json": 39
+  },
+  "changes": [
+    {
+      "file": "default_data.js",
+      "id": "L1_Q001",
+      "field": "parts.L1.options[1]",
+      "before": "1.50 pound",
+      "after": "1.50 pound."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[0]",
+      "before": "She walks",
+      "after": "She walks."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[1]",
+      "before": "She drives",
+      "after": "She drives."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[0]",
+      "before": "She works irregular time",
+      "after": "She works irregular time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[1]",
+      "before": "She does not have a high salary",
+      "after": "She does not have a high salary."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[2]",
+      "before": "She has no fixed workplace",
+      "after": "She has no fixed workplace."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Continuity is important",
+      "after": "Continuity is important."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự liên tục là quan trọng",
+      "after": "Sự liên tục là quan trọng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Job security cannot be guaranteed",
+      "after": "Job security cannot be guaranteed."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự ổn định công việc không thể được đảm bảo",
+      "after": "Sự ổn định công việc không thể được đảm bảo."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Job satisfaction is an important motivator",
+      "after": "Job satisfaction is an important motivator."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự hài lòng trong công việc là một động lực quan trọng",
+      "after": "Sự hài lòng trong công việc là một động lực quan trọng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Technology is good for the economy",
+      "after": "Technology is good for the economy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Công nghệ tốt cho nền kinh tế",
+      "after": "Công nghệ tốt cho nền kinh tế."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T01_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "He wasn't ready to start higher education",
+      "after": "He wasn't ready to start higher education."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T01_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Anh ấy chưa sẵn sàng để bắt đầu học đại học",
+      "after": "Anh ấy chưa sẵn sàng để bắt đầu học đại học."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T01_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "How to be more independent",
+      "after": "How to be more independent."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T01_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Cách để trở nên tự lập hơn",
+      "after": "Cách để trở nên tự lập hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[0]",
+      "before": "The products are delivered",
+      "after": "The products are delivered."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[1]",
+      "before": "It is cheaper",
+      "after": "It is cheaper."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[2]",
+      "before": "It saves time",
+      "after": "It saves time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[3]",
+      "before": "There are more choices",
+      "after": "There are more choices."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SA",
+      "field": "parts.L2.speakers.answer",
+      "before": "The products are delivered",
+      "after": "The products are delivered."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SA",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Sản phẩm được giao đến",
+      "after": "Sản phẩm được giao đến."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SB",
+      "field": "parts.L2.speakers.answer",
+      "before": "It is cheaper",
+      "after": "It is cheaper."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SB",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Nó rẻ hơn",
+      "after": "Nó rẻ hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SC",
+      "field": "parts.L2.speakers.answer",
+      "before": "It saves time",
+      "after": "It saves time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SC",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Nó tiết kiệm thời gian",
+      "after": "Nó tiết kiệm thời gian."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SD",
+      "field": "parts.L2.speakers.answer",
+      "before": "There are more choices",
+      "after": "There are more choices."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SD",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Có nhiều lựa chọn hơn",
+      "after": "Có nhiều lựa chọn hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "People share similar ideas about beauty",
+      "after": "People share similar ideas about beauty."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Mọi người có những quan điểm tương tự nhau về vẻ đẹp",
+      "after": "Mọi người có những quan điểm tương tự nhau về vẻ đẹp."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Ideas about beauty change over time",
+      "after": "Ideas about beauty change over time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các quan điểm về vẻ đẹp thay đổi theo thời gian",
+      "after": "Các quan điểm về vẻ đẹp thay đổi theo thời gian."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Beauty can be found in unlikely places",
+      "after": "Beauty can be found in unlikely places."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Vẻ đẹp có thể được tìm thấy ở những nơi khó ngờ tới",
+      "after": "Vẻ đẹp có thể được tìm thấy ở những nơi khó ngờ tới."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Traditional ideas of beauty are going to change",
+      "after": "Traditional ideas of beauty are going to change."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Những quan niệm truyền thống về vẻ đẹp sẽ thay đổi",
+      "after": "Những quan niệm truyền thống về vẻ đẹp sẽ thay đổi."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T02_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It uses simple language to describe complex ideas",
+      "after": "It uses simple language to describe complex ideas."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T02_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó sử dụng ngôn ngữ đơn giản để mô tả những ý tưởng phức tạp",
+      "after": "Nó sử dụng ngôn ngữ đơn giản để mô tả những ý tưởng phức tạp."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T02_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It is similar to the previous book about the scientist",
+      "after": "It is similar to the previous book about the scientist."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T02_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó tương tự với cuốn sách trước đây về nhà khoa học đó",
+      "after": "Nó tương tự với cuốn sách trước đây về nhà khoa học đó."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[0]",
+      "before": "driving a car is his dream",
+      "after": "driving a car is his dream."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[1]",
+      "before": "he hates public transport",
+      "after": "he hates public transport."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[2]",
+      "before": "he has to drive to work",
+      "after": "he has to drive to work."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[0]",
+      "before": "He was good at his job",
+      "after": "He was good at his job."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[1]",
+      "before": "He paid her a lot",
+      "after": "He paid her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[2]",
+      "before": "He taught her a lot",
+      "after": "He taught her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[0]",
+      "before": "They look like each other",
+      "after": "They look like each other."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[1]",
+      "before": "They have similar interests",
+      "after": "They have similar interests."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[2]",
+      "before": "They have similar characteristics",
+      "after": "They have similar characteristics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[0]",
+      "before": "They look for food reserves",
+      "after": "They look for food reserves."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[1]",
+      "before": "They stay in groups for protection",
+      "after": "They stay in groups for protection."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[2]",
+      "before": "They migrate to other regions",
+      "after": "They migrate to other regions."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Arts are only for few privileged",
+      "after": "Arts are only for few privileged."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Nghệ thuật chỉ dành cho một số ít người có đặc quyền",
+      "after": "Nghệ thuật chỉ dành cho một số ít người có đặc quyền."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "The government should invest more in arts",
+      "after": "The government should invest more in arts."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Chính phủ nên đầu tư nhiều hơn vào nghệ thuật",
+      "after": "Chính phủ nên đầu tư nhiều hơn vào nghệ thuật."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Children should be exposed to art early",
+      "after": "Children should be exposed to art early."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trẻ em nên được tiếp xúc với nghệ thuật từ sớm",
+      "after": "Trẻ em nên được tiếp xúc với nghệ thuật từ sớm."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "In the future, art will be more accessible",
+      "after": "In the future, art will be more accessible."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trong tương lai, nghệ thuật sẽ dễ tiếp cận hơn",
+      "after": "Trong tương lai, nghệ thuật sẽ dễ tiếp cận hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T03_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "They can cause harmful effects",
+      "after": "They can cause harmful effects."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T03_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Chúng có thể gây ra những tác động có hại",
+      "after": "Chúng có thể gây ra những tác động có hại."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T03_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It helps balance students' lives",
+      "after": "It helps balance students' lives."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T03_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó giúp cân bằng cuộc sống của học sinh",
+      "after": "Nó giúp cân bằng cuộc sống của học sinh."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[0]",
+      "before": "He gets a higher salary",
+      "after": "He gets a higher salary."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[1]",
+      "before": "He enjoys the weather here",
+      "after": "He enjoys the weather here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[2]",
+      "before": "He enjoys his job here",
+      "after": "He enjoys his job here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Auditions are most important",
+      "after": "Auditions are most important."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các buổi thử giọng là quan trọng nhất",
+      "after": "Các buổi thử giọng là quan trọng nhất."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Actors response best to strong scripts",
+      "after": "Actors response best to strong scripts."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên phản ứng tốt nhất với những kịch bản có nội dung chất lượng",
+      "after": "Diễn viên phản ứng tốt nhất với những kịch bản có nội dung chất lượng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Theater acting and screen acting are different",
+      "after": "Theater acting and screen acting are different."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn xuất trên sân khấu và diễn xuất trên màn ảnh là khác nhau",
+      "after": "Diễn xuất trên sân khấu và diễn xuất trên màn ảnh là khác nhau."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Actors should be praised as much as possible",
+      "after": "Actors should be praised as much as possible."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên nên được khen ngợi càng nhiều càng tốt",
+      "after": "Diễn viên nên được khen ngợi càng nhiều càng tốt."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T04_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It has the consistent quality throughout",
+      "after": "It has the consistent quality throughout."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T04_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó có chất lượng ổn định xuyên suốt",
+      "after": "Nó có chất lượng ổn định xuyên suốt."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T04_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Viewer habits influence the way that series are made",
+      "after": "Viewer habits influence the way that series are made."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T04_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Thói quen của người xem ảnh hưởng đến cách các bộ phim truyền hình dài tập được sản xuất",
+      "after": "Thói quen của người xem ảnh hưởng đến cách các bộ phim truyền hình dài tập được sản xuất."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q117",
+      "field": "parts.L1.options[0]",
+      "before": "There are no flight staff",
+      "after": "There are no flight staff."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Auditions are the most important of casting",
+      "after": "Auditions are the most important of casting."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các buổi thử vai là phần quan trọng nhất trong quá trình tuyển chọn diễn viên",
+      "after": "Các buổi thử vai là phần quan trọng nhất trong quá trình tuyển chọn diễn viên."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Actors respond best to a strong script",
+      "after": "Actors respond best to a strong script."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên phản ứng tốt nhất với một kịch bản mạnh",
+      "after": "Diễn viên phản ứng tốt nhất với một kịch bản mạnh."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Theatre acting and movie acting require different skills",
+      "after": "Theatre acting and movie acting require different skills."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn xuất sân khấu và diễn xuất điện ảnh đòi hỏi những kỹ năng khác nhau",
+      "after": "Diễn xuất sân khấu và diễn xuất điện ảnh đòi hỏi những kỹ năng khác nhau."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Actors need to be praised",
+      "after": "Actors need to be praised."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên cần được khen ngợi",
+      "after": "Diễn viên cần được khen ngợi."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T05_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "They have both been overlooked by academics",
+      "after": "They have both been overlooked by academics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T05_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Cả hai người đều đã bị các học giả bỏ qua / không được giới học thuật chú ý đúng mức",
+      "after": "Cả hai người đều đã bị các học giả bỏ qua / không được giới học thuật chú ý đúng mức."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T05_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "The meanings of their works are not always easy to be identified",
+      "after": "The meanings of their works are not always easy to be identified."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T05_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Ý nghĩa trong các tác phẩm của họ không phải lúc nào cũng dễ xác định",
+      "after": "Ý nghĩa trong các tác phẩm của họ không phải lúc nào cũng dễ xác định."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q147",
+      "field": "parts.L1.question_en",
+      "before": "How much does a bus card cost?*",
+      "after": "How much does a bus card cost?"
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Future generations fail to cope with technology information",
+      "after": "Future generations fail to cope with technology information."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các thế hệ tương lai không thể thích ứng tốt với thông tin công nghệ",
+      "after": "Các thế hệ tương lai không thể thích ứng tốt với thông tin công nghệ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Technology revolution is good for the economy",
+      "after": "Technology revolution is good for the economy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Cuộc cách mạng công nghệ tốt cho nền kinh tế",
+      "after": "Cuộc cách mạng công nghệ tốt cho nền kinh tế."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "No computer is superior to the human brain",
+      "after": "No computer is superior to the human brain."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không có máy tính nào vượt trội hơn bộ não con người",
+      "after": "Không có máy tính nào vượt trội hơn bộ não con người."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "More should be done to protect individual privacy",
+      "after": "More should be done to protect individual privacy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Cần làm nhiều hơn để bảo vệ quyền riêng tư cá nhân",
+      "after": "Cần làm nhiều hơn để bảo vệ quyền riêng tư cá nhân."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T06_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It doesn't do enough to promote alternatives to driving",
+      "after": "It doesn't do enough to promote alternatives to driving."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T06_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó chưa làm đủ để thúc đẩy các lựa chọn thay thế cho việc lái xe",
+      "after": "Nó chưa làm đủ để thúc đẩy các lựa chọn thay thế cho việc lái xe."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T06_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "The plan is not making efficient use of existing land",
+      "after": "The plan is not making efficient use of existing land."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T06_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Kế hoạch này chưa sử dụng hiệu quả quỹ đất hiện có",
+      "after": "Kế hoạch này chưa sử dụng hiệu quả quỹ đất hiện có."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[0]",
+      "before": "They were thin",
+      "after": "They were thin."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[1]",
+      "before": "They have the same eye color",
+      "after": "They have the same eye color."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[2]",
+      "before": "They have the same hair color",
+      "after": "They have the same hair color."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q147",
+      "field": "parts.L1.question_en",
+      "before": "How much does a bus card cost?*",
+      "after": "How much does a bus card cost?"
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[0]",
+      "before": "She walks",
+      "after": "She walks."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[1]",
+      "before": "She drives",
+      "after": "She drives."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q001",
+      "field": "parts.L1.options[1]",
+      "before": "1.50 pound",
+      "after": "1.50 pound."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[0]",
+      "before": "He was good at his job",
+      "after": "He was good at his job."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[1]",
+      "before": "He paid her a lot",
+      "after": "He paid her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[2]",
+      "before": "He taught her a lot",
+      "after": "He taught her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Exhibitions should be different",
+      "after": "Exhibitions should be different."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các buổi triển lãm nên khác biệt hơn",
+      "after": "Các buổi triển lãm nên khác biệt hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "The traditions are losing significance",
+      "after": "The traditions are losing significance."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các truyền thống đang mất dần ý nghĩa quan trọng",
+      "after": "Các truyền thống đang mất dần ý nghĩa quan trọng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "The local festivals will disappear soon",
+      "after": "The local festivals will disappear soon."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các lễ hội địa phương sẽ sớm biến mất",
+      "after": "Các lễ hội địa phương sẽ sớm biến mất."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Schools are important",
+      "after": "Schools are important."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trường học rất quan trọng",
+      "after": "Trường học rất quan trọng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T07_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Be flexible and open-minded",
+      "after": "Be flexible and open-minded."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T07_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Hãy linh hoạt và cởi mở",
+      "after": "Hãy linh hoạt và cởi mở."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T07_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "They are becoming more competitive",
+      "after": "They are becoming more competitive."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T07_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Chúng đang trở nên cạnh tranh hơn",
+      "after": "Chúng đang trở nên cạnh tranh hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q117",
+      "field": "parts.L1.options[0]",
+      "before": "There are no flight staff",
+      "after": "There are no flight staff."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[0]",
+      "before": "They look like each other",
+      "after": "They look like each other."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[1]",
+      "before": "They have similar interests",
+      "after": "They have similar interests."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[2]",
+      "before": "They have similar characteristics",
+      "after": "They have similar characteristics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Adjusting the pace of lessons help children learn more efficiently",
+      "after": "Adjusting the pace of lessons help children learn more efficiently."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Việc điều chỉnh nhịp độ bài học giúp trẻ em học tập hiệu quả hơn",
+      "after": "Việc điều chỉnh nhịp độ bài học giúp trẻ em học tập hiệu quả hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Occasional group activities may not completely replace regular contact with classmates",
+      "after": "Occasional group activities may not completely replace regular contact with classmates."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các hoạt động nhóm thỉnh thoảng có thể không thay thế hoàn toàn việc tiếp xúc thường xuyên với bạn cùng lớp",
+      "after": "Các hoạt động nhóm thỉnh thoảng có thể không thay thế hoàn toàn việc tiếp xúc thường xuyên với bạn cùng lớp."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Home education can benefit children whose circumstances make a fixed school timetable difficult",
+      "after": "Home education can benefit children whose circumstances make a fixed school timetable difficult."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Giáo dục tại nhà có thể mang lại lợi ích cho những trẻ em có hoàn cảnh khó theo được thời khóa biểu cố định ở trường",
+      "after": "Giáo dục tại nhà có thể mang lại lợi ích cho những trẻ em có hoàn cảnh khó theo được thời khóa biểu cố định ở trường."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "The success of homeschooling depends on whether a family can provide suitable teaching and support",
+      "after": "The success of homeschooling depends on whether a family can provide suitable teaching and support."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự thành công của việc giáo dục tại nhà phụ thuộc vào việc gia đình có thể cung cấp phương pháp dạy và sự hỗ trợ phù hợp hay không",
+      "after": "Sự thành công của việc giáo dục tại nhà phụ thuộc vào việc gia đình có thể cung cấp phương pháp dạy và sự hỗ trợ phù hợp hay không."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T08_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Employees probably worry unnecessarily",
+      "after": "Employees probably worry unnecessarily."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T08_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nhân viên có lẽ lo lắng một cách không cần thiết",
+      "after": "Nhân viên có lẽ lo lắng một cách không cần thiết."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T08_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "People should feel reassured about their presence",
+      "after": "People should feel reassured about their presence."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T08_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Mọi người nên cảm thấy yên tâm hơn về sự hiện diện của chúng",
+      "after": "Mọi người nên cảm thấy yên tâm hơn về sự hiện diện của chúng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "There is too much information on the Internet",
+      "after": "There is too much information on the Internet."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Có quá nhiều thông tin trên Internet",
+      "after": "Có quá nhiều thông tin trên Internet."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Finding information on the Internet requires skills",
+      "after": "Finding information on the Internet requires skills."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Việc tìm kiếm thông tin trên Internet đòi hỏi kỹ năng",
+      "after": "Việc tìm kiếm thông tin trên Internet đòi hỏi kỹ năng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "The use of internet affects the way we think",
+      "after": "The use of internet affects the way we think."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Việc sử dụng Internet ảnh hưởng đến cách chúng ta suy nghĩ",
+      "after": "Việc sử dụng Internet ảnh hưởng đến cách chúng ta suy nghĩ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "The internet makes young people less patient",
+      "after": "The internet makes young people less patient."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Internet khiến người trẻ trở nên kém kiên nhẫn hơn",
+      "after": "Internet khiến người trẻ trở nên kém kiên nhẫn hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T09_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It is different compared to his earlier works",
+      "after": "It is different compared to his earlier works."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T09_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó khác biệt so với những tác phẩm trước đây của ông ấy",
+      "after": "Nó khác biệt so với những tác phẩm trước đây của ông ấy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T09_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "He should listen to critics before writing his next work",
+      "after": "He should listen to critics before writing his next work."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T09_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Ông ấy nên lắng nghe các nhà phê bình trước khi viết tác phẩm tiếp theo",
+      "after": "Ông ấy nên lắng nghe các nhà phê bình trước khi viết tác phẩm tiếp theo."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[0]",
+      "before": "They look like each other",
+      "after": "They look like each other."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[1]",
+      "before": "They have similar interests",
+      "after": "They have similar interests."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[2]",
+      "before": "They have similar characteristics",
+      "after": "They have similar characteristics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Singer can be good models for the young",
+      "after": "Singer can be good models for the young."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Ca sĩ có thể là hình mẫu tốt cho giới trẻ",
+      "after": "Ca sĩ có thể là hình mẫu tốt cho giới trẻ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Taste in music is a highly personal thing",
+      "after": "Taste in music is a highly personal thing."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Gu âm nhạc là một điều mang tính cá nhân cao",
+      "after": "Gu âm nhạc là một điều mang tính cá nhân cao."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Music is a universal language",
+      "after": "Music is a universal language."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Âm nhạc là một ngôn ngữ chung",
+      "after": "Âm nhạc là một ngôn ngữ chung."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Music can be used to manipulate people's feelings",
+      "after": "Music can be used to manipulate people's feelings."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Âm nhạc có thể được sử dụng để tác động cảm xúc của con người",
+      "after": "Âm nhạc có thể được sử dụng để tác động cảm xúc của con người."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T10_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "He will probably retire from singing professionally",
+      "after": "He will probably retire from singing professionally."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T10_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Ông ấy có lẽ sẽ nghỉ hát chuyên nghiệp",
+      "after": "Ông ấy có lẽ sẽ nghỉ hát chuyên nghiệp."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T10_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "He could have been more successful",
+      "after": "He could have been more successful."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T10_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Ông ấy lẽ ra đã có thể thành công hơn",
+      "after": "Ông ấy lẽ ra đã có thể thành công hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q147",
+      "field": "parts.L1.question_en",
+      "before": "How much does a bus card cost?*",
+      "after": "How much does a bus card cost?"
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[0]",
+      "before": "She walks",
+      "after": "She walks."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[1]",
+      "before": "She drives",
+      "after": "She drives."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Living space is more important than farming space",
+      "after": "Living space is more important than farming space."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không gian sống quan trọng hơn không gian canh tác",
+      "after": "Không gian sống quan trọng hơn không gian canh tác."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Farming space is appealing",
+      "after": "Farming space is appealing."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không gian canh tác rất hấp dẫn",
+      "after": "Không gian canh tác rất hấp dẫn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Farming space will benefit the urban economy",
+      "after": "Farming space will benefit the urban economy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không gian canh tác sẽ mang lại lợi ích cho nền kinh tế đô thị",
+      "after": "Không gian canh tác sẽ mang lại lợi ích cho nền kinh tế đô thị."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Farming space is in need of more food",
+      "after": "Farming space is in need of more food."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không gian canh tác đang cần thêm thực phẩm",
+      "after": "Không gian canh tác đang cần thêm thực phẩm."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T11_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It creates a sense of adventure",
+      "after": "It creates a sense of adventure."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T11_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó tạo ra cảm giác phiêu lưu",
+      "after": "Nó tạo ra cảm giác phiêu lưu."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T11_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It is only suitable for particular generations",
+      "after": "It is only suitable for particular generations."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T11_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó chỉ phù hợp với một số thế hệ nhất định",
+      "after": "Nó chỉ phù hợp với một số thế hệ nhất định."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[0]",
+      "before": "They were thin",
+      "after": "They were thin."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[1]",
+      "before": "They have the same eye color",
+      "after": "They have the same eye color."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[2]",
+      "before": "They have the same hair color",
+      "after": "They have the same hair color."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q001",
+      "field": "parts.L1.options[1]",
+      "before": "1.50 pound",
+      "after": "1.50 pound."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q117",
+      "field": "parts.L1.options[0]",
+      "before": "There are no flight staff",
+      "after": "There are no flight staff."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[0]",
+      "before": "She works irregular time",
+      "after": "She works irregular time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[1]",
+      "before": "She does not have a high salary",
+      "after": "She does not have a high salary."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[2]",
+      "before": "She has no fixed workplace",
+      "after": "She has no fixed workplace."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.question_en",
+      "before": "A woman is talking about her job. How is being a writer different from other",
+      "after": "A woman is talking about her job. How is being a writer different from other jobs?"
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T12_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "A business should build up financial reserves before expanding",
+      "after": "A business should build up financial reserves before expanding."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T12_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Một doanh nghiệp nên tích lũy nguồn dự trữ tài chính trước khi mở rộng",
+      "after": "Một doanh nghiệp nên tích lũy nguồn dự trữ tài chính trước khi mở rộng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T12_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Companies working in another country need to understand local customs and communication styles",
+      "after": "Companies working in another country need to understand local customs and communication styles."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T12_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các công ty hoạt động ở quốc gia khác cần hiểu rõ phong tục địa phương và phong cách giao tiếp",
+      "after": "Các công ty hoạt động ở quốc gia khác cần hiểu rõ phong tục địa phương và phong cách giao tiếp."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T12_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Little starting capital does not prevent a small company from growing",
+      "after": "Little starting capital does not prevent a small company from growing."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T12_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Vốn khởi nghiệp ít không ngăn cản một công ty nhỏ phát triển",
+      "after": "Vốn khởi nghiệp ít không ngăn cản một công ty nhỏ phát triển."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T12_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "A less formal workplace may encourage employees to mention problems earlier",
+      "after": "A less formal workplace may encourage employees to mention problems earlier."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T12_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Môi trường làm việc bớt trang trọng hơn có thể khuyến khích nhân viên nêu ra các vấn đề sớm hơn",
+      "after": "Môi trường làm việc bớt trang trọng hơn có thể khuyến khích nhân viên nêu ra các vấn đề sớm hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T12_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It has not been accurately reported by the media",
+      "after": "It has not been accurately reported by the media."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T12_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó chưa được truyền thông đưa tin một cách chính xác",
+      "after": "Nó chưa được truyền thông đưa tin một cách chính xác."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T12_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "The research is unlikely to find a conclusive answer",
+      "after": "The research is unlikely to find a conclusive answer."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T12_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nghiên cứu này khó có khả năng tìm ra một câu trả lời kết luận cuối cùng",
+      "after": "Nghiên cứu này khó có khả năng tìm ra một câu trả lời kết luận cuối cùng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[0]",
+      "before": "He gets a higher salary",
+      "after": "He gets a higher salary."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[1]",
+      "before": "He enjoys the weather here",
+      "after": "He enjoys the weather here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[2]",
+      "before": "He enjoys his job here",
+      "after": "He enjoys his job here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[0]",
+      "before": "They look for food reserves",
+      "after": "They look for food reserves."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[1]",
+      "before": "They stay in groups for protection",
+      "after": "They stay in groups for protection."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[2]",
+      "before": "They migrate to other regions",
+      "after": "They migrate to other regions."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T13_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "The internet makes education more accessible",
+      "after": "The internet makes education more accessible."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T13_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Internet giúp giáo dục trở nên dễ tiếp cận hơn",
+      "after": "Internet giúp giáo dục trở nên dễ tiếp cận hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T13_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Social interactions are essential to university life",
+      "after": "Social interactions are essential to university life."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T13_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các tương tác xã hội là điều thiết yếu trong đời sống đại học",
+      "after": "Các tương tác xã hội là điều thiết yếu trong đời sống đại học."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T13_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "A diverse curriculum is not always a good thing",
+      "after": "A diverse curriculum is not always a good thing."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T13_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Một chương trình học đa dạng không phải lúc nào cũng là điều tốt",
+      "after": "Một chương trình học đa dạng không phải lúc nào cũng là điều tốt."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T13_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Competitions between universities should be encouraged",
+      "after": "Competitions between universities should be encouraged."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T13_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Nên khuyến khích sự cạnh tranh giữa các trường đại học",
+      "after": "Nên khuyến khích sự cạnh tranh giữa các trường đại học."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T13_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "The character were interesting",
+      "after": "The character were interesting."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T13_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Các nhân vật rất thú vị",
+      "after": "Các nhân vật rất thú vị."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T13_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It will establish the author's popularity",
+      "after": "It will establish the author's popularity."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T13_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó sẽ giúp khẳng định sự nổi tiếng của tác giả",
+      "after": "Nó sẽ giúp khẳng định sự nổi tiếng của tác giả."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[0]",
+      "before": "driving a car is his dream",
+      "after": "driving a car is his dream."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[1]",
+      "before": "he hates public transport",
+      "after": "he hates public transport."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[2]",
+      "before": "he has to drive to work",
+      "after": "he has to drive to work."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[0]",
+      "before": "He was good at his job",
+      "after": "He was good at his job."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[1]",
+      "before": "He paid her a lot",
+      "after": "He paid her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[2]",
+      "before": "He taught her a lot",
+      "after": "He taught her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[0]",
+      "before": "The products are delivered",
+      "after": "The products are delivered."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[1]",
+      "before": "It is cheaper",
+      "after": "It is cheaper."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[2]",
+      "before": "It saves time",
+      "after": "It saves time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[3]",
+      "before": "There are more choices",
+      "after": "There are more choices."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SA",
+      "field": "parts.L2.speakers.answer",
+      "before": "The products are delivered",
+      "after": "The products are delivered."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SA",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Sản phẩm được giao đến",
+      "after": "Sản phẩm được giao đến."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SB",
+      "field": "parts.L2.speakers.answer",
+      "before": "It is cheaper",
+      "after": "It is cheaper."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SB",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Nó rẻ hơn",
+      "after": "Nó rẻ hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SC",
+      "field": "parts.L2.speakers.answer",
+      "before": "It saves time",
+      "after": "It saves time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SC",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Nó tiết kiệm thời gian",
+      "after": "Nó tiết kiệm thời gian."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SD",
+      "field": "parts.L2.speakers.answer",
+      "before": "There are more choices",
+      "after": "There are more choices."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SD",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Có nhiều lựa chọn hơn",
+      "after": "Có nhiều lựa chọn hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T14_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Media exaggerates the benefits of the programme",
+      "after": "Media exaggerates the benefits of the programme."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T14_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Truyền thông phóng đại lợi ích của chương trình",
+      "after": "Truyền thông phóng đại lợi ích của chương trình."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T14_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Littering will always be a problem",
+      "after": "Littering will always be a problem."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T14_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Việc xả rác sẽ luôn là một vấn đề",
+      "after": "Việc xả rác sẽ luôn là một vấn đề."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T14_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "The volunteers' motivations do not affect the programme outcome",
+      "after": "The volunteers' motivations do not affect the programme outcome."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T14_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Động lực của các tình nguyện viên không ảnh hưởng đến kết quả của chương trình",
+      "after": "Động lực của các tình nguyện viên không ảnh hưởng đến kết quả của chương trình."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T14_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Punishment is the most effective way to prevent littering",
+      "after": "Punishment is the most effective way to prevent littering."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T14_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Hình phạt là cách hiệu quả nhất để ngăn chặn việc xả rác",
+      "after": "Hình phạt là cách hiệu quả nhất để ngăn chặn việc xả rác."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T14_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Create dedicated periods for writing",
+      "after": "Create dedicated periods for writing."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T14_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Tạo những khoảng thời gian riêng dành cho việc viết",
+      "after": "Tạo những khoảng thời gian riêng dành cho việc viết."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T14_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Refusing to seek advice from others",
+      "after": "Refusing to seek advice from others."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T14_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Từ chối tìm kiếm lời khuyên từ người khác",
+      "after": "Từ chối tìm kiếm lời khuyên từ người khác."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[0]",
+      "before": "They look like each other",
+      "after": "They look like each other."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[1]",
+      "before": "They have similar interests",
+      "after": "They have similar interests."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[2]",
+      "before": "They have similar characteristics",
+      "after": "They have similar characteristics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T15_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Young people are more into politics",
+      "after": "Young people are more into politics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T15_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Người trẻ quan tâm đến chính trị nhiều hơn",
+      "after": "Người trẻ quan tâm đến chính trị nhiều hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T15_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Social media change politics",
+      "after": "Social media change politics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T15_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Mạng xã hội làm thay đổi chính trị",
+      "after": "Mạng xã hội làm thay đổi chính trị."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T15_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "People are now better informed on politic",
+      "after": "People are now better informed on politic."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T15_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Hiện nay mọi người được thông tin tốt hơn về chính trị",
+      "after": "Hiện nay mọi người được thông tin tốt hơn về chính trị."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T15_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "More women pursuit politics",
+      "after": "More women pursuit politics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T15_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Nhiều phụ nữ theo đuổi chính trị hơn",
+      "after": "Nhiều phụ nữ theo đuổi chính trị hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T15_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Maintain the positive attitude",
+      "after": "Maintain the positive attitude."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T15_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Duy trì thái độ tích cực",
+      "after": "Duy trì thái độ tích cực."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T15_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Our definition of it is changing",
+      "after": "Our definition of it is changing."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T15_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Định nghĩa của chúng ta về sự chuyên nghiệp đang thay đổi",
+      "after": "Định nghĩa của chúng ta về sự chuyên nghiệp đang thay đổi."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T16_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Community design influences people's behavior",
+      "after": "Community design influences people's behavior."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T16_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Thiết kế cộng đồng ảnh hưởng đến hành vi của con người",
+      "after": "Thiết kế cộng đồng ảnh hưởng đến hành vi của con người."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T16_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "A sense of community can take time",
+      "after": "A sense of community can take time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T16_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Cảm giác thuộc về một cộng đồng có thể cần thời gian để hình thành",
+      "after": "Cảm giác thuộc về một cộng đồng có thể cần thời gian để hình thành."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T16_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Work communities and social communities are the same",
+      "after": "Work communities and social communities are the same."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T16_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Cộng đồng trong công việc và cộng đồng xã hội là giống nhau",
+      "after": "Cộng đồng trong công việc và cộng đồng xã hội là giống nhau."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T16_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Technology improves the way communities are formed",
+      "after": "Technology improves the way communities are formed."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T16_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Công nghệ cải thiện cách các cộng đồng được hình thành",
+      "after": "Công nghệ cải thiện cách các cộng đồng được hình thành."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T16_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Giúp bạn đưa ra quyết định",
+      "after": "Giúp bạn đưa ra quyết định."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T16_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Requires you to set yourself certain limits",
+      "after": "Requires you to set yourself certain limits."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T16_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Yêu cầu bạn đặt ra cho bản thân một số giới hạn nhất định",
+      "after": "Yêu cầu bạn đặt ra cho bản thân một số giới hạn nhất định."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[0]",
+      "before": "They were thin",
+      "after": "They were thin."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[1]",
+      "before": "They have the same eye color",
+      "after": "They have the same eye color."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[2]",
+      "before": "They have the same hair color",
+      "after": "They have the same hair color."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[0]",
+      "before": "driving a car is his dream",
+      "after": "driving a car is his dream."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[1]",
+      "before": "he hates public transport",
+      "after": "he hates public transport."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[2]",
+      "before": "he has to drive to work",
+      "after": "he has to drive to work."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[0]",
+      "before": "She walks",
+      "after": "She walks."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[1]",
+      "before": "She drives",
+      "after": "She drives."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T17_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Children are interested in tech-based learning",
+      "after": "Children are interested in tech-based learning."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T17_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trẻ em quan tâm đến việc học dựa trên công nghệ",
+      "after": "Trẻ em quan tâm đến việc học dựa trên công nghệ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T17_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Children find it difficult to communicate offline",
+      "after": "Children find it difficult to communicate offline."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T17_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trẻ em cảm thấy khó giao tiếp trực tiếp đời thực",
+      "after": "Trẻ em cảm thấy khó giao tiếp trực tiếp đời thực."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T17_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Families require help with management of technology",
+      "after": "Families require help with management of technology."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T17_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các gia đình cần được hỗ trợ trong việc quản lý công nghệ",
+      "after": "Các gia đình cần được hỗ trợ trong việc quản lý công nghệ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T17_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Children can learn to regulate their online interactions",
+      "after": "Children can learn to regulate their online interactions."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T17_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trẻ em có thể học cách tự điều chỉnh các tương tác trực tuyến của mình",
+      "after": "Trẻ em có thể học cách tự điều chỉnh các tương tác trực tuyến của mình."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T17_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It is making exaggerated claims",
+      "after": "It is making exaggerated claims."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T17_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó đang đưa ra những tuyên bố phóng đại",
+      "after": "Nó đang đưa ra những tuyên bố phóng đại."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T17_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó tốn quá nhiều chi phí nên khó tạo ra lợi nhuận",
+      "after": "Nó tốn quá nhiều chi phí nên khó tạo ra lợi nhuận."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[0]",
+      "before": "They look for food reserves",
+      "after": "They look for food reserves."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[1]",
+      "before": "They stay in groups for protection",
+      "after": "They stay in groups for protection."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[2]",
+      "before": "They migrate to other regions",
+      "after": "They migrate to other regions."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q117",
+      "field": "parts.L1.options[0]",
+      "before": "There are no flight staff",
+      "after": "There are no flight staff."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[0]",
+      "before": "He gets a higher salary",
+      "after": "He gets a higher salary."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[1]",
+      "before": "He enjoys the weather here",
+      "after": "He enjoys the weather here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[2]",
+      "before": "He enjoys his job here",
+      "after": "He enjoys his job here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[0]",
+      "before": "She works irregular time",
+      "after": "She works irregular time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[1]",
+      "before": "She does not have a high salary",
+      "after": "She does not have a high salary."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[2]",
+      "before": "She has no fixed workplace",
+      "after": "She has no fixed workplace."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.question_en",
+      "before": "A woman is talking about her job. How is being a writer different from other",
+      "after": "A woman is talking about her job. How is being a writer different from other jobs?"
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q001",
+      "field": "parts.L1.options[1]",
+      "before": "1.50 pound",
+      "after": "1.50 pound."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Continuity is important",
+      "after": "Continuity is important."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự liên tục là quan trọng",
+      "after": "Sự liên tục là quan trọng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Job security cannot be guaranteed",
+      "after": "Job security cannot be guaranteed."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự ổn định công việc không thể được đảm bảo",
+      "after": "Sự ổn định công việc không thể được đảm bảo."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Job satisfaction is an important motivator",
+      "after": "Job satisfaction is an important motivator."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự hài lòng trong công việc là một động lực quan trọng",
+      "after": "Sự hài lòng trong công việc là một động lực quan trọng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Technology is good for the economy",
+      "after": "Technology is good for the economy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T01_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Công nghệ tốt cho nền kinh tế",
+      "after": "Công nghệ tốt cho nền kinh tế."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T19_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "The standard of service was not good",
+      "after": "The standard of service was not good."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T19_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Tiêu chuẩn phục vụ không tốt",
+      "after": "Tiêu chuẩn phục vụ không tốt."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T19_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "They should make the customers feel valued and welcomed",
+      "after": "They should make the customers feel valued and welcomed."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T19_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Họ nên làm cho khách hàng cảm thấy được trân trọng và chào đón",
+      "after": "Họ nên làm cho khách hàng cảm thấy được trân trọng và chào đón."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q147",
+      "field": "parts.L1.question_en",
+      "before": "How much does a bus card cost?*",
+      "after": "How much does a bus card cost?"
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "People share similar ideas about beauty",
+      "after": "People share similar ideas about beauty."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Mọi người có những quan điểm tương tự nhau về vẻ đẹp",
+      "after": "Mọi người có những quan điểm tương tự nhau về vẻ đẹp."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Ideas about beauty change over time",
+      "after": "Ideas about beauty change over time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các quan điểm về vẻ đẹp thay đổi theo thời gian",
+      "after": "Các quan điểm về vẻ đẹp thay đổi theo thời gian."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Beauty can be found in unlikely places",
+      "after": "Beauty can be found in unlikely places."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Vẻ đẹp có thể được tìm thấy ở những nơi khó ngờ tới",
+      "after": "Vẻ đẹp có thể được tìm thấy ở những nơi khó ngờ tới."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Traditional ideas of beauty are going to change",
+      "after": "Traditional ideas of beauty are going to change."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T02_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Những quan niệm truyền thống về vẻ đẹp sẽ thay đổi",
+      "after": "Những quan niệm truyền thống về vẻ đẹp sẽ thay đổi."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T20_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It wasn't as good as expected",
+      "after": "It wasn't as good as expected."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T20_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó không tốt như mong đợi",
+      "after": "Nó không tốt như mong đợi."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T20_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It depends on your situation and personality",
+      "after": "It depends on your situation and personality."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T20_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Điều đó phụ thuộc vào hoàn cảnh và tính cách của bạn",
+      "after": "Điều đó phụ thuộc vào hoàn cảnh và tính cách của bạn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Arts are only for few privileged",
+      "after": "Arts are only for few privileged."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Nghệ thuật chỉ dành cho một số ít người có đặc quyền",
+      "after": "Nghệ thuật chỉ dành cho một số ít người có đặc quyền."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "The government should invest more in arts",
+      "after": "The government should invest more in arts."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Chính phủ nên đầu tư nhiều hơn vào nghệ thuật",
+      "after": "Chính phủ nên đầu tư nhiều hơn vào nghệ thuật."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Children should be exposed to art early",
+      "after": "Children should be exposed to art early."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trẻ em nên được tiếp xúc với nghệ thuật từ sớm",
+      "after": "Trẻ em nên được tiếp xúc với nghệ thuật từ sớm."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "In the future, art will be more accessible",
+      "after": "In the future, art will be more accessible."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T03_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trong tương lai, nghệ thuật sẽ dễ tiếp cận hơn",
+      "after": "Trong tương lai, nghệ thuật sẽ dễ tiếp cận hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T21_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Monitor your spending for a weekly plan",
+      "after": "Monitor your spending for a weekly plan."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T21_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Theo dõi việc chi tiêu của bạn theo kế hoạch hằng tuần",
+      "after": "Theo dõi việc chi tiêu của bạn theo kế hoạch hằng tuần."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T21_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Seek advice from someone who have experience",
+      "after": "Seek advice from someone who have experience."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T21_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Tìm kiếm lời khuyên từ người có kinh nghiệm",
+      "after": "Tìm kiếm lời khuyên từ người có kinh nghiệm."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[0]",
+      "before": "He was good at his job",
+      "after": "He was good at his job."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[1]",
+      "before": "He paid her a lot",
+      "after": "He paid her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[2]",
+      "before": "He taught her a lot",
+      "after": "He taught her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q001",
+      "field": "parts.L1.options[1]",
+      "before": "1.50 pound",
+      "after": "1.50 pound."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[0]",
+      "before": "They look like each other",
+      "after": "They look like each other."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[1]",
+      "before": "They have similar interests",
+      "after": "They have similar interests."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[2]",
+      "before": "They have similar characteristics",
+      "after": "They have similar characteristics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Auditions are most important",
+      "after": "Auditions are most important."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các buổi thử giọng là quan trọng nhất",
+      "after": "Các buổi thử giọng là quan trọng nhất."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Actors response best to strong scripts",
+      "after": "Actors response best to strong scripts."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên phản ứng tốt nhất với những kịch bản có nội dung chất lượng",
+      "after": "Diễn viên phản ứng tốt nhất với những kịch bản có nội dung chất lượng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Theater acting and screen acting are different",
+      "after": "Theater acting and screen acting are different."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn xuất trên sân khấu và diễn xuất trên màn ảnh là khác nhau",
+      "after": "Diễn xuất trên sân khấu và diễn xuất trên màn ảnh là khác nhau."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Actors should be praised as much as possible",
+      "after": "Actors should be praised as much as possible."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T04_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên nên được khen ngợi càng nhiều càng tốt",
+      "after": "Diễn viên nên được khen ngợi càng nhiều càng tốt."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T22_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Blocking out noise and light is the key",
+      "after": "Blocking out noise and light is the key."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T22_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Loại bỏ tiếng ồn và ánh sáng là yếu tố then chốt",
+      "after": "Loại bỏ tiếng ồn và ánh sáng là yếu tố then chốt."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T22_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "People can't always recognize the symptoms of tiredness",
+      "after": "People can't always recognize the symptoms of tiredness."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T22_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Mọi người không phải lúc nào cũng nhận ra các dấu hiệu của sự mệt mỏi",
+      "after": "Mọi người không phải lúc nào cũng nhận ra các dấu hiệu của sự mệt mỏi."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[0]",
+      "before": "He gets a higher salary",
+      "after": "He gets a higher salary."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[1]",
+      "before": "He enjoys the weather here",
+      "after": "He enjoys the weather here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[2]",
+      "before": "He enjoys his job here",
+      "after": "He enjoys his job here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Auditions are the most important of casting",
+      "after": "Auditions are the most important of casting."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các buổi thử vai là phần quan trọng nhất trong quá trình tuyển chọn diễn viên",
+      "after": "Các buổi thử vai là phần quan trọng nhất trong quá trình tuyển chọn diễn viên."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Actors respond best to a strong script",
+      "after": "Actors respond best to a strong script."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên phản ứng tốt nhất với một kịch bản mạnh",
+      "after": "Diễn viên phản ứng tốt nhất với một kịch bản mạnh."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Theatre acting and movie acting require different skills",
+      "after": "Theatre acting and movie acting require different skills."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn xuất sân khấu và diễn xuất điện ảnh đòi hỏi những kỹ năng khác nhau",
+      "after": "Diễn xuất sân khấu và diễn xuất điện ảnh đòi hỏi những kỹ năng khác nhau."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Actors need to be praised",
+      "after": "Actors need to be praised."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T05_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên cần được khen ngợi",
+      "after": "Diễn viên cần được khen ngợi."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T24_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó có thể giúp tiếp cận những khách hàng mới",
+      "after": "Nó có thể giúp tiếp cận những khách hàng mới."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T24_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "They can generate negative publicity for the sport",
+      "after": "They can generate negative publicity for the sport."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T24_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Chúng có thể tạo ra sự công khai tiêu cực cho môn thể thao đó",
+      "after": "Chúng có thể tạo ra sự công khai tiêu cực cho môn thể thao đó."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Future generations fail to cope with technology information",
+      "after": "Future generations fail to cope with technology information."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các thế hệ tương lai không thể thích ứng tốt với thông tin công nghệ",
+      "after": "Các thế hệ tương lai không thể thích ứng tốt với thông tin công nghệ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Technology revolution is good for the economy",
+      "after": "Technology revolution is good for the economy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Cuộc cách mạng công nghệ tốt cho nền kinh tế",
+      "after": "Cuộc cách mạng công nghệ tốt cho nền kinh tế."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "No computer is superior to the human brain",
+      "after": "No computer is superior to the human brain."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không có máy tính nào vượt trội hơn bộ não con người",
+      "after": "Không có máy tính nào vượt trội hơn bộ não con người."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "More should be done to protect individual privacy",
+      "after": "More should be done to protect individual privacy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T06_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Cần làm nhiều hơn để bảo vệ quyền riêng tư cá nhân",
+      "after": "Cần làm nhiều hơn để bảo vệ quyền riêng tư cá nhân."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T25_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Bối cảnh / tiểu sử của các nhân vật chưa được khai thác đầy đủ",
+      "after": "Bối cảnh / tiểu sử của các nhân vật chưa được khai thác đầy đủ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T25_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "The new industry demands are negatively influencing script production",
+      "after": "The new industry demands are negatively influencing script production."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T25_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Những yêu cầu mới của ngành đang ảnh hưởng tiêu cực đến việc sản xuất kịch bản",
+      "after": "Những yêu cầu mới của ngành đang ảnh hưởng tiêu cực đến việc sản xuất kịch bản."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[0]",
+      "before": "She works irregular time",
+      "after": "She works irregular time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[1]",
+      "before": "She does not have a high salary",
+      "after": "She does not have a high salary."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[2]",
+      "before": "She has no fixed workplace",
+      "after": "She has no fixed workplace."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q011",
+      "field": "parts.L1.question_en",
+      "before": "A woman is talking about her job. How is being a writer different from other",
+      "after": "A woman is talking about her job. How is being a writer different from other jobs?"
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[0]",
+      "before": "They look for food reserves",
+      "after": "They look for food reserves."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[1]",
+      "before": "They stay in groups for protection",
+      "after": "They stay in groups for protection."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[2]",
+      "before": "They migrate to other regions",
+      "after": "They migrate to other regions."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q147",
+      "field": "parts.L1.question_en",
+      "before": "How much does a bus card cost?*",
+      "after": "How much does a bus card cost?"
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Exhibitions should be different",
+      "after": "Exhibitions should be different."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các buổi triển lãm nên khác biệt hơn",
+      "after": "Các buổi triển lãm nên khác biệt hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "The traditions are losing significance",
+      "after": "The traditions are losing significance."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các truyền thống đang mất dần ý nghĩa quan trọng",
+      "after": "Các truyền thống đang mất dần ý nghĩa quan trọng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "The local festivals will disappear soon",
+      "after": "The local festivals will disappear soon."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các lễ hội địa phương sẽ sớm biến mất",
+      "after": "Các lễ hội địa phương sẽ sớm biến mất."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Schools are important",
+      "after": "Schools are important."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T07_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trường học rất quan trọng",
+      "after": "Trường học rất quan trọng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T26_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Creators do not promote their shows",
+      "after": "Creators do not promote their shows."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T26_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Những người sáng tạo không quảng bá chương trình của họ",
+      "after": "Những người sáng tạo không quảng bá chương trình của họ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T26_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It is a great way to build a community",
+      "after": "It is a great way to build a community."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T26_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Đây là một cách tuyệt vời để xây dựng cộng đồng",
+      "after": "Đây là một cách tuyệt vời để xây dựng cộng đồng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Adjusting the pace of lessons help children learn more efficiently",
+      "after": "Adjusting the pace of lessons help children learn more efficiently."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Việc điều chỉnh nhịp độ bài học giúp trẻ em học tập hiệu quả hơn",
+      "after": "Việc điều chỉnh nhịp độ bài học giúp trẻ em học tập hiệu quả hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Occasional group activities may not completely replace regular contact with classmates",
+      "after": "Occasional group activities may not completely replace regular contact with classmates."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các hoạt động nhóm thỉnh thoảng có thể không thay thế hoàn toàn việc tiếp xúc thường xuyên với bạn cùng lớp",
+      "after": "Các hoạt động nhóm thỉnh thoảng có thể không thay thế hoàn toàn việc tiếp xúc thường xuyên với bạn cùng lớp."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Home education can benefit children whose circumstances make a fixed school timetable difficult",
+      "after": "Home education can benefit children whose circumstances make a fixed school timetable difficult."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Giáo dục tại nhà có thể mang lại lợi ích cho những trẻ em có hoàn cảnh khó theo được thời khóa biểu cố định ở trường",
+      "after": "Giáo dục tại nhà có thể mang lại lợi ích cho những trẻ em có hoàn cảnh khó theo được thời khóa biểu cố định ở trường."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "The success of homeschooling depends on whether a family can provide suitable teaching and support",
+      "after": "The success of homeschooling depends on whether a family can provide suitable teaching and support."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T08_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự thành công của việc giáo dục tại nhà phụ thuộc vào việc gia đình có thể cung cấp phương pháp dạy và sự hỗ trợ phù hợp hay không",
+      "after": "Sự thành công của việc giáo dục tại nhà phụ thuộc vào việc gia đình có thể cung cấp phương pháp dạy và sự hỗ trợ phù hợp hay không."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T28_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It has a good description of a specific period of time",
+      "after": "It has a good description of a specific period of time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T28_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó mô tả tốt về một giai đoạn thời gian cụ thể",
+      "after": "Nó mô tả tốt về một giai đoạn thời gian cụ thể."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T28_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It is an unconventional biography",
+      "after": "It is an unconventional biography."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T28_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó là một cuốn tiểu sử không theo lối thông thường",
+      "after": "Nó là một cuốn tiểu sử không theo lối thông thường."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q117",
+      "field": "parts.L1.options[0]",
+      "before": "There are no flight staff",
+      "after": "There are no flight staff."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[0]",
+      "before": "She walks",
+      "after": "She walks."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[1]",
+      "before": "She drives",
+      "after": "She drives."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[0]",
+      "before": "driving a car is his dream",
+      "after": "driving a car is his dream."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[1]",
+      "before": "he hates public transport",
+      "after": "he hates public transport."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[2]",
+      "before": "he has to drive to work",
+      "after": "he has to drive to work."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[0]",
+      "before": "The products are delivered",
+      "after": "The products are delivered."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[1]",
+      "before": "It is cheaper",
+      "after": "It is cheaper."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[2]",
+      "before": "It saves time",
+      "after": "It saves time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02",
+      "field": "parts.L2.options[3]",
+      "before": "There are more choices",
+      "after": "There are more choices."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SA",
+      "field": "parts.L2.speakers.answer",
+      "before": "The products are delivered",
+      "after": "The products are delivered."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SA",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Sản phẩm được giao đến",
+      "after": "Sản phẩm được giao đến."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SB",
+      "field": "parts.L2.speakers.answer",
+      "before": "It is cheaper",
+      "after": "It is cheaper."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SB",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Nó rẻ hơn",
+      "after": "Nó rẻ hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SC",
+      "field": "parts.L2.speakers.answer",
+      "before": "It saves time",
+      "after": "It saves time."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SC",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Nó tiết kiệm thời gian",
+      "after": "Nó tiết kiệm thời gian."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SD",
+      "field": "parts.L2.speakers.answer",
+      "before": "There are more choices",
+      "after": "There are more choices."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L2_T02_SD",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Có nhiều lựa chọn hơn",
+      "after": "Có nhiều lựa chọn hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "There is too much information on the Internet",
+      "after": "There is too much information on the Internet."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Có quá nhiều thông tin trên Internet",
+      "after": "Có quá nhiều thông tin trên Internet."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Finding information on the Internet requires skills",
+      "after": "Finding information on the Internet requires skills."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Việc tìm kiếm thông tin trên Internet đòi hỏi kỹ năng",
+      "after": "Việc tìm kiếm thông tin trên Internet đòi hỏi kỹ năng."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "The use of internet affects the way we think",
+      "after": "The use of internet affects the way we think."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Việc sử dụng Internet ảnh hưởng đến cách chúng ta suy nghĩ",
+      "after": "Việc sử dụng Internet ảnh hưởng đến cách chúng ta suy nghĩ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "The internet makes young people less patient",
+      "after": "The internet makes young people less patient."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T09_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Internet khiến người trẻ trở nên kém kiên nhẫn hơn",
+      "after": "Internet khiến người trẻ trở nên kém kiên nhẫn hơn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T29_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Effective time management",
+      "after": "Effective time management."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T29_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Quản lý thời gian hiệu quả",
+      "after": "Quản lý thời gian hiệu quả."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T29_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Using them effectively requires effort",
+      "after": "Using them effectively requires effort."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T29_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Việc sử dụng chúng một cách hiệu quả đòi hỏi sự nỗ lực",
+      "after": "Việc sử dụng chúng một cách hiệu quả đòi hỏi sự nỗ lực."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[0]",
+      "before": "He was good at his job",
+      "after": "He was good at his job."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[1]",
+      "before": "He paid her a lot",
+      "after": "He paid her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[2]",
+      "before": "He taught her a lot",
+      "after": "He taught her a lot."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[0]",
+      "before": "They were thin",
+      "after": "They were thin."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[1]",
+      "before": "They have the same eye color",
+      "after": "They have the same eye color."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q154",
+      "field": "parts.L1.options[2]",
+      "before": "They have the same hair color",
+      "after": "They have the same hair color."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Singer can be good models for the young",
+      "after": "Singer can be good models for the young."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Ca sĩ có thể là hình mẫu tốt cho giới trẻ",
+      "after": "Ca sĩ có thể là hình mẫu tốt cho giới trẻ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Taste in music is a highly personal thing",
+      "after": "Taste in music is a highly personal thing."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Gu âm nhạc là một điều mang tính cá nhân cao",
+      "after": "Gu âm nhạc là một điều mang tính cá nhân cao."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Music is a universal language",
+      "after": "Music is a universal language."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Âm nhạc là một ngôn ngữ chung",
+      "after": "Âm nhạc là một ngôn ngữ chung."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Music can be used to manipulate people's feelings",
+      "after": "Music can be used to manipulate people's feelings."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T10_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Âm nhạc có thể được sử dụng để tác động cảm xúc của con người",
+      "after": "Âm nhạc có thể được sử dụng để tác động cảm xúc của con người."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T30_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Belief in her musical instincts",
+      "after": "Belief in her musical instincts."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T30_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Niềm tin vào bản năng âm nhạc của cô ấy",
+      "after": "Niềm tin vào bản năng âm nhạc của cô ấy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T30_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Performers find it hard to get started",
+      "after": "Performers find it hard to get started."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T30_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Các nghệ sĩ biểu diễn cảm thấy khó khăn khi bắt đầu sự nghiệp",
+      "after": "Các nghệ sĩ biểu diễn cảm thấy khó khăn khi bắt đầu sự nghiệp."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[0]",
+      "before": "He gets a higher salary",
+      "after": "He gets a higher salary."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[1]",
+      "before": "He enjoys the weather here",
+      "after": "He enjoys the weather here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[2]",
+      "before": "He enjoys his job here",
+      "after": "He enjoys his job here."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[0]",
+      "before": "They look for food reserves",
+      "after": "They look for food reserves."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[1]",
+      "before": "They stay in groups for protection",
+      "after": "They stay in groups for protection."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[2]",
+      "before": "They migrate to other regions",
+      "after": "They migrate to other regions."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[0]",
+      "before": "They look like each other",
+      "after": "They look like each other."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[1]",
+      "before": "They have similar interests",
+      "after": "They have similar interests."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[2]",
+      "before": "They have similar characteristics",
+      "after": "They have similar characteristics."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Living space is more important than farming space",
+      "after": "Living space is more important than farming space."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không gian sống quan trọng hơn không gian canh tác",
+      "after": "Không gian sống quan trọng hơn không gian canh tác."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Farming space is appealing",
+      "after": "Farming space is appealing."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không gian canh tác rất hấp dẫn",
+      "after": "Không gian canh tác rất hấp dẫn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Farming space will benefit the urban economy",
+      "after": "Farming space will benefit the urban economy."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không gian canh tác sẽ mang lại lợi ích cho nền kinh tế đô thị",
+      "after": "Không gian canh tác sẽ mang lại lợi ích cho nền kinh tế đô thị."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Farming space is in need of more food",
+      "after": "Farming space is in need of more food."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L3_T11_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không gian canh tác đang cần thêm thực phẩm",
+      "after": "Không gian canh tác đang cần thêm thực phẩm."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T31_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Chúng được đặc trưng bởi sự u buồn",
+      "after": "Chúng được đặc trưng bởi sự u buồn."
+    },
+    {
+      "file": "default_data.js",
+      "id": "L4_T31_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Một cửa sổ nhìn về quá khứ",
+      "after": "Một cửa sổ nhìn về quá khứ."
+    },
+    {
+      "file": "default_data.js",
+      "id": "R23_T01",
+      "field": "reading.R23.topics.lead_en",
+      "before": "Here are some ideas to help you talk about making films",
+      "after": "Here are some ideas to help you talk about making films."
+    },
+    {
+      "file": "default_data.js",
+      "id": "R23_T02",
+      "field": "reading.R23.topics.lead_en",
+      "before": "This is what happened during the weekend race and games",
+      "after": "This is what happened during the weekend race and games."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q001",
+      "field": "items.options[1]",
+      "before": "1.50 pound",
+      "after": "1.50 pound."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q003",
+      "field": "items.options[0]",
+      "before": "She walks",
+      "after": "She walks."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q003",
+      "field": "items.options[1]",
+      "before": "She drives",
+      "after": "She drives."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q011",
+      "field": "items.options[0]",
+      "before": "She works irregular time",
+      "after": "She works irregular time."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q011",
+      "field": "items.options[1]",
+      "before": "She does not have a high salary",
+      "after": "She does not have a high salary."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q011",
+      "field": "items.options[2]",
+      "before": "She has no fixed workplace",
+      "after": "She has no fixed workplace."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q051",
+      "field": "items.options[0]",
+      "before": "driving a car is his dream",
+      "after": "driving a car is his dream."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q051",
+      "field": "items.options[1]",
+      "before": "he hates public transport",
+      "after": "he hates public transport."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q051",
+      "field": "items.options[2]",
+      "before": "he has to drive to work",
+      "after": "he has to drive to work."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q058",
+      "field": "items.options[0]",
+      "before": "He was good at his job",
+      "after": "He was good at his job."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q058",
+      "field": "items.options[1]",
+      "before": "He paid her a lot",
+      "after": "He paid her a lot."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q058",
+      "field": "items.options[2]",
+      "before": "He taught her a lot",
+      "after": "He taught her a lot."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q063",
+      "field": "items.options[0]",
+      "before": "They look like each other",
+      "after": "They look like each other."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q063",
+      "field": "items.options[1]",
+      "before": "They have similar interests",
+      "after": "They have similar interests."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q063",
+      "field": "items.options[2]",
+      "before": "They have similar characteristics",
+      "after": "They have similar characteristics."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q065",
+      "field": "items.options[0]",
+      "before": "They look for food reserves",
+      "after": "They look for food reserves."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q065",
+      "field": "items.options[1]",
+      "before": "They stay in groups for protection",
+      "after": "They stay in groups for protection."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q065",
+      "field": "items.options[2]",
+      "before": "They migrate to other regions",
+      "after": "They migrate to other regions."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q090",
+      "field": "items.options[0]",
+      "before": "He gets a higher salary",
+      "after": "He gets a higher salary."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q090",
+      "field": "items.options[1]",
+      "before": "He enjoys the weather here",
+      "after": "He enjoys the weather here."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q090",
+      "field": "items.options[2]",
+      "before": "He enjoys his job here",
+      "after": "He enjoys his job here."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q117",
+      "field": "items.options[0]",
+      "before": "There are no flight staff",
+      "after": "There are no flight staff."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q154",
+      "field": "items.options[0]",
+      "before": "They were thin",
+      "after": "They were thin."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q154",
+      "field": "items.options[1]",
+      "before": "They have the same eye color",
+      "after": "They have the same eye color."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q154",
+      "field": "items.options[2]",
+      "before": "They have the same hair color",
+      "after": "They have the same hair color."
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q001",
+      "field": "dialogues.segments[0].text",
+      "before": "I have seen two different figures, “1.25 pound.” and “2 pounds.”. Which figure applies to this situation?",
+      "after": "I have seen two different figures, “1.25 pound.” and “2 pounds.” Which figure applies to this situation?"
+    },
+    {
+      "file": "l1_canonical_data.js",
+      "id": "L1_Q004",
+      "field": "dialogues.segments[0].text",
+      "before": "I have “1pm” written down, but I also heard “3pm.”. Which time or day should I plan around?",
+      "after": "I have “1pm” written down, but I also heard “3pm.” Which time or day should I plan around?"
+    },
+    {
+      "file": "l2_key_data.js",
+      "id": "L2_T02_SA",
+      "field": "answer_en",
+      "before": "The products are delivered",
+      "after": "The products are delivered."
+    },
+    {
+      "file": "l2_key_data.js",
+      "id": "L2_T02_SA",
+      "field": "answer_vi",
+      "before": "Sản phẩm được giao đến",
+      "after": "Sản phẩm được giao đến."
+    },
+    {
+      "file": "l2_key_data.js",
+      "id": "L2_T02_SB",
+      "field": "answer_en",
+      "before": "It is cheaper",
+      "after": "It is cheaper."
+    },
+    {
+      "file": "l2_key_data.js",
+      "id": "L2_T02_SB",
+      "field": "answer_vi",
+      "before": "Nó rẻ hơn",
+      "after": "Nó rẻ hơn."
+    },
+    {
+      "file": "l2_key_data.js",
+      "id": "L2_T02_SC",
+      "field": "answer_en",
+      "before": "It saves time",
+      "after": "It saves time."
+    },
+    {
+      "file": "l2_key_data.js",
+      "id": "L2_T02_SC",
+      "field": "answer_vi",
+      "before": "Nó tiết kiệm thời gian",
+      "after": "Nó tiết kiệm thời gian."
+    },
+    {
+      "file": "l2_key_data.js",
+      "id": "L2_T02_SD",
+      "field": "answer_en",
+      "before": "There are more choices",
+      "after": "There are more choices."
+    },
+    {
+      "file": "l2_key_data.js",
+      "id": "L2_T02_SD",
+      "field": "answer_vi",
+      "before": "Có nhiều lựa chọn hơn",
+      "after": "Có nhiều lựa chọn hơn."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L1_Q001",
+      "field": "parts.L1.options[1]",
+      "before": "1.50 pound",
+      "after": "1.50 pound."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[0]",
+      "before": "She walks",
+      "after": "She walks."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L1_Q003",
+      "field": "parts.L1.options[1]",
+      "before": "She drives",
+      "after": "She drives."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[0]",
+      "before": "She works irregular time",
+      "after": "She works irregular time."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[1]",
+      "before": "She does not have a high salary",
+      "after": "She does not have a high salary."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L1_Q011",
+      "field": "parts.L1.options[2]",
+      "before": "She has no fixed workplace",
+      "after": "She has no fixed workplace."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T01_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Continuity is important",
+      "after": "Continuity is important."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T01_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự liên tục là quan trọng",
+      "after": "Sự liên tục là quan trọng."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T01_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Job security cannot be guaranteed",
+      "after": "Job security cannot be guaranteed."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T01_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự ổn định công việc không thể được đảm bảo",
+      "after": "Sự ổn định công việc không thể được đảm bảo."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T01_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Job satisfaction is an important motivator",
+      "after": "Job satisfaction is an important motivator."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T01_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Sự hài lòng trong công việc là một động lực quan trọng",
+      "after": "Sự hài lòng trong công việc là một động lực quan trọng."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T01_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Technology is good for the economy",
+      "after": "Technology is good for the economy."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T01_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Công nghệ tốt cho nền kinh tế",
+      "after": "Công nghệ tốt cho nền kinh tế."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L4_T01_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "He wasn't ready to start higher education",
+      "after": "He wasn't ready to start higher education."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L4_T01_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Anh ấy chưa sẵn sàng để bắt đầu học đại học",
+      "after": "Anh ấy chưa sẵn sàng để bắt đầu học đại học."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L4_T01_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "How to be more independent",
+      "after": "How to be more independent."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L4_T01_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Cách để trở nên tự lập hơn",
+      "after": "Cách để trở nên tự lập hơn."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02",
+      "field": "parts.L2.options[0]",
+      "before": "The products are delivered",
+      "after": "The products are delivered."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02",
+      "field": "parts.L2.options[1]",
+      "before": "It is cheaper",
+      "after": "It is cheaper."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02",
+      "field": "parts.L2.options[2]",
+      "before": "It saves time",
+      "after": "It saves time."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02",
+      "field": "parts.L2.options[3]",
+      "before": "There are more choices",
+      "after": "There are more choices."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02_SA",
+      "field": "parts.L2.speakers.answer",
+      "before": "The products are delivered",
+      "after": "The products are delivered."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02_SA",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Sản phẩm được giao đến",
+      "after": "Sản phẩm được giao đến."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02_SB",
+      "field": "parts.L2.speakers.answer",
+      "before": "It is cheaper",
+      "after": "It is cheaper."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02_SB",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Nó rẻ hơn",
+      "after": "Nó rẻ hơn."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02_SC",
+      "field": "parts.L2.speakers.answer",
+      "before": "It saves time",
+      "after": "It saves time."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02_SC",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Nó tiết kiệm thời gian",
+      "after": "Nó tiết kiệm thời gian."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02_SD",
+      "field": "parts.L2.speakers.answer",
+      "before": "There are more choices",
+      "after": "There are more choices."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L2_T02_SD",
+      "field": "parts.L2.speakers.key_vi.answer",
+      "before": "Có nhiều lựa chọn hơn",
+      "after": "Có nhiều lựa chọn hơn."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T02_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "People share similar ideas about beauty",
+      "after": "People share similar ideas about beauty."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T02_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Mọi người có những quan điểm tương tự nhau về vẻ đẹp",
+      "after": "Mọi người có những quan điểm tương tự nhau về vẻ đẹp."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T02_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Ideas about beauty change over time",
+      "after": "Ideas about beauty change over time."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T02_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các quan điểm về vẻ đẹp thay đổi theo thời gian",
+      "after": "Các quan điểm về vẻ đẹp thay đổi theo thời gian."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T02_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Beauty can be found in unlikely places",
+      "after": "Beauty can be found in unlikely places."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T02_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Vẻ đẹp có thể được tìm thấy ở những nơi khó ngờ tới",
+      "after": "Vẻ đẹp có thể được tìm thấy ở những nơi khó ngờ tới."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T02_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Traditional ideas of beauty are going to change",
+      "after": "Traditional ideas of beauty are going to change."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L3_T02_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Những quan niệm truyền thống về vẻ đẹp sẽ thay đổi",
+      "after": "Những quan niệm truyền thống về vẻ đẹp sẽ thay đổi."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L4_T02_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It uses simple language to describe complex ideas",
+      "after": "It uses simple language to describe complex ideas."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L4_T02_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó sử dụng ngôn ngữ đơn giản để mô tả những ý tưởng phức tạp",
+      "after": "Nó sử dụng ngôn ngữ đơn giản để mô tả những ý tưởng phức tạp."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L4_T02_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It is similar to the previous book about the scientist",
+      "after": "It is similar to the previous book about the scientist."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "L4_T02_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó tương tự với cuốn sách trước đây về nhà khoa học đó",
+      "after": "Nó tương tự với cuốn sách trước đây về nhà khoa học đó."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "R23_T01",
+      "field": "reading.R23.topics.lead_en",
+      "before": "Here are some ideas to help you talk about making films",
+      "after": "Here are some ideas to help you talk about making films."
+    },
+    {
+      "file": "APTIS_COMPLETE_DATA_V3_2.json",
+      "id": "R23_T02",
+      "field": "reading.R23.topics.lead_en",
+      "before": "This is what happened during the weekend race and games",
+      "after": "This is what happened during the weekend race and games."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L1_Q117",
+      "field": "parts.L1.options[0]",
+      "before": "There are no flight staff",
+      "after": "There are no flight staff."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T05_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Auditions are the most important of casting",
+      "after": "Auditions are the most important of casting."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T05_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các buổi thử vai là phần quan trọng nhất trong quá trình tuyển chọn diễn viên",
+      "after": "Các buổi thử vai là phần quan trọng nhất trong quá trình tuyển chọn diễn viên."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T05_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Actors respond best to a strong script",
+      "after": "Actors respond best to a strong script."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T05_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên phản ứng tốt nhất với một kịch bản mạnh",
+      "after": "Diễn viên phản ứng tốt nhất với một kịch bản mạnh."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T05_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Theatre acting and movie acting require different skills",
+      "after": "Theatre acting and movie acting require different skills."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T05_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn xuất sân khấu và diễn xuất điện ảnh đòi hỏi những kỹ năng khác nhau",
+      "after": "Diễn xuất sân khấu và diễn xuất điện ảnh đòi hỏi những kỹ năng khác nhau."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T05_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Actors need to be praised",
+      "after": "Actors need to be praised."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T05_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên cần được khen ngợi",
+      "after": "Diễn viên cần được khen ngợi."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L4_T05_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "They have both been overlooked by academics",
+      "after": "They have both been overlooked by academics."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L4_T05_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Cả hai người đều đã bị các học giả bỏ qua / không được giới học thuật chú ý đúng mức",
+      "after": "Cả hai người đều đã bị các học giả bỏ qua / không được giới học thuật chú ý đúng mức."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L4_T05_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "The meanings of their works are not always easy to be identified",
+      "after": "The meanings of their works are not always easy to be identified."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L4_T05_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Ý nghĩa trong các tác phẩm của họ không phải lúc nào cũng dễ xác định",
+      "after": "Ý nghĩa trong các tác phẩm của họ không phải lúc nào cũng dễ xác định."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L1_Q147",
+      "field": "parts.L1.question_en",
+      "before": "How much does a bus card cost?*",
+      "after": "How much does a bus card cost?"
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T06_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Future generations fail to cope with technology information",
+      "after": "Future generations fail to cope with technology information."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T06_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các thế hệ tương lai không thể thích ứng tốt với thông tin công nghệ",
+      "after": "Các thế hệ tương lai không thể thích ứng tốt với thông tin công nghệ."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T06_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Technology revolution is good for the economy",
+      "after": "Technology revolution is good for the economy."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T06_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Cuộc cách mạng công nghệ tốt cho nền kinh tế",
+      "after": "Cuộc cách mạng công nghệ tốt cho nền kinh tế."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T06_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "No computer is superior to the human brain",
+      "after": "No computer is superior to the human brain."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T06_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Không có máy tính nào vượt trội hơn bộ não con người",
+      "after": "Không có máy tính nào vượt trội hơn bộ não con người."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T06_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "More should be done to protect individual privacy",
+      "after": "More should be done to protect individual privacy."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L3_T06_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Cần làm nhiều hơn để bảo vệ quyền riêng tư cá nhân",
+      "after": "Cần làm nhiều hơn để bảo vệ quyền riêng tư cá nhân."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L4_T06_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It doesn't do enough to promote alternatives to driving",
+      "after": "It doesn't do enough to promote alternatives to driving."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L4_T06_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó chưa làm đủ để thúc đẩy các lựa chọn thay thế cho việc lái xe",
+      "after": "Nó chưa làm đủ để thúc đẩy các lựa chọn thay thế cho việc lái xe."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L4_T06_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "The plan is not making efficient use of existing land",
+      "after": "The plan is not making efficient use of existing land."
+    },
+    {
+      "file": "packs/LISTENING_PACK_05_06_V3_2.json",
+      "id": "L4_T06_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Kế hoạch này chưa sử dụng hiệu quả quỹ đất hiện có",
+      "after": "Kế hoạch này chưa sử dụng hiệu quả quỹ đất hiện có."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[0]",
+      "before": "driving a car is his dream",
+      "after": "driving a car is his dream."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[1]",
+      "before": "he hates public transport",
+      "after": "he hates public transport."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q051",
+      "field": "parts.L1.options[2]",
+      "before": "he has to drive to work",
+      "after": "he has to drive to work."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[0]",
+      "before": "He was good at his job",
+      "after": "He was good at his job."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[1]",
+      "before": "He paid her a lot",
+      "after": "He paid her a lot."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q058",
+      "field": "parts.L1.options[2]",
+      "before": "He taught her a lot",
+      "after": "He taught her a lot."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[0]",
+      "before": "They look like each other",
+      "after": "They look like each other."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[1]",
+      "before": "They have similar interests",
+      "after": "They have similar interests."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q063",
+      "field": "parts.L1.options[2]",
+      "before": "They have similar characteristics",
+      "after": "They have similar characteristics."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[0]",
+      "before": "They look for food reserves",
+      "after": "They look for food reserves."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[1]",
+      "before": "They stay in groups for protection",
+      "after": "They stay in groups for protection."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q065",
+      "field": "parts.L1.options[2]",
+      "before": "They migrate to other regions",
+      "after": "They migrate to other regions."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T03_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Arts are only for few privileged",
+      "after": "Arts are only for few privileged."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T03_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Nghệ thuật chỉ dành cho một số ít người có đặc quyền",
+      "after": "Nghệ thuật chỉ dành cho một số ít người có đặc quyền."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T03_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "The government should invest more in arts",
+      "after": "The government should invest more in arts."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T03_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Chính phủ nên đầu tư nhiều hơn vào nghệ thuật",
+      "after": "Chính phủ nên đầu tư nhiều hơn vào nghệ thuật."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T03_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Children should be exposed to art early",
+      "after": "Children should be exposed to art early."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T03_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trẻ em nên được tiếp xúc với nghệ thuật từ sớm",
+      "after": "Trẻ em nên được tiếp xúc với nghệ thuật từ sớm."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T03_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "In the future, art will be more accessible",
+      "after": "In the future, art will be more accessible."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T03_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Trong tương lai, nghệ thuật sẽ dễ tiếp cận hơn",
+      "after": "Trong tương lai, nghệ thuật sẽ dễ tiếp cận hơn."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L4_T03_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "They can cause harmful effects",
+      "after": "They can cause harmful effects."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L4_T03_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Chúng có thể gây ra những tác động có hại",
+      "after": "Chúng có thể gây ra những tác động có hại."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L4_T03_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It helps balance students' lives",
+      "after": "It helps balance students' lives."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L4_T03_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó giúp cân bằng cuộc sống của học sinh",
+      "after": "Nó giúp cân bằng cuộc sống của học sinh."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[0]",
+      "before": "He gets a higher salary",
+      "after": "He gets a higher salary."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[1]",
+      "before": "He enjoys the weather here",
+      "after": "He enjoys the weather here."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L1_Q090",
+      "field": "parts.L1.options[2]",
+      "before": "He enjoys his job here",
+      "after": "He enjoys his job here."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T04_Q01",
+      "field": "parts.L3.statements.text",
+      "before": "Auditions are most important",
+      "after": "Auditions are most important."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T04_Q01",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Các buổi thử giọng là quan trọng nhất",
+      "after": "Các buổi thử giọng là quan trọng nhất."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T04_Q02",
+      "field": "parts.L3.statements.text",
+      "before": "Actors response best to strong scripts",
+      "after": "Actors response best to strong scripts."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T04_Q02",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên phản ứng tốt nhất với những kịch bản có nội dung chất lượng",
+      "after": "Diễn viên phản ứng tốt nhất với những kịch bản có nội dung chất lượng."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T04_Q03",
+      "field": "parts.L3.statements.text",
+      "before": "Theater acting and screen acting are different",
+      "after": "Theater acting and screen acting are different."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T04_Q03",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn xuất trên sân khấu và diễn xuất trên màn ảnh là khác nhau",
+      "after": "Diễn xuất trên sân khấu và diễn xuất trên màn ảnh là khác nhau."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T04_Q04",
+      "field": "parts.L3.statements.text",
+      "before": "Actors should be praised as much as possible",
+      "after": "Actors should be praised as much as possible."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L3_T04_Q04",
+      "field": "parts.L3.statements.key_vi.statement_vi",
+      "before": "Diễn viên nên được khen ngợi càng nhiều càng tốt",
+      "after": "Diễn viên nên được khen ngợi càng nhiều càng tốt."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L4_T04_Q01",
+      "field": "parts.L4.questions.options[0]",
+      "before": "It has the consistent quality throughout",
+      "after": "It has the consistent quality throughout."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L4_T04_Q01",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Nó có chất lượng ổn định xuyên suốt",
+      "after": "Nó có chất lượng ổn định xuyên suốt."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L4_T04_Q02",
+      "field": "parts.L4.questions.options[0]",
+      "before": "Viewer habits influence the way that series are made",
+      "after": "Viewer habits influence the way that series are made."
+    },
+    {
+      "file": "packs/LISTENING_PACK_03_04_V3_2.json",
+      "id": "L4_T04_Q02",
+      "field": "parts.L4.questions.key_vi.answer",
+      "before": "Thói quen của người xem ảnh hưởng đến cách các bộ phim truyền hình dài tập được sản xuất",
+      "after": "Thói quen của người xem ảnh hưởng đến cách các bộ phim truyền hình dài tập được sản xuất."
+    }
+  ],
+  "review_flags": [
+    {
+      "id": "L1_Q002",
+      "reason": "The parenthetical source note follows a correctly punctuated question; retained, not treated as a sentence."
+    },
+    {
+      "id": "L1_Q011",
+      "reason": "Legacy embedded version truncated “other”; restored “jobs?” from canonical verified question_en. Raw source retained."
+    },
+    {
+      "id": "R5 headings",
+      "reason": "Headings are not sentences; keep exact teacher/app provenance even if ending punctuation varies."
+    },
+    {
+      "id": "L1/L2 short answer labels",
+      "reason": "Numbers, times, phrases and labels normally do not require trailing full stops."
+    },
+    {
+      "id": "Reading R1 / Practice R1",
+      "reason": "Single-word gap choices must remain unpunctuated to fit into passages."
+    }
+  ],
+  "runtime_translation_vi_terminal_punctuation": true,
+  "legacy_ocr_differences": [
+    {
+      "set_id": "SET_06",
+      "question_id": "L1_Q147",
+      "displayed": [
+        "$10",
+        "$20",
+        "c. $30"
+      ],
+      "canonical": [
+        "$10",
+        "$20",
+        "$30"
+      ]
+    },
+    {
+      "set_id": "SET_07",
+      "question_id": "L1_Q147",
+      "displayed": [
+        "$10",
+        "$20",
+        "c. $30"
+      ],
+      "canonical": [
+        "$10",
+        "$20",
+        "$30"
+      ]
+    },
+    {
+      "set_id": "SET_09",
+      "question_id": "L1_Q089",
+      "displayed": [
+        "A stadium",
+        "_A Performance space",
+        "A school yard"
+      ],
+      "canonical": [
+        "A stadium",
+        "A performance space",
+        "A school yard"
+      ]
+    },
+    {
+      "set_id": "SET_10",
+      "question_id": "L1_Q073",
+      "displayed": [
+        "Science",
+        "ö. Art",
+        "Math"
+      ],
+      "canonical": [
+        "Science",
+        "Art",
+        "Math"
+      ]
+    },
+    {
+      "set_id": "SET_11",
+      "question_id": "L1_Q147",
+      "displayed": [
+        "$10",
+        "$20",
+        "c. $30"
+      ],
+      "canonical": [
+        "$10",
+        "$20",
+        "$30"
+      ]
+    },
+    {
+      "set_id": "SET_11",
+      "question_id": "L1_Q004",
+      "displayed": [
+        "lpm",
+        "2pm",
+        "3pm."
+      ],
+      "canonical": [
+        "1pm",
+        "2pm",
+        "3pm."
+      ]
+    },
+    {
+      "set_id": "SET_13",
+      "question_id": "L1_Q080",
+      "displayed": [
+        "10",
+        "20",
+        "c. 30"
+      ],
+      "canonical": [
+        "10",
+        "20",
+        "30"
+      ]
+    },
+    {
+      "set_id": "SET_14",
+      "question_id": "L1_Q073",
+      "displayed": [
+        "Science",
+        "ö. Art",
+        "Math"
+      ],
+      "canonical": [
+        "Science",
+        "Art",
+        "Math"
+      ]
+    },
+    {
+      "set_id": "SET_15",
+      "question_id": "L1_Q004",
+      "displayed": [
+        "lpm",
+        "2pm",
+        "3pm."
+      ],
+      "canonical": [
+        "1pm",
+        "2pm",
+        "3pm."
+      ]
+    },
+    {
+      "set_id": "SET_15",
+      "question_id": "L1_Q062",
+      "displayed": [
+        "Go to the coffee shop",
+        "Go for a drive",
+        "Go ona picnic"
+      ],
+      "canonical": [
+        "Go to the coffee shop",
+        "Go for a drive",
+        "Go on a picnic"
+      ]
+    },
+    {
+      "set_id": "SET_17",
+      "question_id": "L1_Q089",
+      "displayed": [
+        "A stadium",
+        "_A Performance space",
+        "A school yard"
+      ],
+      "canonical": [
+        "A stadium",
+        "A performance space",
+        "A school yard"
+      ]
+    },
+    {
+      "set_id": "SET_19",
+      "question_id": "L1_Q080",
+      "displayed": [
+        "10",
+        "20",
+        "c. 30"
+      ],
+      "canonical": [
+        "10",
+        "20",
+        "30"
+      ]
+    },
+    {
+      "set_id": "SET_19",
+      "question_id": "L1_Q147",
+      "displayed": [
+        "$10",
+        "$20",
+        "c. $30"
+      ],
+      "canonical": [
+        "$10",
+        "$20",
+        "$30"
+      ]
+    },
+    {
+      "set_id": "SET_21",
+      "question_id": "L1_Q062",
+      "displayed": [
+        "Go to the coffee shop",
+        "Go for a drive",
+        "Go ona picnic"
+      ],
+      "canonical": [
+        "Go to the coffee shop",
+        "Go for a drive",
+        "Go on a picnic"
+      ]
+    },
+    {
+      "set_id": "SET_21",
+      "question_id": "L1_Q089",
+      "displayed": [
+        "A stadium",
+        "_A Performance space",
+        "A school yard"
+      ],
+      "canonical": [
+        "A stadium",
+        "A performance space",
+        "A school yard"
+      ]
+    },
+    {
+      "set_id": "SET_22",
+      "question_id": "L1_Q073",
+      "displayed": [
+        "Science",
+        "ö. Art",
+        "Math"
+      ],
+      "canonical": [
+        "Science",
+        "Art",
+        "Math"
+      ]
+    },
+    {
+      "set_id": "SET_24",
+      "question_id": "L1_Q080",
+      "displayed": [
+        "10",
+        "20",
+        "c. 30"
+      ],
+      "canonical": [
+        "10",
+        "20",
+        "30"
+      ]
+    },
+    {
+      "set_id": "SET_24",
+      "question_id": "L1_Q147",
+      "displayed": [
+        "$10",
+        "$20",
+        "c. $30"
+      ],
+      "canonical": [
+        "$10",
+        "$20",
+        "$30"
+      ]
+    },
+    {
+      "set_id": "SET_25",
+      "question_id": "L1_Q004",
+      "displayed": [
+        "lpm",
+        "2pm",
+        "3pm."
+      ],
+      "canonical": [
+        "1pm",
+        "2pm",
+        "3pm."
+      ]
+    },
+    {
+      "set_id": "SET_26",
+      "question_id": "L1_Q089",
+      "displayed": [
+        "A stadium",
+        "_A Performance space",
+        "A school yard"
+      ],
+      "canonical": [
+        "A stadium",
+        "A performance space",
+        "A school yard"
+      ]
+    },
+    {
+      "set_id": "SET_27",
+      "question_id": "L1_Q080",
+      "displayed": [
+        "10",
+        "20",
+        "c. 30"
+      ],
+      "canonical": [
+        "10",
+        "20",
+        "30"
+      ]
+    },
+    {
+      "set_id": "SET_28_SUPPLEMENTAL",
+      "question_id": "L1_Q073",
+      "displayed": [
+        "Science",
+        "ö. Art",
+        "Math"
+      ],
+      "canonical": [
+        "Science",
+        "Art",
+        "Math"
+      ]
+    }
+  ],
+  "principles": [
+    "Preserve raw source fields and answer IDs/indices",
+    "Punctuate standalone clauses/statements, not individual gap-fill words, times or headings",
+    "Keep speaker.answer and L2 options synchronized",
+    "Keep standalone HTML in sync"
+  ]
+}

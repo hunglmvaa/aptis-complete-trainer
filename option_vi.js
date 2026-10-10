@@ -52,9 +52,15 @@ function moneyTime(en){
   if(pounds)return `${pounds[1]} bảng Anh`;
   return '';
 }
+function punctuateOptionVi(en,vi){
+  const english=String(en??'').trim(),translated=String(vi??'').trim();
+  if(!translated || /[.!?…]$/.test(translated))return translated;
+  if(/\?$/.test(english))return translated+'?';
+  return /\.$/.test(english)?translated+'.':translated;
+}
 function known(en){
  const value=String(en??'').trim();
- return dictionary.get(norm(value))||staticVi?.cached(value)||moneyTime(value)||'';
+ return punctuateOptionVi(value,dictionary.get(norm(value))||staticVi?.cached(value)||moneyTime(value)||'');
 }
 const enEsc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let generation=0,queue=[],working=false,stopped=false;
@@ -93,6 +99,7 @@ function enhanceLabels(app){
      const english=label.querySelector('.option-en')?.textContent?.trim()||'';
      let vi=label.querySelector('.option-vi');
      if(!vi){vi=emitChoice(label.querySelector('span')||label,english,'');}
+     else if(vi.textContent.trim()){vi.textContent=punctuateOptionVi(english,vi.textContent)}
      else if(!vi.textContent.trim()){
        vi.dataset.viEn=english;
        vi.textContent=known(english)||'Đang lấy nghĩa tiếng Việt…';
@@ -139,6 +146,7 @@ function collectPending(app){
   return q;
 }
 function reflect(en,vi){
+  vi=punctuateOptionVi(en,vi);
   document.querySelectorAll('.option-vi[data-vi-en],.vi-select-inline[data-vi-en]').forEach(node=>{
     if(node.dataset.viEn!==en||!node.isConnected)return;
     node.textContent=vi;node.dataset.viState='ready';

@@ -1,0 +1,18 @@
+APTIS COMPLETE TRAINER V4.2 – PUNCTUATION AUDIT (10/10/2026)
+
+- Listening L1: add terminal punctuation to complete option clauses and restore partial display questions from canonical where applicable.
+- Listening L2: punctuation only on complete finite statements; synchronize answer labels and L2 key data.
+- Listening L3: add full stops to complete English statements and Vietnamese statement translations.
+- Listening L4: consistently end complete option responses with full stops, including curated Vietnamese correct-answer explanations.
+- Reading R2/3: add final punctuation to prose instruction and full sentences when missing.
+- Reading R1, Practice R1: keep isolated gap-filling words without punctuation.
+- Reading R5: headings are not sentences; preserve original headings and teacher source.
+- L1 canonical dialogues: remove duplicate full stops after closing quotation marks.
+- Displayed Vietnamese option translations: mirror English terminal punctuation (including cached and machine translations).
+- Legacy and optional online packs are corrected consistently; HTML standalone regenerated.
+- Raw source fields, answer_index, question IDs, shuffle, scoring, Vietnamese dictionary, browser progress and UI CSS are unchanged.
+
+IMPORTANT: These are punctuation fixes, not a factual revalidation of the correctness of APTIS answers. Source text and keys have not been independently verified against test audio.
+Use files from patch/files at their corresponding relative paths in repository.
+Do NOT upload only the ZIP as a repository file; upload the contents in their folder hierarchy.
+Use the full-source package if unsure about old source version. Backup your current GitHub branch before replacing files.
