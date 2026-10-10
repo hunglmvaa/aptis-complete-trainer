@@ -135,3 +135,32 @@ html,body{max-width:100%;overflow-x:clip}
 /* V4.1: keep A/B/C markers unbroken beside bilingual answers */
 label.option.bilingual-option > b{white-space:nowrap;flex:0 0 22px;min-width:22px;text-align:left;overflow-wrap:normal}
 label.option.bilingual-option > .option-text-stack{min-width:0;flex:1 1 0}
+
+
+/* V4.3 · Desktop compact reading layout.
+   Restrict the study column on laptops; mobile <=780px keeps V4.1 styling.
+   Change --aptis-desktop-width to 860px or 980px if preferred. */
+@media (min-width: 781px) {
+  :root { --aptis-desktop-width: 920px; }
+  main#app {
+    width: 100%;
+    max-width: var(--aptis-desktop-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 14px 90px;
+  }
+  /* The navigation bar can remain wider than the reading column. */
+  .topbar {
+    padding-left: max(16px, calc((100vw - 1120px) / 2));
+    padding-right: max(16px, calc((100vw - 1120px) / 2));
+    gap: 10px;
+  }
+  .topbar .navscroll { min-width: 0; flex: 1 1 auto; }
+  .topbar .brand { flex: 0 0 auto; }
+  .topbar .navbtn { padding: 8px 10px; }
+}
+@media (min-width: 781px) and (max-width: 960px) {
+  .topbar { flex-wrap: wrap; }
+  .topbar .brand { max-width: 100%; white-space: normal; }
+  .topbar .navscroll { flex-basis: 100%; }
+}
